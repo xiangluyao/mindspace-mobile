@@ -1,0 +1,42 @@
+{
+  "schema": "anatomy-blender-source-validation-v10",
+  "blenderVersion": "4.5.8 LTS",
+  "sourceProject": "anatomy-muscles.blend",
+  "collections": {
+    "Muscles": {
+      "meshCount": 509,
+      "vertices": 996893,
+      "polygons": 1969810,
+      "hiddenViewport": false,
+      "hiddenRender": false
+    },
+    "OriginalMuscleTopology": {
+      "meshCount": 509,
+      "vertices": 980434,
+      "polygons": 1953133,
+      "hiddenViewport": true,
+      "hiddenRender": true
+    },
+    "SourceAttachmentSurfaces": {
+      "meshCount": 705,
+      "vertices": 467266,
+      "polygons": 465742,
+      "hiddenViewport": true,
+      "hiddenRender": true
+    },
+    "ReferenceSkeleton": {
+      "meshCount": 1,
+      "vertices": 257610,
+      "polygons": 499294,
+      "hiddenViewport": false,
+      "hiddenRender": false
+    }
+  },
+  "checks": [
+    "Compressed source project reopens in Blender",
+    "509 raw muscle meshes retain source vertex and polygon counts",
+    "Rendered 509 source-derived meshes and 705 attachment surfaces remain separately named",
+    "Original topology and attachment collections default hidden",
+    "No character animation rig or fabricated muscle physiology"
+  ]
+}

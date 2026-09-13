@@ -1,0 +1,217 @@
+{
+  "version": "restaurant-events-3.0",
+  "mode": "definitions-only",
+  "description": "只设置事件勾选类别与距离；人物执行由总览 L3 时间序列调度。从多个类别全部可用物体中按真实可达路径统一选择。",
+  "definitions": [
+    {
+      "id": "arrival",
+      "name": "进店并进入等候流程",
+      "type": "enter",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "entrance"
+      ],
+      "distanceThreshold": 0.4,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 1,
+      "action": "idle"
+    },
+    {
+      "id": "wait-seating",
+      "name": "等候服务员安排座位",
+      "type": "wait-seat",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "waiting"
+      ],
+      "distanceThreshold": 0.4,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 30,
+      "action": "queue"
+    },
+    {
+      "id": "seat-search",
+      "name": "寻找现有空椅",
+      "type": "find-seat",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "seat"
+      ],
+      "distanceThreshold": 0.4,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 1,
+      "action": "sit"
+    },
+    {
+      "id": "read-menu",
+      "name": "浏览菜单",
+      "type": "menu",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "table"
+      ],
+      "distanceThreshold": 1.5,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 20,
+      "action": "menu"
+    },
+    {
+      "id": "order-request",
+      "name": "请求点单",
+      "type": "request-order",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "table"
+      ],
+      "distanceThreshold": 1.35,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 4,
+      "action": "callserver"
+    },
+    {
+      "id": "food-request",
+      "name": "等待并请求上菜",
+      "type": "request-food",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "table"
+      ],
+      "distanceThreshold": 1.35,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 4,
+      "action": "callserver"
+    },
+    {
+      "id": "meal",
+      "name": "用餐",
+      "type": "eat",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "table"
+      ],
+      "distanceThreshold": 1.5,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 25,
+      "action": "eat"
+    },
+    {
+      "id": "checkout-request",
+      "name": "请求结账",
+      "type": "request-checkout",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "table"
+      ],
+      "distanceThreshold": 1.35,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 4,
+      "action": "callserver"
+    },
+    {
+      "id": "seat-departure",
+      "name": "从现有餐椅起身",
+      "type": "leave-seat",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "seat"
+      ],
+      "distanceThreshold": 0.4,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 1,
+      "action": "idle"
+    },
+    {
+      "id": "approach-object",
+      "name": "沿可达路线接近物体",
+      "type": "move-object",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "all",
+      "objectKinds": [
+        "workstation"
+      ],
+      "distanceThreshold": 1.8,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 1,
+      "action": "idle"
+    },
+    {
+      "id": "chef-work",
+      "name": "厨房岗位工作",
+      "type": "perform-action",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "chef",
+      "objectKinds": [
+        "workstation"
+      ],
+      "distanceThreshold": 1.8,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 25,
+      "action": "cook"
+    },
+    {
+      "id": "service-work",
+      "name": "服务员岗位工作",
+      "type": "perform-action",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "service",
+      "objectKinds": [
+        "workstation"
+      ],
+      "distanceThreshold": 1.8,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 12,
+      "action": "greet"
+    },
+    {
+      "id": "wipe-table",
+      "name": "擦拭现有餐桌",
+      "type": "perform-action",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "service",
+      "objectKinds": [
+        "table"
+      ],
+      "distanceThreshold": 1.5,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 12,
+      "action": "wipe"
+    },
+    {
+      "id": "customer-action",
+      "name": "顾客个体动作",
+      "type": "perform-action",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "table"
+      ],
+      "distanceThreshold": 1.5,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 12,
+      "action": "drink"
+    },
+    {
+      "id": "depart",
+      "name": "到达入口后离店",
+      "type": "exit",
+      "description": "通过当前场景的真实物体、可达路线和个体状态执行。",
+      "role": "customer",
+      "objectKinds": [
+        "entrance"
+      ],
+      "distanceThreshold": 0.4,
+      "targetStrategy": "nearest-reachable-path",
+      "durationSeconds": 1,
+      "action": "idle"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "sourceBlendSHA256": "810295b44fede385940cce4791574d7569af490fa88abac80a59d840e09f3d15",
+  "sourceP14SHA256": "85d354297375dbd3c93c4ba2de4658f40bbf26871d3f1db5103b6a89350c1bcc",
+  "originalCharacters": {
+    "p01": "15826d13f030a47263b95e9e41a35f53bf0bb93b22d825d86a3a2029c74c4cb9",
+    "p02": "70d171f9ac5a2817db1ed77b764ac606ddf34d779236b41df12c92ac418b6312",
+    "p03": "23e77cd7c6b88ce54509d9d9090b4eff9b5c136883a878ea5bbae3d32bef4160",
+    "p04": "92c2a6a6ca28880e62c324426d1bae25be4ae59a3a1345d35349ee07ed91c700",
+    "p05": "f697bb5cf8aae1fbce7322ef6a16bfa790ab2d16edb23c78f48b51e3a37a2b32",
+    "p06": "7e40f1de9e672040814258d43def2554fb0c076c77314cfa365fa00f6c5e9561",
+    "p07": "1466c21ef85c35ae998af577f2e38342bdddc42cc0a82fdd59bcf68a356a2f08",
+    "p08": "fdbcff3ef99474a2bc1a4756bc35ca7045830b61dd568f67565d3f5753dff55f",
+    "p09": "434a1b93ae1c3638eeb518893c78c5b8dff876772d01e674d0dbd91266d0c1df",
+    "p10": "dc66d09e24e93cdb3c6e3815569b029a928400ac5626a68a6f97391a0d507a15",
+    "p11": "b90bd046fc55dc9777becdc64c51265f68eff2c3637c7021bac5274f2a1f078a",
+    "p12": "520e8a8b45722cd52e5e7cbfc91ad736ddcd9deda403df38be2a6c5540d7bfad",
+    "p13": "bdc4b572604fff516ee415edb27927f58180a99b23a077253860fb722c4da0c4",
+    "p14": "85d354297375dbd3c93c4ba2de4658f40bbf26871d3f1db5103b6a89350c1bcc",
+    "p15": "cbb199e01941cc823c88e4ae80879b7ee01e9ad5ebe785b1e9691f5c99cf8837",
+    "p16": "eb906f1f8dd4c069214b1f05386a5834ceed37bd0e59655da5cb3b03570922aa"
+  },
+  "blender": "4.5.8 LTS",
+  "method": "Reconstruct posterior vest and shoulder panels from clipped source shirt triangles; 8 mm normal clearance; barycentric transfer of source skin weights. Original shirt and front panels remain unchanged.",
+  "garments": [
+    {
+      "name": "p14_vest_back",
+      "oldVertices": 38,
+      "oldFaces": 18,
+      "vertices": 1956,
+      "faces": 3115,
+      "sourceFaces": 1531,
+      "weightGroups": [
+        "clavicle_r",
+        "head",
+        "spine_03",
+        "neck_01",
+        "upperarm_r",
+        "clavicle_l",
+        "upperarm_l",
+        "spine_02",
+        "spine_01",
+        "pelvis",
+        "thigh_r",
+        "thigh_l",
+        "lowerarm_r",
+        "lowerarm_l"
+      ]
+    },
+    {
+      "name": "p14_vest_shoulder_-1",
+      "oldVertices": 6,
+      "oldFaces": 2,
+      "vertices": 147,
+      "faces": 164,
+      "sourceFaces": 85,
+      "weightGroups": [
+        "clavicle_r",
+        "head",
+        "spine_03",
+        "neck_01",
+        "upperarm_r"
+      ]
+    },
+    {
+      "name": "p14_vest_shoulder_1",
+      "oldVertices": 6,
+      "oldFaces": 2,
+      "vertices": 155,
+      "faces": 184,
+      "sourceFaces": 94,
+      "weightGroups": [
+        "head",
+        "spine_03",
+        "neck_01",
+        "clavicle_l",
+        "upperarm_l"
+      ]
+    }
+  ],
+  "outputSHA256": "0a8529e1d15b18d3794a62b8b4f1b6b176269198f96087b94326dcfa631d25f7",
+  "originalBinaryPrefixPreserved": true,
+  "animationJsonUnchanged": true,
+  "skinJsonUnchanged": true,
+  "nodeJsonUnchanged": true,
+  "animations": [
+    {
+      "name": "Idle",
+      "channels": 159
+    },
+    {
+      "name": "Walk",
+      "channels": 159
+    },
+    {
+      "name": "Run",
+      "channels": 159
+    },
+    {
+      "name": "Wave",
+      "channels": 159
+    },
+    {
+      "name": "Sit",
+      "channels": 159
+    },
+    {
+      "name": "Carry",
+      "channels": 159
+    },
+    {
+      "name": "TakeOrder",
+      "channels": 159
+    },
+    {
+      "name": "Serve",
+      "channels": 159
+    },
+    {
+      "name": "Greet",
+      "channels": 159
+    },
+    {
+      "name": "Guide",
+      "channels": 159
+    },
+    {
+      "name": "Listen",
+      "channels": 159
+    },
+    {
+      "name": "WipeTable",
+      "channels": 159
+    }
+  ],
+  "bones": 53,
+  "keypoints": 27,
+  "all16OriginalGLBsUnchanged": true,
+  "outputBlenderSHA256": "b43de6f597dfe74ecf3bd288142050fe5deb29209f63d91b0f3ae3795ae4fd20",
+  "outputBytes": 3194028,
+  "outputBlenderBytes": 39078420
+}

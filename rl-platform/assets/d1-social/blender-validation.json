@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "source": {
+    "reopened": true,
+    "bones": 13,
+    "clips": [
+      "Greet",
+      "Idle",
+      "Listen",
+      "Walk"
+    ],
+    "camera": "D1 QA camera"
+  },
+  "glbBytes": 6417368,
+  "boneCount": 13,
+  "skinnedMeshCount": 62,
+  "animationClips": [
+    {
+      "name": "Idle",
+      "duration": 3.200000047683716,
+      "channels": 39,
+      "changingChannels": 9,
+      "animatedRootTranslation": 0
+    },
+    {
+      "name": "Walk",
+      "duration": 1.2000000476837158,
+      "channels": 39,
+      "changingChannels": 9,
+      "animatedRootTranslation": 0
+    },
+    {
+      "name": "Greet",
+      "duration": 3.5999999046325684,
+      "channels": 39,
+      "changingChannels": 9,
+      "animatedRootTranslation": 0
+    },
+    {
+      "name": "Listen",
+      "duration": 4.0,
+      "channels": 39,
+      "changingChannels": 9,
+      "animatedRootTranslation": 0
+    }
+  ],
+  "bindBoundsBlenderMetres": {
+    "min": [
+      -0.18760833144187927,
+      -0.25201961398124695,
+      -6.05398895459075e-08
+    ],
+    "max": [
+      0.18760833144187927,
+      0.2578742504119873,
+      0.42000001668930054
+    ]
+  },
+  "sampledAnimationChecks": [
+    {
+      "name": "Idle",
+      "samples": 17,
+      "minimumFootYMetres": -1.6979174688458443e-07,
+      "maximumRaisedFootYMetres": 5.011679604649544e-08,
+      "maximumSupportFloorErrorMetres": 1.6979174688458443e-07,
+      "rootHeadVariationMetres": 0.0
+    },
+    {
+      "name": "Walk",
+      "samples": 17,
+      "minimumFootYMetres": -2.9566464945673943e-05,
+      "maximumRaisedFootYMetres": 0.032204847782850266,
+      "maximumSupportFloorErrorMetres": 2.9566464945673943e-05,
+      "rootHeadVariationMetres": 0.0
+    },
+    {
+      "name": "Greet",
+      "samples": 17,
+      "minimumFootYMetres": -1.0314397513866425e-07,
+      "maximumRaisedFootYMetres": 0.1038653701543808,
+      "maximumSupportFloorErrorMetres": 1.0314397513866425e-07,
+      "rootHeadVariationMetres": 0.0
+    },
+    {
+      "name": "Listen",
+      "samples": 17,
+      "minimumFootYMetres": -1.932494342327118e-07,
+      "maximumRaisedFootYMetres": 3.259629011154175e-08,
+      "maximumSupportFloorErrorMetres": 1.932494342327118e-07,
+      "rootHeadVariationMetres": 0.0
+    }
+  ],
+  "checks": [
+    "GLB 2 binary and accessors parse",
+    "Every mesh has normalized skin weights",
+    "13 actual joints in exported skin",
+    "Four nonconstant actual animation clips",
+    "Source .blend reopens with rig and NLA actions",
+    "GLB reimports with armature modifiers",
+    "Measured bind floor zero and height 0.420 m",
+    "Root does not translate during any clip",
+    "Sampled support tread remains within 3 mm of floor",
+    "Walk and Greet raise actual foot geometry"
+  ]
+}

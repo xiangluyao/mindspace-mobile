@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><script src="/mindspace-mobile/online-routes.js"></script><script src="/mindspace-mobile/online-adapter.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Perspective · 餐厅三维视口</title>
+  <script type="module" crossorigin src="./assets/perspective-COxKBmvU.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="./assets/preload-helper-D9Z9MdNV.js">
+  <link rel="modulepreload" crossorigin href="./assets/RoomEnvironment-CLu3oT9u.js">
+  <link rel="stylesheet" crossorigin href="./assets/perspective-BUWTkNMf.css">
+</head>
+<body>
+  <main id="perspective-viewport" aria-label="可交互餐厅透视视口">
+    <div id="canvas-host"></div>
+    <header class="viewport-toolbar" aria-label="视口工具">
+      <span class="viewport-title"><i aria-hidden="true"></i>Perspective</span>
+      <div class="toolbar-actions">
+        <button id="reset-view" type="button" title="回到默认相机（Home）" disabled>重置</button>
+        <button id="fit-view" type="button" title="完整显示餐厅" disabled>全景</button>
+        <button id="focus-selection" type="button" title="聚焦所选对象（F）" disabled>聚焦</button>
+        <button id="wireframe" type="button" aria-pressed="false" title="切换模型线框（W）" disabled>线框</button>
+        <span class="cutaway-control">
+          <button id="cutaway" type="button" aria-pressed="true" aria-describedby="cutaway-status" title="切换 2.7 米剖切与完整模型" disabled>剖切</button>
+          <span id="cutaway-status" role="status" aria-live="polite">剖切 2.7 m</span>
+        </span>
+      </div>
+    </header>
+    <div id="load-state" class="load-state" role="status" aria-live="polite">
+      <span class="load-spinner" aria-hidden="true"></span>
+      <strong id="load-title">正在初始化三维视口…</strong>
+      <span id="load-detail">准备图形上下文</span>
+      <button id="retry-load" type="button" hidden>重新载入</button>
+    </div>
+    <div class="selection-caption" aria-live="polite">
+      <span id="selection-label">未选择对象</span>
+      <span id="selection-dimensions"></span>
+    </div>
+    <footer class="viewport-footer">
+      <span id="interaction-hint">拖动旋转 · 滚轮缩放 · 右键平移 · 双击聚焦</span>
+      <span id="scene-status">等待场景</span>
+    </footer>
+  </main>
+</body>
+</html>

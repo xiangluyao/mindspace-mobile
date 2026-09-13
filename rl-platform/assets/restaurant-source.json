@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "1.2",
+  "asset": {
+    "fileName": "restaurant-scene.glb",
+    "projectPath": "public/assets/restaurant-scene.glb",
+    "format": "glTF 2.0 binary",
+    "bytes": 11961520,
+    "sha256": "41c0f9b58606c081982cca4a12c4f998befdfa56028a0457156e6815f67ef8a4",
+    "externalResourceUris": [],
+    "derivation": "serviceDerivative"
+  },
+  "originalDelivery": {
+    "threadId": "01a02372-d0a2-77d3-9138-f144ed3b4ef5",
+    "turnId": "01a03744-e9e2-7153-b59b-ecbc0d9eebd4",
+    "startedAt": "2026-08-25T12:54:18+08:00",
+    "deliveredAt": "2026-08-25T13:49:40+08:00",
+    "timezone": "Asia/Shanghai",
+    "description": "独立餐厅整合模型：Bistro 前厅、商业后厨、两台黑色人形机器人、任务区域及仿真元数据；当时未接入 HTML。",
+    "sourceDirectory": "/Users/luyao/Documents/餐饮落地/MindSpace_开放餐厅整合模型_v2",
+    "files": [
+      {
+        "fileName": "MindSpace_Open_Restaurant_v2.blend",
+        "type": "Blender editable master",
+        "bytes": 140779874,
+        "sha256": "77ff176b0d860c4a31a7ae3297432f920f9bf698939afbc54095257b732743e8",
+        "sourcePath": "/Users/luyao/Documents/餐饮落地/MindSpace_开放餐厅整合模型_v2/MindSpace_Open_Restaurant_v2.blend"
+      },
+      {
+        "fileName": "MindSpace_Open_Restaurant_v2.glb",
+        "type": "glTF 2.0 binary",
+        "bytes": 426013152,
+        "sha256": "55946ad309a4b27d900e1cb6d67da3306fb8ef55333e98caea83de97b117064f",
+        "sourcePath": "/Users/luyao/Documents/餐饮落地/MindSpace_开放餐厅整合模型_v2/MindSpace_Open_Restaurant_v2.glb"
+      },
+      {
+        "fileName": "MindSpace_Open_Restaurant_v2.usdc",
+        "type": "OpenUSD binary crate",
+        "bytes": 72766482,
+        "sha256": "a9d345c5e0f9d624b4b7091a9fb03c6aa4071ba542b57730593ff021302769ce",
+        "sourcePath": "/Users/luyao/Documents/餐饮落地/MindSpace_开放餐厅整合模型_v2/MindSpace_Open_Restaurant_v2.usdc"
+      }
+    ],
+    "hashVerification": "All three hashes were computed from the original files during the read-only provenance audit and matched the original VALIDATION.md."
+  },
+  "webDerivative": {
+    "sourcePath": "/Users/luyao/Documents/餐饮落地/MindSpace_餐饮机器人训练仿真平台_3D场景人物接入_v7/assets/3d/restaurant_web.glb",
+    "fileName": "restaurant_web.glb",
+    "generatedAt": "2026-08-25T19:49:09+08:00",
+    "timestampBasis": "Source file modification time; the GLB does not contain a separate export timestamp.",
+    "bytes": 26365464,
+    "sha256": "e60a1bb35cc5eae0d7a392299f928caaf71690d53f78145acb0fc759f42a0002",
+    "generator": "glTF-Transform v4.4.2",
+    "sourceDeliveryNotes": "/Users/luyao/Documents/餐饮落地/MindSpace_餐饮机器人训练仿真平台_3D场景人物接入_v7/交付说明_3D接入.md",
+    "documentedTransformations": [
+      "WebP texture conversion",
+      "Meshopt compression",
+      "GPU instancing and mesh quantization present in exported GLB"
+    ],
+    "copyVerification": "Initial integration copy was byte-identical to this historical web derivative. The current distributed asset is the separately recorded runtimeDerivative with smaller embedded texture images."
+  },
+  "gltf": {
+    "extensionsRequired": [
+      "EXT_meshopt_compression",
+      "EXT_texture_webp",
+      "KHR_mesh_quantization"
+    ],
+    "extensionsUsed": [
+      "EXT_mesh_gpu_instancing",
+      "EXT_meshopt_compression",
+      "EXT_texture_webp",
+      "KHR_materials_emissive_strength",
+      "KHR_materials_specular",
+      "KHR_materials_transmission",
+      "KHR_mesh_quantization"
+    ],
+    "loaderRequirement": "Configure GLTFLoader.setMeshoptDecoder(MeshoptDecoder); runtime must support WebP, KHR_mesh_quantization and EXT_mesh_gpu_instancing.",
+    "defaultScene": 0
+  },
+  "geometryComparison": {
+    "method": "Read GLB JSON accessors. For each TRIANGLES primitive, triangle count is index accessor count / 3 (or POSITION count / 3 for a nonindexed primitive). Unique mesh triangles sum each mesh once. Scene triangles traverse the default scene and multiply a referenced mesh by its EXT_mesh_gpu_instancing accessor count, or one for a regular node.",
+    "original": {
+      "meshes": 1498,
+      "primitives": 2393,
+      "nodes": 1511,
+      "activeSceneNodes": 1511,
+      "meshNodes": 1498,
+      "primitiveModes": {
+        "4": 2393
+      },
+      "uniqueMeshTriangles": 1246311,
+      "meshInstances": 1498,
+      "gpuInstancedNodes": 0,
+      "gpuInstances": 0,
+      "sceneTrianglesAfterInstancing": 1246311
+    },
+    "webDerivative": {
+      "meshes": 85,
+      "primitives": 114,
+      "nodes": 89,
+      "activeSceneNodes": 89,
+      "meshNodes": 85,
+      "primitiveModes": {
+        "4": 114
+      },
+      "uniqueMeshTriangles": 1164507,
+      "meshInstances": 206,
+      "gpuInstancedNodes": 14,
+      "gpuInstances": 135,
+      "sceneTrianglesAfterInstancing": 1246311
+    },
+    "sceneTriangleCountMatches": true,
+    "interpretation": "The web asset uses fewer mesh/primitive/node records and GPU instances. Its expanded scene triangle count equals the original; node counts are not a count of distinct visible objects after merging and instancing.",
+    "limitations": [
+      "The compressed vertex buffers were not decoded for a vertex-by-vertex comparison.",
+      "Equal triangle totals do not prove identical topology, vertex positions, normals, UVs, material values or texture pixels.",
+      "Mesh quantization and WebP conversion are declared transformations; no bit-identical geometry or texture claim is made."
+    ]
+  },
+  "attribution": {
+    "bistro": {
+      "title": "Amazon Lumberyard Bistro, interior scene",
+      "creator": "Amazon Lumberyard",
+      "distributor": "NVIDIA ORCA",
+      "sourceUrl": "https://developer.nvidia.com/orca/amazon-lumberyard-bistro",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseFile": "licenses/Bistro-CC-BY-4.0.txt",
+      "sourceLicensePath": "/Users/luyao/Documents/餐饮落地/MindSpace_开放餐厅整合模型_v2/source_assets/bistro/Bistro_v5_2/LICENSE.txt",
+      "licenseSha256": "9a9ef3c33320eebe6126b0c7dc327885806bde242283bbe6e4ae77641ad703e4",
+      "modifications": [
+        "Presentation cutaway and original-shell organization in the editable master",
+        "Integrated commercial kitchen and authored scene additions",
+        "WebP conversion, mesh optimization, instancing and quantization in web derivative",
+        "Runtime derivative: embedded WebP texture dimensions limited to 512 pixels, with geometry, node/material JSON, and Meshopt payloads preserved."
+      ]
+    },
+    "cc0Appliances": {
+      "count": 2,
+      "license": "CC0",
+      "provenance": "The original ATTRIBUTION.md identifies two kitchen appliance meshes from the earlier CC0 Home Kitchen asset; Blender objects carry source_license = CC0.",
+      "evidencePath": "/Users/luyao/Documents/餐饮落地/MindSpace_开放餐厅整合模型_v2/ATTRIBUTION.md",
+      "scope": "Appliance components only; this does not make the entire Bistro scene CC0."
+    },
+    "mindspaceAdditions": {
+      "description": "Commercial kitchen extension, black humanoid robots, semantic zones, cameras, lighting, scene organization and simulation metadata authored for the original MindSpace integration.",
+      "licenseNote": "No new license is assigned to these project-authored additions by this provenance record."
+    }
+  },
+  "runtimeDerivative": {
+    "sourceDerivative": "webDerivative",
+    "sourceSha256": "e60a1bb35cc5eae0d7a392299f928caaf71690d53f78145acb0fc759f42a0002",
+    "generatedOn": "2026-09-06",
+    "fileName": "restaurant-scene.glb",
+    "projectPath": "public/assets/restaurant-scene.glb",
+    "bytes": 11376004,
+    "sha256": "f9fad5b7bde4ca86662725e3d2ebdab59eaf16fdc245214e8366297abc1538a6",
+    "purpose": "Reduce decoded texture memory for the Human Layer and Perspective WebGL viewers.",
+    "transformations": [
+      "Resize embedded WebP images larger than 512 pixels on their longest edge to fit 512 × 512, preserving aspect ratio; re-encode changed images with WebP quality 88.",
+      "Repack GLB image buffer views and update binary offsets.",
+      "Copy all Meshopt-compressed geometry payload bytes unchanged."
+    ],
+    "textureCount": 105,
+    "maxTextureEdgePixels": 512,
+    "preservedJSONSections": [
+      "nodes",
+      "meshes",
+      "accessors",
+      "skins",
+      "animations",
+      "scenes",
+      "materials",
+      "textures"
+    ],
+    "meshoptPayloadsUnchanged": true,
+    "geometryAndNodeJSONUnchanged": true,
+    "estimatedDecodedTextureMemory": {
+      "beforeMB": 2103.5723679999965,
+      "afterMB": 135.89845333333315,
+      "method": "Sum width × height × 4 bytes × 4/3 for RGBA8 and a complete mip chain, decimal MB. This is a texture allocation estimate per separately decoded asset, not measured browser GPU usage or total memory."
+    },
+    "verificationReport": "examples/restaurant-validation/texture-optimization.json",
+    "geometryVerification": "The final runtime GLB was decoded with the real Three.js GLTFLoader and MeshoptDecoder; 1,009,088 expanded vertex samples, 114 decoded meshes, and tight world bounds agree with the historical web derivative.",
+    "limitations": [
+      "Downsampled texture pixels differ from the historical web derivative; close-up texture detail is reduced.",
+      "The byte-preservation claim applies from the historical web derivative to this runtime derivative, not from the original 13:49 GLB to the historical web derivative."
+    ],
+    "originalFilesModified": false
+  },
+  "serviceDerivative": {
+    "version": "restaurant-service-4.0",
+    "sourceSHA256": "f9fad5b7bde4ca86662725e3d2ebdab59eaf16fdc245214e8366297abc1538a6",
+    "sha256": "41c0f9b58606c081982cca4a12c4f998befdfa56028a0457156e6815f67ef8a4",
+    "bytes": 11961520,
+    "description": "Remove 54,400 uniquely matched triangles belonging to the original two robot hierarchies. Preserve original vertex-attribute and image binary payload; update indices/instances and rename residual material batches. R01 removed from application.",
+    "expandedSceneTriangles": 1191911,
+    "reports": [
+      "examples/service-validation/robot-removal-report.json",
+      "examples/service-validation/no-robots-decode-qa.json"
+    ]
+  }
+}

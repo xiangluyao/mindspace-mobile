@@ -1,0 +1,187 @@
+{
+  "url": "http://127.0.0.1:5231/blender/v11_1-garment/browser-preview.html",
+  "browser": "Chrome isolated context",
+  "errors": [],
+  "samples": [
+    {
+      "clip": "Idle",
+      "time": 0,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Idle-0-back.png"
+    },
+    {
+      "clip": "Idle",
+      "time": 0,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Idle-0-side.png"
+    },
+    {
+      "clip": "Idle",
+      "time": 0.5,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Idle-0_5-back.png"
+    },
+    {
+      "clip": "Idle",
+      "time": 0.5,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Idle-0_5-side.png"
+    },
+    {
+      "clip": "Idle",
+      "time": 1,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Idle-1-back.png"
+    },
+    {
+      "clip": "Idle",
+      "time": 1,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Idle-1-side.png"
+    },
+    {
+      "clip": "Walk",
+      "time": 0,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Walk-0-back.png"
+    },
+    {
+      "clip": "Walk",
+      "time": 0,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Walk-0-side.png"
+    },
+    {
+      "clip": "Walk",
+      "time": 0.5,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Walk-0_5-back.png"
+    },
+    {
+      "clip": "Walk",
+      "time": 0.5,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Walk-0_5-side.png"
+    },
+    {
+      "clip": "Walk",
+      "time": 1,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Walk-1-back.png"
+    },
+    {
+      "clip": "Walk",
+      "time": 1,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Walk-1-side.png"
+    },
+    {
+      "clip": "Carry",
+      "time": 0,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Carry-0-back.png"
+    },
+    {
+      "clip": "Carry",
+      "time": 0,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Carry-0-side.png"
+    },
+    {
+      "clip": "Carry",
+      "time": 0.5,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Carry-0_5-back.png"
+    },
+    {
+      "clip": "Carry",
+      "time": 0.5,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Carry-0_5-side.png"
+    },
+    {
+      "clip": "Carry",
+      "time": 1,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Carry-1-back.png"
+    },
+    {
+      "clip": "Carry",
+      "time": 1,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Carry-1-side.png"
+    },
+    {
+      "clip": "Serve",
+      "time": 0,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Serve-0-back.png"
+    },
+    {
+      "clip": "Serve",
+      "time": 0,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Serve-0-side.png"
+    },
+    {
+      "clip": "Serve",
+      "time": 0.5,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Serve-0_5-back.png"
+    },
+    {
+      "clip": "Serve",
+      "time": 0.5,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Serve-0_5-side.png"
+    },
+    {
+      "clip": "Serve",
+      "time": 1,
+      "loaded": true,
+      "view": "back",
+      "screenshot": "browser-Serve-1-back.png"
+    },
+    {
+      "clip": "Serve",
+      "time": 1,
+      "loaded": true,
+      "view": "side",
+      "screenshot": "browser-Serve-1-side.png"
+    }
+  ],
+  "status": "PASS",
+  "manualVisualReview": {
+    "passed": true,
+    "reviewed": [
+      "browser-Idle-0-back.png",
+      "browser-Walk-0_5-side.png",
+      "browser-Carry-0_5-side.png",
+      "browser-Serve-1-back.png",
+      "browser-Serve-1-side.png"
+    ],
+    "finding": "Corrected posterior panel covers original shirt throughout inspected poses. Reconstructed side returns cover previous white wedge gaps; normal collar and sleeves remain visible. No rendering-order/depth workaround."
+  }
+}

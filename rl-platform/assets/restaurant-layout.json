@@ -1,0 +1,4815 @@
+{
+  "title": "MindSpace开放餐厅 · 进店候位与人物事件时间序列",
+  "sourceVersion": "MindSpace_Open_Restaurant_v2 · 2026-08-25 13:49:40",
+  "coordinateSystem": {
+    "up": "+Y",
+    "forward": "+Z",
+    "units": "metres",
+    "blenderToThree": "(x,y,z) -> (x,z,-y)",
+    "heading": "radians about +Y; 0 points toward +Z"
+  },
+  "cameraOverview": {
+    "position": [
+      20,
+      22,
+      22
+    ],
+    "target": [
+      5.6,
+      0.8,
+      -1.1
+    ]
+  },
+  "navigation": {
+    "bounds": {
+      "minX": -2.2,
+      "maxX": 14,
+      "minZ": -14.2,
+      "maxZ": 10.7
+    },
+    "floorY": 0.397,
+    "walkablePolygons": [
+      [
+        [
+          -1.2,
+          -2.6
+        ],
+        [
+          2,
+          -8.43
+        ],
+        [
+          3.9,
+          -7.43
+        ],
+        [
+          4.5,
+          -7.7
+        ],
+        [
+          4.88,
+          -8.5
+        ],
+        [
+          6.15,
+          -11.2
+        ],
+        [
+          7.05,
+          -11.2
+        ],
+        [
+          8.5,
+          -10.45
+        ],
+        [
+          6.2,
+          -6.05
+        ],
+        [
+          6.35,
+          -5.5
+        ],
+        [
+          7.7,
+          -4.97
+        ],
+        [
+          12.48,
+          -2.55
+        ],
+        [
+          12.45,
+          -1.8
+        ],
+        [
+          8.78,
+          4.23
+        ],
+        [
+          0.35,
+          0.97
+        ],
+        [
+          -0.25,
+          0.35
+        ],
+        [
+          -1.2,
+          -2.6
+        ]
+      ],
+      [
+        [
+          -1.175,
+          4.825
+        ],
+        [
+          13.675,
+          4.825
+        ],
+        [
+          13.675,
+          10.375
+        ],
+        [
+          -1.175,
+          10.375
+        ]
+      ]
+    ],
+    "floorRegions": [
+      {
+        "id": "dining",
+        "polygon": [
+          [
+            -1.427,
+            -2.577
+          ],
+          [
+            0.269,
+            1.044
+          ],
+          [
+            9.411,
+            4.703
+          ],
+          [
+            13.562,
+            -2.931
+          ],
+          [
+            6.706,
+            -6.656
+          ],
+          [
+            9.155,
+            -11.101
+          ],
+          [
+            4.469,
+            -13.66
+          ],
+          [
+            -1.427,
+            -2.577
+          ]
+        ],
+        "y": 0.397
+      },
+      {
+        "id": "kitchen",
+        "polygon": [
+          [
+            -1.175,
+            4.825
+          ],
+          [
+            13.675,
+            4.825
+          ],
+          [
+            13.675,
+            10.375
+          ],
+          [
+            -1.175,
+            10.375
+          ]
+        ],
+        "y": 0
+      }
+    ],
+    "obstacles": [
+      {
+        "id": "Bistro_Research_Interior_Paris_Bar_Cart_01b_Mesh_2104",
+        "type": "box",
+        "x": 3.4662,
+        "z": -7.3265,
+        "width": 1.4568,
+        "depth": 1.1639,
+        "height": 1.1024,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Bar_Cart_01b_Mesh_2104"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Barstool_01A1_2108",
+        "type": "box",
+        "x": 6.0881,
+        "z": -2.8376,
+        "width": 0.5351,
+        "depth": 0.5096,
+        "height": 1.0946,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Barstool_01A1_2108"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Barstool_01A2_2110",
+        "type": "box",
+        "x": 6.9772,
+        "z": -2.1339,
+        "width": 0.4385,
+        "depth": 0.4843,
+        "height": 1.0946,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Barstool_01A2_2110"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Barstool_01A3_2112",
+        "type": "box",
+        "x": 7.8775,
+        "z": -1.6562,
+        "width": 0.5427,
+        "depth": 0.5457,
+        "height": 1.0946,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Barstool_01A3_2112"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Barstool_01A4_2114",
+        "type": "box",
+        "x": 8.7799,
+        "z": -1.1673,
+        "width": 0.4643,
+        "depth": 0.5056,
+        "height": 1.0946,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Barstool_01A4_2114"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Barstool_01A5_2116",
+        "type": "box",
+        "x": 9.7021,
+        "z": -0.6861,
+        "width": 0.5403,
+        "depth": 0.5462,
+        "height": 1.0946,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Barstool_01A5_2116"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Barstool_01A6_2118",
+        "type": "box",
+        "x": 10.5457,
+        "z": -0.2245,
+        "width": 0.4952,
+        "depth": 0.5265,
+        "height": 1.0946,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Barstool_01A6_2118"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Barstool_01A_2106",
+        "type": "box",
+        "x": 5.8747,
+        "z": -3.8893,
+        "width": 0.4614,
+        "depth": 0.4305,
+        "height": 1.0946,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Barstool_01A_2106"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02_2372",
+        "type": "box",
+        "x": 6.037764876063399,
+        "z": 0.5109019169989495,
+        "width": 0.6018190397960603,
+        "depth": 0.6066357896244456,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02_2372"
+        ],
+        "rotation": -1.8725855709138504,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2374",
+        "type": "box",
+        "x": 9.655299900292482,
+        "z": 0.9956801512323277,
+        "width": 0.6019033158590608,
+        "depth": 0.6065832517931646,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2374"
+        ],
+        "rotation": 1.0070717651560308,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2376",
+        "type": "box",
+        "x": 0.30313694735838226,
+        "z": -3.2036823542058417,
+        "width": 0.601903149066012,
+        "depth": 0.6065833723950942,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2376"
+        ],
+        "rotation": -2.134523716511997,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2378",
+        "type": "box",
+        "x": 1.7099748514051183,
+        "z": -5.742591896431049,
+        "width": 0.6019026210471283,
+        "depth": 0.6065834690396608,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2378"
+        ],
+        "rotation": -2.134521983781659,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2380",
+        "type": "box",
+        "x": 2.968795300947674,
+        "z": 0.7868270229672416,
+        "width": 0.6018584518779448,
+        "depth": 0.6066368108432624,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2380"
+        ],
+        "rotation": -0.4651753755085212,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2382",
+        "type": "box",
+        "x": 5.758743060969422,
+        "z": 1.8768733014838184,
+        "width": 0.6018587953626859,
+        "depth": 0.6066368323022779,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2382"
+        ],
+        "rotation": -0.46517767806558286,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2384",
+        "type": "box",
+        "x": 8.532166585807229,
+        "z": 2.9676409738663043,
+        "width": 0.6018587861730058,
+        "depth": 0.6066366096489615,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2384"
+        ],
+        "rotation": -0.4651684502828051,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2386",
+        "type": "box",
+        "x": 7.561502550642888,
+        "z": 1.336449319334342,
+        "width": 0.6018584446970445,
+        "depth": 0.60660579424483,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2386"
+        ],
+        "rotation": -2.1738086107523813,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2388",
+        "type": "box",
+        "x": 4.563621778381896,
+        "z": -0.3061948454851233,
+        "width": 0.6018331807815871,
+        "depth": 0.6066102755555245,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2388"
+        ],
+        "rotation": 1.0882536722962013,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_02__2390",
+        "type": "box",
+        "x": 3.1026878653295737,
+        "z": -1.0695403826343877,
+        "width": 0.6018519566794316,
+        "depth": 0.6066053808131708,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_02__2390"
+        ],
+        "rotation": 0.8288843174084555,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_03_2392",
+        "type": "box",
+        "x": 8.281719650025357,
+        "z": 3.5772941607963014,
+        "width": 0.6018691984749402,
+        "depth": 0.606598875008507,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_03_2392"
+        ],
+        "rotation": -0.500091005175914,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_03__2394",
+        "type": "box",
+        "x": 10.237280164241792,
+        "z": 1.3049624819904788,
+        "width": 0.6019020420153298,
+        "depth": 0.6065834639981702,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_03__2394"
+        ],
+        "rotation": 0.9723174606467236,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_03__2396",
+        "type": "box",
+        "x": -0.27884421135843196,
+        "z": -3.5129653040303435,
+        "width": 0.6019030263596923,
+        "depth": 0.6065834484184578,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_03__2396"
+        ],
+        "rotation": -2.169284940752468,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_03__2398",
+        "type": "box",
+        "x": 1.1279928655657527,
+        "z": -6.051875539782424,
+        "width": 0.6019033150127413,
+        "depth": 0.6065831008036509,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_03__2398"
+        ],
+        "rotation": -2.1692888194598297,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_03__2400",
+        "type": "box",
+        "x": 2.7183497448696343,
+        "z": 1.3964783057582897,
+        "width": 0.6018690470044632,
+        "depth": 0.6065992292152028,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_03__2400"
+        ],
+        "rotation": -0.500085284631707,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_03__2402",
+        "type": "box",
+        "x": 5.508297253302957,
+        "z": 2.486524743599501,
+        "width": 0.6018696584637659,
+        "depth": 0.6065989773077027,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_03__2402"
+        ],
+        "rotation": -0.5000882717744757,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_04_2404",
+        "type": "box",
+        "x": 7.044358964523348,
+        "z": 3.078442953959386,
+        "width": 0.6019342177240867,
+        "depth": 0.606605258887714,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_04_2404"
+        ],
+        "rotation": 2.8267718684605327,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_04__2406",
+        "type": "box",
+        "x": 9.618923285581312,
+        "z": 2.4871571411972844,
+        "width": 0.6019036106682454,
+        "depth": 0.6065819590563173,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_04__2406"
+        ],
+        "rotation": -1.9845765501544776,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_04__2408",
+        "type": "box",
+        "x": 0.3395082058757257,
+        "z": -4.695161079651822,
+        "width": 0.6019030682766875,
+        "depth": 0.6065833222204837,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_04__2408"
+        ],
+        "rotation": 1.1570515629276052,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_04__2410",
+        "type": "box",
+        "x": 1.7463481475129887,
+        "z": -7.234070151188426,
+        "width": 0.6019030455235903,
+        "depth": 0.6065832939906852,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_04__2410"
+        ],
+        "rotation": 1.1570374351955894,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_04__2412",
+        "type": "box",
+        "x": 1.4809886530520304,
+        "z": 0.8976272709195179,
+        "width": 0.6019344391056545,
+        "depth": 0.6066051540519226,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_04__2412"
+        ],
+        "rotation": 2.826768943608857,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_04__2414",
+        "type": "box",
+        "x": 4.2709363630269905,
+        "z": 1.9876727046069365,
+        "width": 0.6019345153934479,
+        "depth": 0.6066049986182984,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_04__2414"
+        ],
+        "rotation": 2.8267660187627532,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05_2416",
+        "type": "box",
+        "x": 6.718317950420171,
+        "z": -0.6371015629887546,
+        "width": 0.6019057345923482,
+        "depth": 0.6066046074440834,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05_2416"
+        ],
+        "rotation": 1.2082299142387107,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2418",
+        "type": "box",
+        "x": 9.037381268197676,
+        "z": 2.1787783376370276,
+        "width": 0.6019030181485512,
+        "depth": 0.6065830789665316,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2418"
+        ],
+        "rotation": -2.154393867851129,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2420",
+        "type": "box",
+        "x": 0.9210541558347127,
+        "z": -4.386781275422057,
+        "width": 0.6019028770354677,
+        "depth": 0.6065832286167798,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2420"
+        ],
+        "rotation": 0.9872102116693394,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2422",
+        "type": "box",
+        "x": 2.3278931216319023,
+        "z": -6.925690311492231,
+        "width": 0.6019030984029694,
+        "depth": 0.6065833743073683,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2422"
+        ],
+        "rotation": 0.9872022721386203,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2424",
+        "type": "box",
+        "x": 1.730559302947452,
+        "z": 0.28850819013607487,
+        "width": 0.601919924511078,
+        "depth": 0.6066141823923712,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2424"
+        ],
+        "rotation": -0.4846722913831589,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2426",
+        "type": "box",
+        "x": 4.520506970063425,
+        "z": 1.378553981453254,
+        "width": 0.601919872947005,
+        "depth": 0.6066139933560166,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2426"
+        ],
+        "rotation": -0.48467364892142245,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2428",
+        "type": "box",
+        "x": 7.293929366322919,
+        "z": 2.469324099293789,
+        "width": 0.6019197007660182,
+        "depth": 0.6066144961423339,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2428"
+        ],
+        "rotation": -0.4846668612106965,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2430",
+        "type": "box",
+        "x": 8.22559801988649,
+        "z": 0.17863768026468296,
+        "width": 0.6019461801194144,
+        "depth": 0.6066191361960591,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2430"
+        ],
+        "rotation": 0.9477975577445904,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2432",
+        "type": "box",
+        "x": 5.232470646325354,
+        "z": -1.4605665315359835,
+        "width": 0.6019641668476798,
+        "depth": 0.606639953822159,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2432"
+        ],
+        "rotation": 1.0031291002847167,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Chair_05__2434",
+        "type": "box",
+        "x": 3.7659971286037437,
+        "z": -2.2285185535696623,
+        "width": 0.6019202091585929,
+        "depth": 0.606630379289586,
+        "height": 1.1603,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Chair_05__2434"
+        ],
+        "rotation": 1.048351398194161,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Coat_Rack_01A_2436",
+        "type": "box",
+        "x": -0.9134,
+        "z": -2.4063,
+        "width": 0.6371,
+        "depth": 0.6371,
+        "height": 2.0114,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Coat_Rack_01A_2436"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Coat_Rack_01B1_2440",
+        "type": "box",
+        "x": 6.1424,
+        "z": -10.652,
+        "width": 0.487,
+        "depth": 0.663,
+        "height": 0.4557,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Coat_Rack_01B1_2440"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Coat_Rack_01B_2438",
+        "type": "box",
+        "x": 5.7581,
+        "z": -9.9586,
+        "width": 0.487,
+        "depth": 0.663,
+        "height": 0.4557,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Coat_Rack_01B_2438"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Flower_Pot_01A_2442",
+        "type": "box",
+        "x": 0.7212,
+        "z": 0.3695,
+        "width": 1.2541,
+        "depth": 1.2471,
+        "height": 1.262,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Flower_Pot_01A_2442"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Flower_Pot_02A_2444",
+        "type": "box",
+        "x": 10.8785,
+        "z": -0.7018,
+        "width": 0.5288,
+        "depth": 0.4377,
+        "height": 0.9681,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Flower_Pot_02A_2444"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_radiator_mesh_01_3226",
+        "type": "box",
+        "x": -0.9567,
+        "z": -2.9456,
+        "width": 0.5759,
+        "depth": 1.0021,
+        "height": 0.7167,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_radiator_mesh_01_3226"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_radiator_mesh_02_3228",
+        "type": "box",
+        "x": 0.4303,
+        "z": -5.5542,
+        "width": 0.5759,
+        "depth": 1.0021,
+        "height": 0.7167,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_radiator_mesh_02_3228"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_radiator_mesh_03_3230",
+        "type": "box",
+        "x": 9.3535,
+        "z": 3.4092,
+        "width": 0.5759,
+        "depth": 1.0021,
+        "height": 0.7167,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_radiator_mesh_03_3230"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_radiator_mesh_04_3232",
+        "type": "box",
+        "x": 11.9667,
+        "z": -1.5056,
+        "width": 0.5759,
+        "depth": 1.0021,
+        "height": 0.7167,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_radiator_mesh_04_3232"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_radiator_mesh_05_3234",
+        "type": "box",
+        "x": 2.4373,
+        "z": -8.1848,
+        "width": 1.0011,
+        "depth": 0.5778,
+        "height": 0.7167,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_radiator_mesh_05_3234"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_radiator_mesh_06_3236",
+        "type": "box",
+        "x": 7.423,
+        "z": -10.7741,
+        "width": 0.9927,
+        "depth": 0.593,
+        "height": 0.7167,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_radiator_mesh_06_3236"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02A_3242",
+        "type": "box",
+        "x": 6.385460446712323,
+        "z": -0.055470171012793834,
+        "width": 1.0034102803521145,
+        "depth": 0.7887663802956397,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02A_3242"
+        ],
+        "rotation": 2.6354924890010603,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02A__3244",
+        "type": "box",
+        "x": 7.900230843308706,
+        "z": 0.7649606500780415,
+        "width": 0.788766601104669,
+        "depth": 1.003410238743971,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02A__3244"
+        ],
+        "rotation": -2.076896507329883,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02A__3246",
+        "type": "box",
+        "x": 4.905754670303867,
+        "z": -0.8753132751906214,
+        "width": 1.0034100457945572,
+        "depth": 0.788766142804143,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02A__3246"
+        ],
+        "rotation": -0.5061002399938017,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02A__3248",
+        "type": "box",
+        "x": 3.43798129119305,
+        "z": -1.644173107107811,
+        "width": 1.0034103127139533,
+        "depth": 0.7887662907441411,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02A__3248"
+        ],
+        "rotation": -0.5060998232887255,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02B_3250",
+        "type": "box",
+        "x": 7.790090419976135,
+        "z": 3.0206871983659136,
+        "width": 1.458694341162858,
+        "depth": 0.7887967421652853,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02B_3250"
+        ],
+        "rotation": -1.960843741908637,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02B__3252",
+        "type": "box",
+        "x": 9.634966758386687,
+        "z": 1.739398433575721,
+        "width": 1.4586705030338276,
+        "depth": 0.7887665768943077,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02B__3252"
+        ],
+        "rotation": -0.48872704163528274,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02B__3254",
+        "type": "box",
+        "x": 0.3234702844296944,
+        "z": -3.947400144873761,
+        "width": 1.4586692231788643,
+        "depth": 0.7887663047626976,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02B__3254"
+        ],
+        "rotation": -0.4887271719422639,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02B__3256",
+        "type": "box",
+        "x": 1.7303073199087606,
+        "z": -6.486309416589153,
+        "width": 0.7887662689425072,
+        "depth": 1.4586691809415349,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02B__3256"
+        ],
+        "rotation": -2.0595232499605625,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02B__3258",
+        "type": "box",
+        "x": 2.226719867838337,
+        "z": 0.8398721353549392,
+        "width": 1.4586947248562177,
+        "depth": 0.7887964290888732,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02B__3258"
+        ],
+        "rotation": -1.96084363463542,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_Paris_Table_02B__3260",
+        "type": "box",
+        "x": 5.016667306808177,
+        "z": 1.9299183008684162,
+        "width": 1.4586947394408185,
+        "depth": 0.7887966841447325,
+        "height": 0.8434,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_Paris_Table_02B__3260"
+        ],
+        "rotation": -1.9608441310104816,
+        "sourceGeometry": "Minimum-area OBB fitted to original world-space furniture vertices"
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket10_3372",
+        "type": "box",
+        "x": 12.2416,
+        "z": -2.5102,
+        "width": 0.1818,
+        "depth": 0.2088,
+        "height": 0.1104,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket10_3372"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket11_3374",
+        "type": "box",
+        "x": 12.2436,
+        "z": -2.5305,
+        "width": 0.1958,
+        "depth": 0.2067,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket11_3374"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket12_3376",
+        "type": "box",
+        "x": 12.2349,
+        "z": -2.5268,
+        "width": 0.1735,
+        "depth": 0.214,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket12_3376"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket13_3378",
+        "type": "box",
+        "x": 12.0553,
+        "z": -2.6272,
+        "width": 0.2039,
+        "depth": 0.1965,
+        "height": 0.1104,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket13_3378"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket14_3380",
+        "type": "box",
+        "x": 12.0489,
+        "z": -2.6342,
+        "width": 0.2034,
+        "depth": 0.2064,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket14_3380"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket15_3382",
+        "type": "box",
+        "x": 12.0382,
+        "z": -2.629,
+        "width": 0.2104,
+        "depth": 0.1866,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket15_3382"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket1_3370",
+        "type": "box",
+        "x": 3.339,
+        "z": -7.5291,
+        "width": 0.2163,
+        "depth": 0.1754,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket1_3370"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket2_3384",
+        "type": "box",
+        "x": 3.1301,
+        "z": -7.4195,
+        "width": 0.2163,
+        "depth": 0.1754,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket2_3384"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket3_3386",
+        "type": "box",
+        "x": 3.1413,
+        "z": -7.4256,
+        "width": 0.2091,
+        "depth": 0.1908,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket3_3386"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket4_3388",
+        "type": "box",
+        "x": 10.3203,
+        "z": -3.5615,
+        "width": 0.2059,
+        "depth": 0.2101,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket4_3388"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket5_3390",
+        "type": "box",
+        "x": 10.3089,
+        "z": -3.5603,
+        "width": 0.2063,
+        "depth": 0.1965,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket5_3390"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket6_3392",
+        "type": "box",
+        "x": 10.3073,
+        "z": -3.5506,
+        "width": 0.2017,
+        "depth": 0.2043,
+        "height": 0.1104,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket6_3392"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket7_3394",
+        "type": "box",
+        "x": 10.4952,
+        "z": -3.4849,
+        "width": 0.1882,
+        "depth": 0.2137,
+        "height": 0.1104,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket7_3394"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket8_3396",
+        "type": "box",
+        "x": 10.4927,
+        "z": -3.4874,
+        "width": 0.1794,
+        "depth": 0.2179,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket8_3396"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_WickerBasket9_3398",
+        "type": "box",
+        "x": 10.4812,
+        "z": -3.4837,
+        "width": 0.1962,
+        "depth": 0.2126,
+        "height": 0.0904,
+        "category": "furniture",
+        "sourceNames": [
+          "Bistro_Research_Interior_WickerBasket9_3398"
+        ]
+      },
+      {
+        "id": "CC0_Commercial_Fridge_A",
+        "type": "box",
+        "x": 11.2869,
+        "z": 9.001,
+        "width": 1.02,
+        "depth": 0.82,
+        "height": 2.42,
+        "category": "kitchen",
+        "sourceNames": [
+          "CC0_Commercial_Fridge_A"
+        ]
+      },
+      {
+        "id": "CC0_Commercial_Fridge_B",
+        "type": "box",
+        "x": 12.3869,
+        "z": 9.001,
+        "width": 1.02,
+        "depth": 0.82,
+        "height": 2.42,
+        "category": "kitchen",
+        "sourceNames": [
+          "CC0_Commercial_Fridge_B"
+        ]
+      },
+      {
+        "id": "CC0_Commercial_Oven",
+        "type": "box",
+        "x": 9.9994,
+        "z": 9.0222,
+        "width": 0.82,
+        "depth": 0.88,
+        "height": 1.12,
+        "category": "kitchen",
+        "sourceNames": [
+          "CC0_Commercial_Oven"
+        ]
+      },
+      {
+        "id": "Kitchen_Back_Wall_Cutaway",
+        "type": "box",
+        "x": 6.25,
+        "z": 10.31,
+        "width": 14.85,
+        "depth": 0.2,
+        "height": 0.6,
+        "category": "kitchen",
+        "sourceNames": [
+          "Kitchen_Back_Wall_Cutaway"
+        ]
+      },
+      {
+        "id": "Kitchen_Left_Wall",
+        "type": "box",
+        "x": -1.08,
+        "z": 7.63,
+        "width": 0.2,
+        "depth": 5.55,
+        "height": 4.2,
+        "category": "kitchen",
+        "sourceNames": [
+          "Kitchen_Left_Wall"
+        ]
+      },
+      {
+        "id": "Kitchen_Right_Low_Wall",
+        "type": "box",
+        "x": 13.58,
+        "z": 7.63,
+        "width": 0.2,
+        "depth": 5.55,
+        "height": 1.44,
+        "category": "kitchen",
+        "sourceNames": [
+          "Kitchen_Right_Low_Wall"
+        ]
+      },
+      {
+        "id": "Pass_Counter_Base",
+        "type": "box",
+        "x": 4.35,
+        "z": 6.2,
+        "width": 10.95,
+        "depth": 1.25,
+        "height": 1.365,
+        "category": "kitchen",
+        "sourceNames": [
+          "Pass_Counter_Base",
+          "Pass_Counter_Top"
+        ]
+      },
+      {
+        "id": "Prep_Counter",
+        "type": "box",
+        "x": 8.6,
+        "z": 8.7,
+        "width": 2.72,
+        "depth": 1.45,
+        "height": 1.28,
+        "category": "kitchen",
+        "sourceNames": [
+          "Prep_Counter",
+          "Prep_Top"
+        ]
+      },
+      {
+        "id": "Sink_Cabinet",
+        "type": "box",
+        "x": 5.6,
+        "z": 8.7,
+        "width": 2.72,
+        "depth": 1.45,
+        "height": 1.26,
+        "category": "kitchen",
+        "sourceNames": [
+          "Sink_Cabinet",
+          "Sink_Top"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_0",
+        "type": "box",
+        "x": 6.7,
+        "z": -11.3,
+        "width": 1,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_1",
+        "type": "box",
+        "x": 6.7,
+        "z": -11.1,
+        "width": 1.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_2",
+        "type": "box",
+        "x": 6.2,
+        "z": -10.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_3",
+        "type": "box",
+        "x": 7.5,
+        "z": -10.9,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_4",
+        "type": "box",
+        "x": 6,
+        "z": -10.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_5",
+        "type": "box",
+        "x": 7.9,
+        "z": -10.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_6",
+        "type": "box",
+        "x": 6,
+        "z": -10.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_7",
+        "type": "box",
+        "x": 8.1,
+        "z": -10.5,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_8",
+        "type": "box",
+        "x": 5.8,
+        "z": -10.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_9",
+        "type": "box",
+        "x": 8.3,
+        "z": -10.3,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_10",
+        "type": "box",
+        "x": 5.8,
+        "z": -10.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_11",
+        "type": "box",
+        "x": 8.4,
+        "z": -10.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_12",
+        "type": "box",
+        "x": 5.6,
+        "z": -9.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_13",
+        "type": "box",
+        "x": 8.2,
+        "z": -9.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_14",
+        "type": "box",
+        "x": 5.5,
+        "z": -9.7,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_15",
+        "type": "box",
+        "x": 8.1,
+        "z": -9.7,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_16",
+        "type": "box",
+        "x": 5.3,
+        "z": -9.5,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_17",
+        "type": "box",
+        "x": 8,
+        "z": -9.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_18",
+        "type": "box",
+        "x": 5.2,
+        "z": -9.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_19",
+        "type": "box",
+        "x": 8,
+        "z": -9.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_20",
+        "type": "box",
+        "x": 5,
+        "z": -9.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_21",
+        "type": "box",
+        "x": 8,
+        "z": -9.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_22",
+        "type": "box",
+        "x": 4.9,
+        "z": -8.9,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_23",
+        "type": "box",
+        "x": 7.8,
+        "z": -8.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_24",
+        "type": "box",
+        "x": 2,
+        "z": -8.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_25",
+        "type": "box",
+        "x": 4.8,
+        "z": -8.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_26",
+        "type": "box",
+        "x": 7.8,
+        "z": -8.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_27",
+        "type": "box",
+        "x": 2.1,
+        "z": -8.5,
+        "width": 1,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_28",
+        "type": "box",
+        "x": 4.8,
+        "z": -8.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_29",
+        "type": "box",
+        "x": 7.5,
+        "z": -8.5,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_30",
+        "type": "box",
+        "x": 1.8,
+        "z": -8.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_31",
+        "type": "box",
+        "x": 2.7,
+        "z": -8.3,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_32",
+        "type": "box",
+        "x": 4.8,
+        "z": -8.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_33",
+        "type": "box",
+        "x": 7.4,
+        "z": -8.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_34",
+        "type": "box",
+        "x": 1.6,
+        "z": -8.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_35",
+        "type": "box",
+        "x": 3,
+        "z": -8.1,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_36",
+        "type": "box",
+        "x": 4.6,
+        "z": -8.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_37",
+        "type": "box",
+        "x": 7.2,
+        "z": -8.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_38",
+        "type": "box",
+        "x": 1.4,
+        "z": -7.9,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_39",
+        "type": "box",
+        "x": 3.4,
+        "z": -7.9,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_40",
+        "type": "box",
+        "x": 4.6,
+        "z": -7.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_41",
+        "type": "box",
+        "x": 7.2,
+        "z": -7.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_42",
+        "type": "box",
+        "x": 1.3,
+        "z": -7.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_43",
+        "type": "box",
+        "x": 3.7,
+        "z": -7.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_44",
+        "type": "box",
+        "x": 4.4,
+        "z": -7.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_45",
+        "type": "box",
+        "x": 7,
+        "z": -7.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_46",
+        "type": "box",
+        "x": 1.2,
+        "z": -7.5,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_47",
+        "type": "box",
+        "x": 4.1,
+        "z": -7.5,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_48",
+        "type": "box",
+        "x": 7,
+        "z": -7.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_49",
+        "type": "box",
+        "x": 1.1,
+        "z": -7.3,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_50",
+        "type": "box",
+        "x": 6.8,
+        "z": -7.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_51",
+        "type": "box",
+        "x": 0.9,
+        "z": -7.1,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_52",
+        "type": "box",
+        "x": 6.7,
+        "z": -7.1,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_53",
+        "type": "box",
+        "x": 0.8,
+        "z": -6.9,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_54",
+        "type": "box",
+        "x": 6.6,
+        "z": -6.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_55",
+        "type": "box",
+        "x": 0.7,
+        "z": -6.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_56",
+        "type": "box",
+        "x": 6.4,
+        "z": -6.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_57",
+        "type": "box",
+        "x": 0.6,
+        "z": -6.5,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_58",
+        "type": "box",
+        "x": 6.4,
+        "z": -6.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_59",
+        "type": "box",
+        "x": 0.5,
+        "z": -6.3,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_60",
+        "type": "box",
+        "x": 6.2,
+        "z": -6.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_61",
+        "type": "box",
+        "x": 0.5,
+        "z": -6.1,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_62",
+        "type": "box",
+        "x": 6.2,
+        "z": -6.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_63",
+        "type": "box",
+        "x": 0.4,
+        "z": -5.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_64",
+        "type": "box",
+        "x": 6.3,
+        "z": -5.9,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_65",
+        "type": "box",
+        "x": 0.4,
+        "z": -5.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_66",
+        "type": "box",
+        "x": 6.7,
+        "z": -5.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_67",
+        "type": "box",
+        "x": 0.2,
+        "z": -5.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_68",
+        "type": "box",
+        "x": 6.8,
+        "z": -5.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_69",
+        "type": "box",
+        "x": 0,
+        "z": -5.3,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_70",
+        "type": "box",
+        "x": 7,
+        "z": -5.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_71",
+        "type": "box",
+        "x": 7.8,
+        "z": -5.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_72",
+        "type": "box",
+        "x": -0.1,
+        "z": -5.1,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_73",
+        "type": "box",
+        "x": 7.7,
+        "z": -5.1,
+        "width": 1.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_74",
+        "type": "box",
+        "x": -0.3,
+        "z": -4.9,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_75",
+        "type": "box",
+        "x": 7.5,
+        "z": -4.9,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_76",
+        "type": "box",
+        "x": 8.4,
+        "z": -4.9,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_77",
+        "type": "box",
+        "x": -0.3,
+        "z": -4.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_78",
+        "type": "box",
+        "x": 8.7,
+        "z": -4.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_79",
+        "type": "box",
+        "x": -0.5,
+        "z": -4.5,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_80",
+        "type": "box",
+        "x": 9.1,
+        "z": -4.5,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_81",
+        "type": "box",
+        "x": -0.6,
+        "z": -4.3,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_82",
+        "type": "box",
+        "x": 9.5,
+        "z": -4.3,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_83",
+        "type": "box",
+        "x": -0.7,
+        "z": -4.1,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_84",
+        "type": "box",
+        "x": 9.8,
+        "z": -4.1,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_85",
+        "type": "box",
+        "x": -0.8,
+        "z": -3.9,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_86",
+        "type": "box",
+        "x": 10.2,
+        "z": -3.9,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_87",
+        "type": "box",
+        "x": -0.9,
+        "z": -3.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_88",
+        "type": "box",
+        "x": 10.6,
+        "z": -3.7,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_89",
+        "type": "box",
+        "x": -0.9,
+        "z": -3.5,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_90",
+        "type": "box",
+        "x": 10.9,
+        "z": -3.5,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_91",
+        "type": "box",
+        "x": -1,
+        "z": -3.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_92",
+        "type": "box",
+        "x": 11.3,
+        "z": -3.3,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_93",
+        "type": "box",
+        "x": -1,
+        "z": -3.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_94",
+        "type": "box",
+        "x": 11.7,
+        "z": -3.1,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_95",
+        "type": "box",
+        "x": -1.2,
+        "z": -2.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_96",
+        "type": "box",
+        "x": 12.1,
+        "z": -2.9,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_97",
+        "type": "box",
+        "x": -1.2,
+        "z": -2.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_98",
+        "type": "box",
+        "x": 12.3,
+        "z": -2.7,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_99",
+        "type": "box",
+        "x": -1.3,
+        "z": -2.5,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_100",
+        "type": "box",
+        "x": 12.5,
+        "z": -2.5,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_101",
+        "type": "box",
+        "x": -1.3,
+        "z": -2.3,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_102",
+        "type": "box",
+        "x": 12.4,
+        "z": -2.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_103",
+        "type": "box",
+        "x": -1.2,
+        "z": -2.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_104",
+        "type": "box",
+        "x": 12.4,
+        "z": -2.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_105",
+        "type": "box",
+        "x": 12.4,
+        "z": -1.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_106",
+        "type": "box",
+        "x": 12.2,
+        "z": -1.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_107",
+        "type": "box",
+        "x": 12.2,
+        "z": -1.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_108",
+        "type": "box",
+        "x": 12,
+        "z": -1.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_109",
+        "type": "box",
+        "x": 11.9,
+        "z": -1.1,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_110",
+        "type": "box",
+        "x": 11.7,
+        "z": -0.9,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_111",
+        "type": "box",
+        "x": 11.6,
+        "z": -0.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_112",
+        "type": "box",
+        "x": 11.4,
+        "z": -0.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_113",
+        "type": "box",
+        "x": 11.3,
+        "z": -0.3,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_114",
+        "type": "box",
+        "x": 11.4,
+        "z": -0.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_115",
+        "type": "box",
+        "x": -0.1,
+        "z": 0.1,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_116",
+        "type": "box",
+        "x": 11.4,
+        "z": 0.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_117",
+        "type": "box",
+        "x": 0,
+        "z": 0.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_118",
+        "type": "box",
+        "x": 11.2,
+        "z": 0.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_119",
+        "type": "box",
+        "x": 0.1,
+        "z": 0.5,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_120",
+        "type": "box",
+        "x": 11.2,
+        "z": 0.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_121",
+        "type": "box",
+        "x": 0.2,
+        "z": 0.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_122",
+        "type": "box",
+        "x": 11,
+        "z": 0.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_123",
+        "type": "box",
+        "x": 0.4,
+        "z": 0.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_124",
+        "type": "box",
+        "x": 11,
+        "z": 0.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_125",
+        "type": "box",
+        "x": 0.6,
+        "z": 1.1,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_126",
+        "type": "box",
+        "x": 10.8,
+        "z": 1.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_127",
+        "type": "box",
+        "x": 1.2,
+        "z": 1.3,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_128",
+        "type": "box",
+        "x": 10.7,
+        "z": 1.3,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_129",
+        "type": "box",
+        "x": 1.6,
+        "z": 1.5,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_130",
+        "type": "box",
+        "x": 10.6,
+        "z": 1.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_131",
+        "type": "box",
+        "x": 2.2,
+        "z": 1.7,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_132",
+        "type": "box",
+        "x": 10.5,
+        "z": 1.7,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_133",
+        "type": "box",
+        "x": 2.6,
+        "z": 1.9,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_134",
+        "type": "box",
+        "x": 10.4,
+        "z": 1.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_135",
+        "type": "box",
+        "x": 3.2,
+        "z": 2.1,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_136",
+        "type": "box",
+        "x": 10.2,
+        "z": 2.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_137",
+        "type": "box",
+        "x": 3.6,
+        "z": 2.3,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_138",
+        "type": "box",
+        "x": 10.2,
+        "z": 2.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_139",
+        "type": "box",
+        "x": 4.2,
+        "z": 2.5,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_140",
+        "type": "box",
+        "x": 10,
+        "z": 2.5,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_141",
+        "type": "box",
+        "x": 4.6,
+        "z": 2.7,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_142",
+        "type": "box",
+        "x": 10,
+        "z": 2.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_143",
+        "type": "box",
+        "x": 5.2,
+        "z": 2.9,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_144",
+        "type": "box",
+        "x": 9.8,
+        "z": 2.9,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_145",
+        "type": "box",
+        "x": 5.7,
+        "z": 3.1,
+        "width": 1,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_146",
+        "type": "box",
+        "x": 9.8,
+        "z": 3.1,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_147",
+        "type": "box",
+        "x": 6.2,
+        "z": 3.3,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_148",
+        "type": "box",
+        "x": 9.6,
+        "z": 3.3,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_149",
+        "type": "box",
+        "x": 6.7,
+        "z": 3.5,
+        "width": 1,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_150",
+        "type": "box",
+        "x": 9.5,
+        "z": 3.5,
+        "width": 0.2,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_151",
+        "type": "box",
+        "x": 7.2,
+        "z": 3.7,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_152",
+        "type": "box",
+        "x": 9.4,
+        "z": 3.7,
+        "width": 0.4,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_153",
+        "type": "box",
+        "x": 7.7,
+        "z": 3.9,
+        "width": 1,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_154",
+        "type": "box",
+        "x": 9.1,
+        "z": 3.9,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_155",
+        "type": "box",
+        "x": 8.2,
+        "z": 4.1,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_156",
+        "type": "box",
+        "x": 9.1,
+        "z": 4.1,
+        "width": 0.6,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "shell_wall_strip_157",
+        "type": "box",
+        "x": 8.6,
+        "z": 4.3,
+        "width": 0.8,
+        "depth": 0.2,
+        "height": 4.03,
+        "category": "wall",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2128"
+        ]
+      },
+      {
+        "id": "Range_1_collision",
+        "type": "box",
+        "x": -0.05,
+        "z": 8.63,
+        "width": 1.58,
+        "depth": 1.58,
+        "height": 1.317,
+        "category": "kitchen",
+        "sourceNames": [
+          "Range_1_Body",
+          "Range_1_Burner",
+          "Range_1_Burner.001",
+          "Range_1_Burner.002",
+          "Range_1_Burner.003",
+          "Range_1_Burner_Core",
+          "Range_1_Burner_Core.001",
+          "Range_1_Burner_Core.002",
+          "Range_1_Burner_Core.003",
+          "Range_1_Face",
+          "Range_1_Handle",
+          "Range_1_Knob",
+          "Range_1_Knob.001",
+          "Range_1_Knob.002",
+          "Range_1_Knob.003",
+          "Range_1_Top"
+        ]
+      },
+      {
+        "id": "Range_2_collision",
+        "type": "box",
+        "x": 1.65,
+        "z": 8.63,
+        "width": 1.58,
+        "depth": 1.58,
+        "height": 1.317,
+        "category": "kitchen",
+        "sourceNames": [
+          "Range_2_Body",
+          "Range_2_Burner",
+          "Range_2_Burner.001",
+          "Range_2_Burner.002",
+          "Range_2_Burner.003",
+          "Range_2_Burner_Core",
+          "Range_2_Burner_Core.001",
+          "Range_2_Burner_Core.002",
+          "Range_2_Burner_Core.003",
+          "Range_2_Face",
+          "Range_2_Handle",
+          "Range_2_Knob",
+          "Range_2_Knob.001",
+          "Range_2_Knob.002",
+          "Range_2_Knob.003",
+          "Range_2_Top"
+        ]
+      },
+      {
+        "id": "Range_3_collision",
+        "type": "box",
+        "x": 3.35,
+        "z": 8.63,
+        "width": 1.58,
+        "depth": 1.58,
+        "height": 1.317,
+        "category": "kitchen",
+        "sourceNames": [
+          "Range_3_Body",
+          "Range_3_Burner",
+          "Range_3_Burner.001",
+          "Range_3_Burner.002",
+          "Range_3_Burner.003",
+          "Range_3_Burner_Core",
+          "Range_3_Burner_Core.001",
+          "Range_3_Burner_Core.002",
+          "Range_3_Burner_Core.003",
+          "Range_3_Face",
+          "Range_3_Handle",
+          "Range_3_Knob",
+          "Range_3_Knob.001",
+          "Range_3_Knob.002",
+          "Range_3_Knob.003",
+          "Range_3_Top"
+        ]
+      },
+      {
+        "id": "Bistro_Research_Interior_paris_building_01_interior_2130",
+        "type": "box",
+        "x": 9.986017387450135,
+        "z": -3.737849805684566,
+        "width": 5.525446083405863,
+        "depth": 0.4104752127455322,
+        "rotation": 2.6436461687762334,
+        "height": 0.9650521253410247,
+        "category": "bar",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2130"
+        ],
+        "sourceGeometry": "Separate OBB for original bar component; replaces the oversized union AABB"
+      },
+      {
+        "id": "Bistro_Research_Interior_paris_building_01_interior_2336",
+        "type": "box",
+        "x": 8.692572137457894,
+        "z": -2.086182297249185,
+        "width": 6.330615655784801,
+        "depth": 1.237583888514349,
+        "rotation": -0.6308819691874289,
+        "height": 1.1841175196144533,
+        "category": "bar",
+        "sourceNames": [
+          "Bistro_Research_Interior_paris_building_01_interior_2336"
+        ],
+        "sourceGeometry": "Separate OBB for original bar component; replaces the oversized union AABB"
+      }
+    ],
+    "humanRadius": 0.3
+  },
+  "placements": [
+    {
+      "id": "p01",
+      "x": 0.1,
+      "y": 0.397,
+      "z": -2.2,
+      "heading": 1.4,
+      "role": "等位顾客",
+      "zone": "入口侧边等候位 1",
+      "rationale": "在原场景可行走地面上保留三处独立等候位置，最小间隔超过1米，至少等待30秒后再按序找现有空椅。",
+      "clearanceMetres": 0.53131,
+      "initialAction": "queue",
+      "area": "entrance-waiting",
+      "inferredLocation": "入口侧边等候位 1",
+      "initialStage": "waitingSeat",
+      "initialDelaySeconds": 30,
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "wait-seating",
+          "parameters": {
+            "durationSeconds": 30,
+            "objectIds": [
+              "waiting-1"
+            ]
+          }
+        },
+        {
+          "atSeconds": 30,
+          "eventId": "seat-search",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 36,
+          "eventId": "read-menu",
+          "parameters": {
+            "durationSeconds": 18
+          }
+        },
+        {
+          "atSeconds": 57,
+          "eventId": "order-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 87,
+          "eventId": "food-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 110,
+          "eventId": "meal",
+          "parameters": {
+            "durationSeconds": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "p02",
+      "x": 0.15,
+      "y": 0.397,
+      "z": -0.9,
+      "heading": 1.4,
+      "role": "等位顾客",
+      "zone": "入口侧边等候位 2",
+      "rationale": "在原场景可行走地面上保留三处独立等候位置，最小间隔超过1米，至少等待30秒后再按序找现有空椅。",
+      "clearanceMetres": 0.38703,
+      "initialAction": "queue",
+      "area": "entrance-waiting",
+      "inferredLocation": "入口侧边等候位 2",
+      "initialStage": "waitingSeat",
+      "initialDelaySeconds": 38,
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "wait-seating",
+          "parameters": {
+            "durationSeconds": 38,
+            "objectIds": [
+              "waiting-2"
+            ]
+          }
+        },
+        {
+          "atSeconds": 38,
+          "eventId": "seat-search",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 44,
+          "eventId": "read-menu",
+          "parameters": {
+            "durationSeconds": 18
+          }
+        },
+        {
+          "atSeconds": 65,
+          "eventId": "order-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 95,
+          "eventId": "food-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 118,
+          "eventId": "meal",
+          "parameters": {
+            "durationSeconds": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "p03",
+      "x": 1.35,
+      "y": 0.397,
+      "z": -1.85,
+      "heading": 1.4,
+      "role": "等位顾客",
+      "zone": "前厅内侧等候位 3",
+      "rationale": "在原场景可行走地面上保留三处独立等候位置，最小间隔超过1米，至少等待30秒后再按序找现有空椅。",
+      "clearanceMetres": 0.53131,
+      "initialAction": "queue",
+      "area": "entrance-waiting",
+      "inferredLocation": "前厅内侧等候位 3",
+      "initialStage": "waitingSeat",
+      "initialDelaySeconds": 46,
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "wait-seating",
+          "parameters": {
+            "durationSeconds": 46,
+            "objectIds": [
+              "waiting-3"
+            ]
+          }
+        },
+        {
+          "atSeconds": 46,
+          "eventId": "seat-search",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 52,
+          "eventId": "read-menu",
+          "parameters": {
+            "durationSeconds": 18
+          }
+        },
+        {
+          "atSeconds": 73,
+          "eventId": "order-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 103,
+          "eventId": "food-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 126,
+          "eventId": "meal",
+          "parameters": {
+            "durationSeconds": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "p04",
+      "x": 7.505147418932579,
+      "y": 0.397,
+      "z": -0.27126531551994204,
+      "heading": -0.6240543707961959,
+      "role": "正在找座的顾客",
+      "zone": "3244 桌 · 现有餐椅",
+      "rationale": "开场从真实餐椅接近点前往可达空椅，展示完整预约与落座过程。",
+      "clearanceMetres": 0.47171,
+      "initialAction": "idle",
+      "area": "dining",
+      "inferredLocation": "3244 桌 · 现有餐椅",
+      "initialStage": "seekingSeat",
+      "initialDelaySeconds": 0,
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "seat-search",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 5,
+          "eventId": "read-menu",
+          "parameters": {
+            "durationSeconds": 20
+          }
+        },
+        {
+          "atSeconds": 28,
+          "eventId": "order-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 57,
+          "eventId": "food-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 83,
+          "eventId": "meal",
+          "parameters": {
+            "durationSeconds": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "p05",
+      "x": 3.2797767208784063,
+      "y": 0.397,
+      "z": 1.661001014466865,
+      "heading": 1.2548055520878532,
+      "role": "就餐顾客",
+      "zone": "3260 桌 · 现有餐椅",
+      "rationale": "按真实餐桌与餐椅分散落座，位置为可达站立接近点，运行时按座面与人物臀部锚点坐入椅子。",
+      "clearanceMetres": 0.3124,
+      "initialAction": "menu",
+      "initialSeatId": "seat-2414",
+      "area": "dining",
+      "inferredLocation": "3260 桌 · 现有餐椅",
+      "initialStage": "browsing",
+      "initialDelaySeconds": 22,
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "read-menu",
+          "parameters": {
+            "durationSeconds": 22
+          }
+        },
+        {
+          "atSeconds": 25,
+          "eventId": "order-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 55,
+          "eventId": "food-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 85,
+          "eventId": "meal",
+          "parameters": {
+            "durationSeconds": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "p06",
+      "x": 3.004356571673829,
+      "y": 0.397,
+      "z": -2.6042509604273185,
+      "heading": -0.5241262469786789,
+      "role": "就餐顾客",
+      "zone": "3248 桌 · 现有餐椅",
+      "rationale": "按真实餐桌与餐椅分散落座，位置为可达站立接近点，运行时按座面与人物臀部锚点坐入椅子。",
+      "clearanceMetres": 0.41584,
+      "initialAction": "menu",
+      "initialSeatId": "seat-2434",
+      "area": "dining",
+      "inferredLocation": "3248 桌 · 现有餐椅",
+      "initialStage": "browsing",
+      "initialDelaySeconds": 28,
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "read-menu",
+          "parameters": {
+            "durationSeconds": 28
+          }
+        },
+        {
+          "atSeconds": 34,
+          "eventId": "order-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 64,
+          "eventId": "food-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 94,
+          "eventId": "meal",
+          "parameters": {
+            "durationSeconds": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "p07",
+      "x": 1.5307486347270376,
+      "y": 0.397,
+      "z": -0.49949508194869235,
+      "heading": 1.0849719786919745,
+      "role": "就餐顾客",
+      "zone": "3258 桌 · 现有餐椅",
+      "rationale": "按真实餐桌与餐椅分散落座，位置为可达站立接近点，运行时按座面与人物臀部锚点坐入椅子。",
+      "clearanceMetres": 0.30586,
+      "initialAction": "callserver",
+      "initialSeatId": "seat-2424",
+      "area": "dining",
+      "inferredLocation": "3258 桌 · 现有餐椅",
+      "initialStage": "requestingOrder",
+      "initialDelaySeconds": 0,
+      "initialEvents": [
+        {
+          "atSeconds": 5,
+          "eventId": "order-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 37,
+          "eventId": "food-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 65,
+          "eventId": "meal",
+          "parameters": {
+            "durationSeconds": 25
+          }
+        },
+        {
+          "atSeconds": 108,
+          "eventId": "checkout-request",
+          "parameters": {}
+        }
+      ]
+    },
+    {
+      "id": "p08",
+      "x": 8.909452889735972,
+      "y": 0.397,
+      "z": 0.5892560044647261,
+      "heading": -0.5647539449705055,
+      "role": "就餐顾客",
+      "zone": "3252 桌 · 现有餐椅",
+      "rationale": "按真实餐桌与餐椅分散落座，位置为可达站立接近点，运行时按座面与人物臀部锚点坐入椅子。",
+      "clearanceMetres": 0.38637,
+      "initialAction": "eat",
+      "initialSeatId": "seat-2374",
+      "area": "dining",
+      "inferredLocation": "3252 桌 · 现有餐椅",
+      "initialStage": "eating",
+      "initialDelaySeconds": 30,
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "meal",
+          "parameters": {
+            "durationSeconds": 30
+          }
+        },
+        {
+          "atSeconds": 38,
+          "eventId": "checkout-request",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 52,
+          "eventId": "seat-departure",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 55,
+          "eventId": "depart",
+          "parameters": {}
+        }
+      ]
+    },
+    {
+      "id": "p09",
+      "x": -0.15,
+      "y": 0.397,
+      "z": -1.6,
+      "heading": 1.4,
+      "role": "错峰到店顾客",
+      "zone": "入口内侧进店边界 A",
+      "rationale": "开场尚未到店；到计划时刻且入口空间可用时，才在真实入口边界进入。",
+      "clearanceMetres": 1.25351,
+      "initialAction": "idle",
+      "area": "entrance",
+      "inferredLocation": "入口内侧进店边界 A",
+      "initialPresent": false,
+      "initialStage": "away",
+      "initialDelaySeconds": 65,
+      "initialEvents": [
+        {
+          "atSeconds": 65,
+          "eventId": "arrival",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 66,
+          "eventId": "wait-seating",
+          "parameters": {
+            "durationSeconds": 22
+          }
+        },
+        {
+          "atSeconds": 91,
+          "eventId": "seat-search",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 99,
+          "eventId": "read-menu",
+          "parameters": {
+            "durationSeconds": 18
+          }
+        },
+        {
+          "atSeconds": 122,
+          "eventId": "order-request",
+          "parameters": {}
+        }
+      ]
+    },
+    {
+      "id": "p10",
+      "x": 0.65,
+      "y": 0.397,
+      "z": -1.5,
+      "heading": 1.4,
+      "role": "错峰到店顾客",
+      "zone": "入口内侧进店边界 B",
+      "rationale": "开场尚未到店；到计划时刻且入口空间可用时，才在真实入口边界进入。",
+      "clearanceMetres": 0.70513,
+      "initialAction": "idle",
+      "area": "entrance",
+      "inferredLocation": "入口内侧进店边界 B",
+      "initialPresent": false,
+      "initialStage": "away",
+      "initialDelaySeconds": 95,
+      "initialEvents": [
+        {
+          "atSeconds": 95,
+          "eventId": "arrival",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 96,
+          "eventId": "wait-seating",
+          "parameters": {
+            "durationSeconds": 24
+          }
+        },
+        {
+          "atSeconds": 121,
+          "eventId": "seat-search",
+          "parameters": {}
+        },
+        {
+          "atSeconds": 129,
+          "eventId": "read-menu",
+          "parameters": {
+            "durationSeconds": 18
+          }
+        },
+        {
+          "atSeconds": 152,
+          "eventId": "order-request",
+          "parameters": {}
+        }
+      ]
+    },
+    {
+      "id": "p11",
+      "x": 3.35,
+      "y": 0,
+      "z": 7.53,
+      "heading": 0,
+      "role": "主厨",
+      "zone": "热厨灶台操作区",
+      "rationale": "位于灶台前方工作通道，面向设备；距把手约0.31m，配合抬高手臂的烹饪动作在台边工作。",
+      "clearanceMetres": 0.31,
+      "initialAction": "cook",
+      "sourceObjects": [
+        "Range_3_Body",
+        "Range_3_Handle",
+        "Pass_Counter_Top"
+      ],
+      "group": "staff",
+      "workstation": {
+        "targetX": 3.35,
+        "targetZ": 8.65
+      },
+      "inferredLocation": "热厨灶台操作区",
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "chef-work",
+          "parameters": {
+            "durationSeconds": 25,
+            "objectIds": [
+              "station-p11"
+            ],
+            "action": "cook"
+          }
+        },
+        {
+          "atSeconds": 36,
+          "eventId": "chef-work",
+          "parameters": {
+            "durationSeconds": 22,
+            "objectIds": [
+              "station-p11"
+            ],
+            "action": "stir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p12",
+      "x": 0.1,
+      "y": 0,
+      "z": 7.53,
+      "heading": 0,
+      "role": "热厨",
+      "zone": "热厨灶台操作区",
+      "rationale": "位于灶台前方工作通道，面向设备；距把手约0.31m，配合抬高手臂的烹饪动作在台边工作。",
+      "clearanceMetres": 0.31,
+      "initialAction": "cook",
+      "sourceObjects": [
+        "Range_1_Body",
+        "Range_1_Handle",
+        "Pass_Counter_Top"
+      ],
+      "group": "staff",
+      "workstation": {
+        "targetX": 0.1,
+        "targetZ": 8.65
+      },
+      "inferredLocation": "热厨灶台操作区",
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "chef-work",
+          "parameters": {
+            "durationSeconds": 22,
+            "objectIds": [
+              "station-p12"
+            ],
+            "action": "season"
+          }
+        },
+        {
+          "atSeconds": 38,
+          "eventId": "chef-work",
+          "parameters": {
+            "durationSeconds": 24,
+            "objectIds": [
+              "station-p12"
+            ],
+            "action": "cook"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p13",
+      "x": 8.6,
+      "y": 0,
+      "z": 7.64,
+      "heading": 0,
+      "role": "备餐厨师",
+      "zone": "后厨备餐台",
+      "rationale": "面向备餐台，距台面前沿约0.335m，配合手掌高度校准在实际台边进行备料操作。",
+      "clearanceMetres": 0.335,
+      "initialAction": "prep",
+      "sourceObjects": [
+        "Prep_Counter",
+        "Prep_Top",
+        "Prep_Tray_1"
+      ],
+      "group": "staff",
+      "workstation": {
+        "targetX": 8.6,
+        "targetZ": 8.7
+      },
+      "inferredLocation": "后厨备餐台",
+      "initialEvents": [
+        {
+          "atSeconds": 0,
+          "eventId": "chef-work",
+          "parameters": {
+            "durationSeconds": 25,
+            "objectIds": [
+              "station-p13"
+            ],
+            "action": "prep"
+          }
+        },
+        {
+          "atSeconds": 34,
+          "eventId": "chef-work",
+          "parameters": {
+            "durationSeconds": 20,
+            "objectIds": [
+              "station-p13"
+            ],
+            "action": "inspectplate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p14",
+      "x": 4.6,
+      "y": 0.397,
+      "z": -2.8,
+      "heading": -0.741947,
+      "role": "前厅服务员",
+      "zone": "前厅桌边服务通道",
+      "rationale": "站在中心桌组外侧服务通道，面向顾客餐桌，保留座椅旁接近空间。",
+      "clearanceMetres": 0.62505,
+      "initialAction": "greet",
+      "sourceObjects": [
+        "Bistro_Research_Interior_Paris_Table_02A__3248"
+      ],
+      "group": "staff",
+      "workstation": {
+        "targetX": 3.5,
+        "targetZ": -1.6
+      },
+      "inferredLocation": "前厅桌边服务通道",
+      "initialEvents": []
+    },
+    {
+      "id": "p15",
+      "x": 5.2,
+      "y": 0.397,
+      "z": 0.6,
+      "heading": -2.937575,
+      "role": "服务员",
+      "zone": "前厅巡台通道",
+      "rationale": "安排在中心桌组与下侧桌组之间的可达服务通道，面向餐桌；经绕椅路径可连接前厅主通道。",
+      "clearanceMetres": 0.47127,
+      "initialAction": "idle",
+      "sourceObjects": [
+        "Bistro_Research_Interior_Paris_Table_02A__3246"
+      ],
+      "group": "staff",
+      "workstation": {
+        "targetX": 4.9,
+        "targetZ": -0.85
+      },
+      "inferredLocation": "前厅巡台通道",
+      "initialEvents": []
+    },
+    {
+      "id": "p16",
+      "x": 4.35,
+      "y": 0,
+      "z": 5.2,
+      "heading": 0,
+      "role": "传菜员",
+      "zone": "出餐口取餐通道",
+      "rationale": "站在 Pass_Counter_Top 出餐台顾客侧的窄通道，面向碗盘取餐；属于独立后厨地板模块，不假设与前厅直接连通。",
+      "clearanceMetres": 0.375,
+      "initialAction": "idle",
+      "sourceObjects": [
+        "Pass_Counter_Top",
+        "Pass_Bowl_3_Body"
+      ],
+      "group": "staff",
+      "workstation": {
+        "targetX": 4.35,
+        "targetZ": 6.2
+      },
+      "inferredLocation": "出餐口取餐通道",
+      "initialEvents": []
+    }
+  ],
+  "worldBounds": [
+    [
+      -2.0621379986411306,
+      -0.19970397450941418,
+      -13.941819756735413
+    ],
+    [
+      13.680000305175781,
+      7.511325449518409,
+      10.409704631054577
+    ]
+  ],
+  "floorplanView": {
+    "center": [
+      5.75,
+      -1.75
+    ],
+    "spanX": 17,
+    "spanZ": 26
+  },
+  "areas": {
+    "entrance": {
+      "x": -0.025,
+      "y": 0.397,
+      "z": -1.21,
+      "source": "Bistro Doormat_01_1520"
+    },
+    "dining": {
+      "x": 4.8,
+      "y": 0.397,
+      "z": -0.8
+    },
+    "waiting": {
+      "x": 5.6,
+      "y": 0.397,
+      "z": -10.1
+    },
+    "bar": {
+      "x": 9.2,
+      "y": 0.518,
+      "z": -2.7
+    },
+    "handoff": {
+      "x": 4.35,
+      "y": 0,
+      "z": 5.15
+    },
+    "kitchen": {
+      "x": 6.25,
+      "y": 0,
+      "z": 7.6
+    }
+  },
+  "notes": [
+    "初始3人在入口侧边真实候位点等候30/38/46秒，1人正在找现有空椅，2人看菜单、1人请求点单、1人正在用餐，另2人65/95秒错峰进店；没有新增椅子。",
+    "seats.y 为实际解码的坐垫世界高度，不是人物根节点；placements 中落座者的 x/z 为合法站立接近点，运行时由 initialSeatId 与人物臀部锚点校准坐姿。",
+    "32把实际餐椅中，仅注册15把有可达接近点和座姿过渡空间的座位；邻墙或邻椅过窄的座位未开放。",
+    "餐饮岗位和就餐活动属于仿真安排，不代表参考照片人物的现实职业或状态。",
+    "前厅地面高度0.39660m，运行取0.397m；后厨约0m。两个模块之间没有实际地板相连，因此不建立跨空隙导航。",
+    "42组桌椅与2组吧台分别按原模型世界顶点拟合OBB，保留158条墙体碰撞条与原地板边界。",
+    "两台原静态黑色人形机器人及其碰撞代理已移除，对应54,400个三角形按原模型机器人层级逐一匹配；所有非机器人场景几何和纹理保留。",
+    "厨师位于灶台与备餐台前，服务员位于前厅桌边通道，传菜员位于后厨出餐口。厨房柜体、灶具与台面碰撞继续保留。"
+  ],
+  "staffExpansion": {
+    "count": 6,
+    "chefIds": [
+      "p11",
+      "p12",
+      "p13"
+    ],
+    "serviceIds": [
+      "p14",
+      "p15",
+      "p16"
+    ],
+    "modifiedObstacleIds": [
+      "Range_1_collision",
+      "Range_2_collision",
+      "Range_3_collision",
+      "Pass_Counter_Base",
+      "Prep_Counter",
+      "Sink_Cabinet"
+    ],
+    "placementMethod": "Source Blender world bounds, decoded runtime GLB ground/body rays, 0.30m collision radius; inferred work roles."
+  },
+  "layoutVersion": "restaurant-consumption-8.0",
+  "cameraTop": {
+    "position": [
+      6,
+      29,
+      -3
+    ],
+    "target": [
+      6,
+      0.4,
+      -3
+    ]
+  },
+  "seats": [
+    {
+      "id": "seat-2372",
+      "label": "餐椅 2372 · 3242 桌",
+      "x": 6.052083703891991,
+      "y": 0.9562502186850628,
+      "z": 0.4568469949606506,
+      "heading": 2.8388532468708583,
+      "floorY": 0.397,
+      "approach": {
+        "x": 5.240738851707329,
+        "z": 0.2034312676794715
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_02_2372"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02A_3242",
+      "tableCenter": {
+        "x": 6.385460446712323,
+        "z": -0.055470171012793834
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_02_2372",
+      "sourceNode": 616,
+      "sourceSurfaceY": 0.9559284786802363,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2374",
+      "label": "餐椅 2374 · 3252 桌",
+      "x": 9.627465158853985,
+      "y": 0.9562502186850628,
+      "z": 1.0441827913172932,
+      "heading": -0.5647539449705055,
+      "floorY": 0.397,
+      "approach": {
+        "x": 8.909452889735972,
+        "z": 0.5892560044647261
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_02__2374"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02B__3252",
+      "tableCenter": {
+        "x": 9.634966758386687,
+        "z": 1.739398433575721
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_02__2374",
+      "sourceNode": 617,
+      "sourceSurfaceY": 0.9561646842746593,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": "p08"
+    },
+    {
+      "id": "seat-2376",
+      "label": "餐椅 2376 · 3254 桌",
+      "x": 0.33097190132259574,
+      "y": 0.9562502186850628,
+      "z": -3.252184800558648,
+      "heading": 2.5768390925319364,
+      "floorY": 0.397,
+      "approach": {
+        "x": 1.0489843450927043,
+        "z": -2.7972582893601063
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_02__2376"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02B__3254",
+      "tableCenter": {
+        "x": 0.3234702844296944,
+        "z": -3.947400144873761
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_02__2376",
+      "sourceNode": 618,
+      "sourceSurfaceY": 0.9560593212162097,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2378",
+      "label": "餐椅 2378 · 3256 桌",
+      "x": 1.7378094617913664,
+      "y": 0.9562502186850628,
+      "z": -5.791094479032021,
+      "heading": 2.576839445981628,
+      "floorY": 0.397,
+      "approach": {
+        "x": 2.4558220663550654,
+        "z": -5.336168221614785
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_02__2378"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02B__3256",
+      "tableCenter": {
+        "x": 1.7303073199087606,
+        "z": -6.486309416589153
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_02__2378",
+      "sourceNode": 619,
+      "sourceSurfaceY": 0.9560594157735809,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2380",
+      "label": "餐椅 2380 · 3258 桌",
+      "x": 2.917366375866248,
+      "y": 0.958229026203391,
+      "z": 0.7636578120936207,
+      "heading": -2.0370099889062967,
+      "floorY": 0.397,
+      "approach": {
+        "x": 3.2994475539126977,
+        "z": 0.004372639459097938
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_02__2380"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02B__3258",
+      "tableCenter": {
+        "x": 2.226719867838337,
+        "z": 0.8398721353549392
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_02__2380",
+      "sourceNode": 620,
+      "sourceSurfaceY": 0.9581833055777942,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2388",
+      "label": "餐椅 2388 · 3246 桌",
+      "x": 4.587412335806747,
+      "y": 0.9552608149258983,
+      "z": -0.3568027628141784,
+      "heading": 2.6579608110519546,
+      "floorY": 0.397,
+      "approach": {
+        "x": 5.339927508066167,
+        "z": 0.03844515371337992
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_02__2388"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02A__3246",
+      "tableCenter": {
+        "x": 4.905754670303867,
+        "z": -0.8753132751906214
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_02__2388",
+      "sourceNode": 624,
+      "sourceSurfaceY": 0.9553105017086475,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2390",
+      "label": "餐椅 2390 · 3248 桌",
+      "x": 3.13869393145611,
+      "y": 0.9552608149258983,
+      "z": -1.1123326068664274,
+      "heading": 2.398849395519326,
+      "floorY": 0.397,
+      "approach": {
+        "x": 3.764817562597035,
+        "z": -0.537468102372627
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_02__2390"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02A__3248",
+      "tableCenter": {
+        "x": 3.43798129119305,
+        "z": -1.644173107107811
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_02__2390",
+      "sourceNode": 625,
+      "sourceSurfaceY": 0.9550282867971757,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2414",
+      "label": "餐椅 2414 · 3260 桌",
+      "x": 4.325314570249279,
+      "y": 0.958229026203391,
+      "z": 2.002835192882265,
+      "heading": 1.2548055520878532,
+      "floorY": 0.397,
+      "approach": {
+        "x": 3.2797767208784063,
+        "z": 1.661001014466865
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_04__2414"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02B__3260",
+      "tableCenter": {
+        "x": 5.016667306808177,
+        "z": 1.9299183008684162
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_04__2414",
+      "sourceNode": 637,
+      "sourceSurfaceY": 0.9581830839269079,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": "p05"
+    },
+    {
+      "id": "seat-2416",
+      "label": "餐椅 2416 · 3242 桌",
+      "x": 6.7007607336521,
+      "y": 0.9562502186850628,
+      "z": -0.5840013909417818,
+      "heading": -0.36378678980669776,
+      "floorY": 0.397,
+      "approach": {
+        "x": 7.495133442556236,
+        "z": -0.2815580088877124
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_05_2416"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02A_3242",
+      "tableCenter": {
+        "x": 6.385460446712323,
+        "z": -0.055470171012793834
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_05_2416",
+      "sourceNode": 638,
+      "sourceSurfaceY": 0.9559285016973675,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2420",
+      "label": "餐椅 2420 · 3254 桌",
+      "x": 0.8922615222947324,
+      "y": 0.9562502186850628,
+      "z": -4.338841238154664,
+      "heading": -0.5846096169477153,
+      "floorY": 0.397,
+      "approach": {
+        "x": 1.7251846934778658,
+        "z": -4.508367020577966
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_05__2420"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02B__3254",
+      "tableCenter": {
+        "x": 0.3234702844296944,
+        "z": -3.947400144873761
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_05__2420",
+      "sourceNode": 640,
+      "sourceSurfaceY": 0.9560593791739731,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2424",
+      "label": "餐椅 2424 · 3258 桌",
+      "x": 1.7815947102569987,
+      "y": 0.958229026203391,
+      "z": 0.31264791432180256,
+      "heading": 1.0849719786919745,
+      "floorY": 0.397,
+      "approach": {
+        "x": 1.5307486347270376,
+        "z": -0.49949508194869235
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_05__2424"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02B__3258",
+      "tableCenter": {
+        "x": 2.226719867838337,
+        "z": 0.8398721353549392
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_05__2424",
+      "sourceNode": 642,
+      "sourceSurfaceY": 0.9581831704076732,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": "p07"
+    },
+    {
+      "id": "seat-2426",
+      "label": "餐椅 2426 · 3260 桌",
+      "x": 4.5715424118110075,
+      "y": 0.958229026203391,
+      "z": 1.4026939269016783,
+      "heading": 1.0849718827714667,
+      "floorY": 0.397,
+      "approach": {
+        "x": 4.3206964141822155,
+        "z": 0.5905509065699043
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_05__2426"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02B__3260",
+      "tableCenter": {
+        "x": 5.016667306808177,
+        "z": 1.9299183008684162
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_05__2426",
+      "sourceNode": 643,
+      "sourceSurfaceY": 0.9581830938562401,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2430",
+      "label": "餐椅 2430 · 3244 桌",
+      "x": 8.194936054550654,
+      "y": 0.9562502186850628,
+      "z": 0.22541530436788373,
+      "heading": -0.6240543707961959,
+      "floorY": 0.397,
+      "approach": {
+        "x": 7.505147418932579,
+        "z": -0.27126531551994204
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_05__2430"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02A__3244",
+      "tableCenter": {
+        "x": 7.900230843308706,
+        "z": 0.7649606500780415
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_05__2430",
+      "sourceNode": 645,
+      "sourceSurfaceY": 0.956103961895633,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2432",
+      "label": "餐椅 2432 · 3246 桌",
+      "x": 5.204527306707175,
+      "y": 0.9552608149258983,
+      "z": -1.4121144302609108,
+      "heading": -0.5695881990701925,
+      "floorY": 0.397,
+      "approach": {
+        "x": 4.4887226506691436,
+        "z": -1.8705069415373008
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_05__2432"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02A__3246",
+      "tableCenter": {
+        "x": 4.905754670303867,
+        "z": -0.8753132751906214
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_05__2432",
+      "sourceNode": 646,
+      "sourceSurfaceY": 0.9553105790683825,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": null
+    },
+    {
+      "id": "seat-2434",
+      "label": "餐椅 2434 · 3248 桌",
+      "x": 3.7402538871602338,
+      "y": 0.9552608149258983,
+      "z": -2.1788627364954576,
+      "heading": -0.5241262469786789,
+      "floorY": 0.397,
+      "approach": {
+        "x": 3.004356571673829,
+        "z": -2.6042509604273185
+      },
+      "obstacleIds": [
+        "Bistro_Research_Interior_Paris_Chair_05__2434"
+      ],
+      "tableId": "Bistro_Research_Interior_Paris_Table_02A__3248",
+      "tableCenter": {
+        "x": 3.43798129119305,
+        "z": -1.644173107107811
+      },
+      "sourceName": "Bistro_Research_Interior_Paris_Chair_05__2434",
+      "sourceNode": 647,
+      "sourceSurfaceY": 0.9550282943573759,
+      "surfaceMesh": "Mesh496_3",
+      "transitionRadius": 0.18,
+      "transitionNote": "Seated torso/hip clearance only, not standing walking radius; only the occupied chair is exempted.",
+      "initialOccupantId": "p06"
+    }
+  ],
+  "operationsExpansion": {
+    "customerCount": 10,
+    "initiallySeated": 4,
+    "occupiedTableGroups": 7,
+    "registeredSeats": 15,
+    "removedRobotObstacleIds": [
+      "Black_Humanoid_Robot_Dining",
+      "Black_Humanoid_Robot_Kitchen"
+    ],
+    "sourceSeatReport": "chair-measurements.json",
+    "runtimeSeatReport": "seats-measured.json",
+    "robotRemovalReport": "robot-removal-report.json",
+    "initiallyWaiting": 3,
+    "initiallySeekingSeat": 1,
+    "staggeredArrivals": 2,
+    "initiallyEating": 1
+  },
+  "waitingPositions": [
+    {
+      "id": "waiting-1",
+      "label": "入口侧边等候位 1",
+      "x": 0.1,
+      "y": 0.397,
+      "z": -2.2
+    },
+    {
+      "id": "waiting-2",
+      "label": "入口侧边等候位 2",
+      "x": 0.15,
+      "y": 0.397,
+      "z": -0.9
+    },
+    {
+      "id": "waiting-3",
+      "label": "前厅内侧等候位 3",
+      "x": 1.35,
+      "y": 0.397,
+      "z": -1.85
+    }
+  ],
+  "entryPositions": [
+    {
+      "id": "entrance-a",
+      "x": -0.15,
+      "y": 0.397,
+      "z": -1.6,
+      "label": "入口内侧进店边界 A"
+    },
+    {
+      "id": "entrance-b",
+      "x": 0.65,
+      "y": 0.397,
+      "z": -1.5,
+      "label": "入口内侧进店边界 B"
+    }
+  ]
+}

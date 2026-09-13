@@ -1,0 +1,23 @@
+{
+  "characterCount": 16,
+  "bonesPerCharacter": 53,
+  "clips": [
+    "Idle",
+    "Walk",
+    "Run",
+    "Wave",
+    "Sit"
+  ],
+  "landmarksPerCharacter": 27,
+  "totalLandmarks": 432,
+  "poseSamplesPerClip": 5,
+  "totalCoordinateChecks": 10800,
+  "maxBoneBindingErrorMetres": 7.639025458334263e-07,
+  "maxExistingGLBErrorMetres": 1.2616805351227185e-06,
+  "allLandmarksMove": true,
+  "minimumLandmarkDisplacementMetres": 0.3033017428236413,
+  "sourceReadOnly": "Original ten-person Blender preserved in prior restaurant delivery ZIP.",
+  "verificationMethod": "Original ten: retained 6750 sampled coordinate checks, original GLB SHA-256 unchanged. Six new staff: 4050 new sampled coordinate checks. Combined Blender reopened; see expanded-reopen-validation.json.",
+  "newStaffReport": "examples/staff-validation/models-validation.json",
+  "reopenReport": "examples/staff-validation/expanded-reopen-validation.json"
+}

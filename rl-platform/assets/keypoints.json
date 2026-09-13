@@ -1,0 +1,427 @@
+{
+  "version": "1.0.0",
+  "coordinateSystem": {
+    "space": "bone-local",
+    "units": "metres",
+    "modelUp": "+Z",
+    "modelForward": "-Y",
+    "threeWrapperRotationX": -1.5707963267948966,
+    "origin": "Bone head; +Y runs toward the bone tail",
+    "runtime": "bone.localToWorld(new THREE.Vector3(...landmark.offset)); update world matrices after AnimationMixer.update()"
+  },
+  "canonicalCharacter": "p03",
+  "landmarks": [
+    {
+      "id": "head_top",
+      "label": "头顶",
+      "bone": "head",
+      "offset": [
+        0.0,
+        0.139227554,
+        0.000331867
+      ],
+      "group": "face"
+    },
+    {
+      "id": "nose",
+      "label": "鼻尖",
+      "bone": "head",
+      "offset": [
+        0.0,
+        0.041307125,
+        0.065770209
+      ],
+      "group": "face"
+    },
+    {
+      "id": "left_eye",
+      "label": "左眼",
+      "bone": "head",
+      "offset": [
+        0.027000001,
+        0.068906091,
+        0.051903185
+      ],
+      "group": "face"
+    },
+    {
+      "id": "left_ear",
+      "label": "左耳",
+      "bone": "head",
+      "offset": [
+        0.061000001,
+        0.056490995,
+        -0.010665705
+      ],
+      "group": "face"
+    },
+    {
+      "id": "right_eye",
+      "label": "右眼",
+      "bone": "head",
+      "offset": [
+        -0.027000001,
+        0.068906091,
+        0.051903185
+      ],
+      "group": "face"
+    },
+    {
+      "id": "right_ear",
+      "label": "右耳",
+      "bone": "head",
+      "offset": [
+        -0.061000001,
+        0.056490995,
+        -0.010665705
+      ],
+      "group": "face"
+    },
+    {
+      "id": "neck",
+      "label": "颈部",
+      "bone": "neck_01",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "torso"
+    },
+    {
+      "id": "chest",
+      "label": "胸骨",
+      "bone": "spine_03",
+      "offset": [
+        0.0,
+        0.080054425,
+        0.071002096
+      ],
+      "group": "torso"
+    },
+    {
+      "id": "pelvis",
+      "label": "骨盆中心",
+      "bone": "pelvis",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "torso"
+    },
+    {
+      "id": "left_shoulder",
+      "label": "左肩",
+      "bone": "upperarm_l",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "arms"
+    },
+    {
+      "id": "left_elbow",
+      "label": "左肘",
+      "bone": "lowerarm_l",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "arms"
+    },
+    {
+      "id": "left_wrist",
+      "label": "左腕",
+      "bone": "hand_l",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "arms"
+    },
+    {
+      "id": "left_index_tip",
+      "label": "左食指尖",
+      "bone": "index_03_l",
+      "offset": [
+        0.0,
+        0.023786319,
+        0.0
+      ],
+      "group": "hands"
+    },
+    {
+      "id": "left_hip",
+      "label": "左髋",
+      "bone": "thigh_l",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "legs"
+    },
+    {
+      "id": "left_knee",
+      "label": "左膝",
+      "bone": "calf_l",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "legs"
+    },
+    {
+      "id": "left_ankle",
+      "label": "左踝",
+      "bone": "foot_l",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "legs"
+    },
+    {
+      "id": "left_toe",
+      "label": "左足尖",
+      "bone": "ball_l",
+      "offset": [
+        0.0,
+        0.059497591,
+        0.0
+      ],
+      "group": "feet"
+    },
+    {
+      "id": "left_heel",
+      "label": "左脚跟",
+      "bone": "foot_l",
+      "offset": [
+        -0.005503344,
+        -0.003000393,
+        0.060734756
+      ],
+      "group": "feet"
+    },
+    {
+      "id": "right_shoulder",
+      "label": "右肩",
+      "bone": "upperarm_r",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "arms"
+    },
+    {
+      "id": "right_elbow",
+      "label": "右肘",
+      "bone": "lowerarm_r",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "arms"
+    },
+    {
+      "id": "right_wrist",
+      "label": "右腕",
+      "bone": "hand_r",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "arms"
+    },
+    {
+      "id": "right_index_tip",
+      "label": "右食指尖",
+      "bone": "index_03_r",
+      "offset": [
+        0.0,
+        0.023786319,
+        0.0
+      ],
+      "group": "hands"
+    },
+    {
+      "id": "right_hip",
+      "label": "右髋",
+      "bone": "thigh_r",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "legs"
+    },
+    {
+      "id": "right_knee",
+      "label": "右膝",
+      "bone": "calf_r",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "legs"
+    },
+    {
+      "id": "right_ankle",
+      "label": "右踝",
+      "bone": "foot_r",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group": "legs"
+    },
+    {
+      "id": "right_toe",
+      "label": "右足尖",
+      "bone": "ball_r",
+      "offset": [
+        0.0,
+        0.059497591,
+        0.0
+      ],
+      "group": "feet"
+    },
+    {
+      "id": "right_heel",
+      "label": "右脚跟",
+      "bone": "foot_r",
+      "offset": [
+        0.005503344,
+        -0.003000393,
+        0.060734756
+      ],
+      "group": "feet"
+    }
+  ],
+  "connections": [
+    [
+      "head_top",
+      "nose"
+    ],
+    [
+      "nose",
+      "left_eye"
+    ],
+    [
+      "nose",
+      "right_eye"
+    ],
+    [
+      "left_eye",
+      "left_ear"
+    ],
+    [
+      "right_eye",
+      "right_ear"
+    ],
+    [
+      "nose",
+      "neck"
+    ],
+    [
+      "neck",
+      "chest"
+    ],
+    [
+      "chest",
+      "pelvis"
+    ],
+    [
+      "neck",
+      "left_shoulder"
+    ],
+    [
+      "left_shoulder",
+      "left_elbow"
+    ],
+    [
+      "left_elbow",
+      "left_wrist"
+    ],
+    [
+      "left_wrist",
+      "left_index_tip"
+    ],
+    [
+      "pelvis",
+      "left_hip"
+    ],
+    [
+      "left_hip",
+      "left_knee"
+    ],
+    [
+      "left_knee",
+      "left_ankle"
+    ],
+    [
+      "left_ankle",
+      "left_toe"
+    ],
+    [
+      "left_ankle",
+      "left_heel"
+    ],
+    [
+      "left_heel",
+      "left_toe"
+    ],
+    [
+      "neck",
+      "right_shoulder"
+    ],
+    [
+      "right_shoulder",
+      "right_elbow"
+    ],
+    [
+      "right_elbow",
+      "right_wrist"
+    ],
+    [
+      "right_wrist",
+      "right_index_tip"
+    ],
+    [
+      "pelvis",
+      "right_hip"
+    ],
+    [
+      "right_hip",
+      "right_knee"
+    ],
+    [
+      "right_knee",
+      "right_ankle"
+    ],
+    [
+      "right_ankle",
+      "right_toe"
+    ],
+    [
+      "right_ankle",
+      "right_heel"
+    ],
+    [
+      "right_heel",
+      "right_toe"
+    ]
+  ],
+  "approximation": "Anatomical visualization landmarks. Joint centers use bone origins; facial and surface offsets are authored approximations shared across the ten characters, not measured motion-capture markers."
+}

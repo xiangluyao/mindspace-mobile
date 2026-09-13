@@ -1,0 +1,66 @@
+{
+  "schema": "anatomy-final-delivery-sha256-v10",
+  "assetId": "z-anatomy-muscles-v10",
+  "files": {
+    "SOURCE_AND_LICENSE.md": {
+      "bytes": 5895,
+      "sha256": "2bd91b8aba94a454ad49b62c38e4e75ba456137f96eb85f389a93484078b9b3b"
+    },
+    "UPSTREAM_LICENSE.txt": {
+      "bytes": 2754,
+      "sha256": "196b66b56551a862e59872f7cdb70e6d9a6ad84e9105962fca8ec28c14e97520"
+    },
+    "anatomy-muscles.blend": {
+      "bytes": 89674861,
+      "sha256": "6ea6a8d7a1513af490337ec2d5ae56384eeedd5fafe4f54f8e2702e6063234b1"
+    },
+    "asset-validation.json": {
+      "bytes": 535817,
+      "sha256": "2b321de02f2a53dbd8887bf10011bf2ae86a849a92a6afe95f24930cf6510291"
+    },
+    "attachments.glb": {
+      "bytes": 14680172,
+      "sha256": "6e0f10380dd99d79be8ccae75ffa1c5e117806922bc4fc958cda3c9a2fde90b9"
+    },
+    "back.png": {
+      "bytes": 1894903,
+      "sha256": "a3b00d2a76c27e593268764c9e96616f8570ff6fa3d6accc58b5e2ce28fd596e"
+    },
+    "character-preservation.json": {
+      "bytes": 4783,
+      "sha256": "0af0706144e510a7797ce67fe11fff06f75335916275016d87818b9b6543d6f4"
+    },
+    "front.png": {
+      "bytes": 1893099,
+      "sha256": "ab4fd55a364102a1a615ec7f4b38202e867462dc904a244bc8b7ab97d6724488"
+    },
+    "muscles.glb": {
+      "bytes": 55867052,
+      "sha256": "a18f5740b9c7948cc668ef848b2bc58cd57aea2daf76abe603f2a427aa9ab2d4"
+    },
+    "muscles.json": {
+      "bytes": 1679720,
+      "sha256": "b38e748c81e685815db9eb88c16fdb8e8027c1c8a4a96a1758bcff47b79b09ce"
+    },
+    "shoulder-detail.png": {
+      "bytes": 1956605,
+      "sha256": "e62883ba1025c1dc9b65b0c74ee0f025d48112c364c8078b1262c87b4359ba99"
+    },
+    "source-lock.json": {
+      "bytes": 1577,
+      "sha256": "e7adf47e4a8235503dde15d2941d0ab908f4608f1c31e4bca39e8146c3df16e2"
+    },
+    "source-project-validation.json": {
+      "bytes": 1195,
+      "sha256": "032fb6c69637bcebada3803fa72039c2083c1b9dd5705967c572ef82e5f9e916"
+    },
+    "three-asset-validation.json": {
+      "bytes": 2271,
+      "sha256": "762261b856fd1162b7634dc36bacfee6567ed770e62416f2d62f2282f850b9df"
+    },
+    "three-quarter.png": {
+      "bytes": 1879178,
+      "sha256": "6d8b4e61f1be8d3d34eaf26ac20966d25d0d39fb958843931972ce39f9d1f1d6"
+    }
+  }
+}

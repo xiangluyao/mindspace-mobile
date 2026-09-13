@@ -1,0 +1,61 @@
+{
+  "checks": {
+    "nodes": true,
+    "skins": true,
+    "animations": true,
+    "materials": true,
+    "textures": true,
+    "images": true,
+    "samplers": true,
+    "scenes": true,
+    "scene": true,
+    "originalAccessorsPreserved": true,
+    "originalBufferViewsPreserved": true,
+    "allOriginalBinaryBytesPreserved": true,
+    "onlyThreeGarmentMeshesChanged": true,
+    "allSkins53Joints": true
+  },
+  "clipNames": [
+    "Idle",
+    "Walk",
+    "Run",
+    "Wave",
+    "Sit",
+    "Carry",
+    "TakeOrder",
+    "Serve",
+    "Greet",
+    "Guide",
+    "Listen",
+    "WipeTable"
+  ],
+  "clipCount": 12,
+  "trackCountPerClip": [
+    159,
+    159,
+    159,
+    159,
+    159,
+    159,
+    159,
+    159,
+    159,
+    159,
+    159,
+    159
+  ],
+  "changedMeshNodes": [
+    "p14_vest_back",
+    "p14_vest_shoulder_-1",
+    "p14_vest_shoulder_1"
+  ],
+  "sha256": "0a8529e1d15b18d3794a62b8b4f1b6b176269198f96087b94326dcfa631d25f7",
+  "savedBlenderSourceReopened": {
+    "version": "4.5.8 LTS",
+    "boneCount": 53,
+    "keypointObjects": 27,
+    "nlaClipCount": 12
+  },
+  "keypointDefinitionSHA256": "a4bf17a7aec306dafc06bda1b5b52e6b7008cf6e748f90006bfa4157eb265aff",
+  "status": "PASS"
+}

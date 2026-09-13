@@ -1,0 +1,456 @@
+{
+  "baseline": "Monday 19:53 stable release",
+  "deliveredAt": "2026-08-24T19:53:51+08:00",
+  "threadId": "01a02372-d0a2-77d3-9138-f144ed3b4ef5",
+  "turnId": "01a03388-ecaa-7ae3-9d41-5c2ad1a6d278",
+  "gitTag": "monday-1953",
+  "originalIndexSha256": "0da3ecd8647b8da68b90cbecc8882246395f507260290b055ec3b4d56069b769",
+  "replacementScope": "Human Layer below original top navigation only",
+  "assets": [
+    {
+      "path": "assets/card_objects.png",
+      "bytes": 2240595,
+      "sha256": "23524ab530fe1671731fa1387efd51b778460eb0531c98d21f0e79381a774b73"
+    },
+    {
+      "path": "assets/card_scene.png",
+      "bytes": 2521937,
+      "sha256": "732c3026e84ac3e0e85d57450ef12286b23fc045eafd84d71dbfaccb056c9f3b"
+    },
+    {
+      "path": "assets/card_kitchen.png",
+      "bytes": 2405389,
+      "sha256": "71a841281f8b3d792ededd3ba080e028b7922966be4db6fb86228c2f5c50240b"
+    },
+    {
+      "path": "assets/viewport_main.png",
+      "bytes": 2544359,
+      "sha256": "089dbac4548b60a34c1eadf8c729b587d732fb37440c9948c50ebd3d90de4ba1"
+    },
+    {
+      "path": "assets/card_front_hall.png",
+      "bytes": 2312774,
+      "sha256": "8687cb5e2b1698499008a218cbc0f9291400384f2bfe7acd5827d1b9ce00e3c9"
+    },
+    {
+      "path": "assets/card_people.png",
+      "bytes": 2158073,
+      "sha256": "c733eee8d9a0c43bf7498e7ecc85cc18a08294a47e5aaa66d2cbd327a6b99320"
+    },
+    {
+      "path": "assets/generated/human_motion_prediction_atlas_v1.png",
+      "bytes": 1873826,
+      "sha256": "be3d25d77fe04cfadf3d02a375d4d065b2e0c93e5acf3ac50212b8fc44490d4f"
+    },
+    {
+      "path": "assets/generated/agent_role_sprite_v1.png",
+      "bytes": 1475399,
+      "sha256": "18b890dce0d25243bb394c72d6d1dcb946eae428bda362a53d099c031876efa5"
+    },
+    {
+      "path": "assets/scene_cards_rendered/supermarket_objects.png",
+      "bytes": 2287888,
+      "sha256": "b618243cb01a95f227c9dc1ee0e2d8811376fceeb466c270923722054419df56"
+    },
+    {
+      "path": "assets/scene_cards_rendered/supermarket_checkout.png",
+      "bytes": 2346306,
+      "sha256": "57fb198d45950e7a6f1e306fcc5b795439d1fcd87c9b6c41b57e2f4f8e0c680a"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hotel_robot.png",
+      "bytes": 1947455,
+      "sha256": "30dd3c80699d26224d4172afa1b2f50cfe472c193629239c2d1eb5634bc11c8f"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hotel_reception.png",
+      "bytes": 2169118,
+      "sha256": "fb78e24fb087a754483e3347e8cb02af80ad5ee53c920056559d95ceebeffe50"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hospital_robot.png",
+      "bytes": 1676206,
+      "sha256": "550769a84fdffc3b10925e9efbfc298b9ff88a563196891d9844e8ae499279e0"
+    },
+    {
+      "path": "assets/scene_cards_rendered/home_people.png",
+      "bytes": 2271032,
+      "sha256": "8ee049f48da90d11224b52be05fb831965ee67bd870a12391bb28b24b4faecea"
+    },
+    {
+      "path": "assets/scene_cards_rendered/bank_atm.png",
+      "bytes": 2101075,
+      "sha256": "44611a1730930d708f4d1ff12780748c901f217d7d776541aa56cff64bb11ea6"
+    },
+    {
+      "path": "assets/scene_cards_rendered/home_living.png",
+      "bytes": 2228129,
+      "sha256": "3773a85f333cc1722d829f86571cb7824de5b4e7d29652526cd43acc3e5de97f"
+    },
+    {
+      "path": "assets/scene_cards_rendered/supermarket_world.png",
+      "bytes": 2643079,
+      "sha256": "27c0cb2f366ab13906db4a82df90ce00943d4d3cfff619bcb8f3b658988b90c1"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hotel_objects.png",
+      "bytes": 2060095,
+      "sha256": "b8861d1a6f573c855a934bec59880bb0d0562820a176a039a01fec9461eec33c"
+    },
+    {
+      "path": "assets/scene_cards_rendered/home_robot.png",
+      "bytes": 1682639,
+      "sha256": "5589493311e45e9ac0da886d8ac5b933cc80ceaa89b0dc9b1bcff0b455a05e9b"
+    },
+    {
+      "path": "assets/scene_cards_rendered/bank_world.png",
+      "bytes": 2403192,
+      "sha256": "3e46be758f921cd61b111d9727055719087d5a60dadf84c8cfb272633bb094cc"
+    },
+    {
+      "path": "assets/scene_cards_rendered/bank_people.png",
+      "bytes": 2328460,
+      "sha256": "7443f13d46f7938131dcfa7e9fa76014740c5685b481c3043af14cebe80f6c4b"
+    },
+    {
+      "path": "assets/scene_cards_rendered/home_objects.png",
+      "bytes": 2128552,
+      "sha256": "bb6cb92a32cfd2887f602cf33e0089a5fae9cf94d1fe829a7f33c74cce635402"
+    },
+    {
+      "path": "assets/scene_cards_rendered/supermarket_robot.png",
+      "bytes": 1819916,
+      "sha256": "09d79d27454b9fd74c492676ccd3e14f0b0f3910d22be7fce4b0c10089f73dbb"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hotel_people.png",
+      "bytes": 2528200,
+      "sha256": "767d9fee8838d7b99d94d813fc2738fe1bcd14da1f092275a94eb496fce9d1ab"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hospital_objects.png",
+      "bytes": 1989326,
+      "sha256": "e2473d811704b7e61ae207a45cccd6f7f313ab356662212226decc3a62772467"
+    },
+    {
+      "path": "assets/scene_cards_rendered/bank_robot.png",
+      "bytes": 1739537,
+      "sha256": "1f1c1df22c9689af1c41b450c7a087cc875a194b953b285fc32c0bf35e194201"
+    },
+    {
+      "path": "assets/scene_cards_rendered/home_world.png",
+      "bytes": 2188212,
+      "sha256": "0fbeda102d631701ba71b83d8463a81de87428df36d671dfbfd73d1973194b5b"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hospital_people.png",
+      "bytes": 2045526,
+      "sha256": "c183a732631d21ab529a7d81d48f7f885be734884c017aaed56d85d7856cf2ec"
+    },
+    {
+      "path": "assets/scene_cards_rendered/bank_objects.png",
+      "bytes": 1974702,
+      "sha256": "6c4f2ab573e8ac1b187c4e3e873fe42df759241716ee4cf9058c8fc9d8432df5"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hospital_world.png",
+      "bytes": 2260298,
+      "sha256": "0f1bc0964f744b40306cd057154cbba58defc8fef77c5dbd2e28af66c67483e2"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hotel_world.png",
+      "bytes": 2484808,
+      "sha256": "597eabf1a2f398d7339199d7c8ee41ae03b44b8436061e82b4e6fd1c63c6a4f1"
+    },
+    {
+      "path": "assets/scene_cards_rendered/supermarket_shelf.png",
+      "bytes": 2328096,
+      "sha256": "98f7ce7f8a0020c5a704352fccee6f341aab9deab742dcfd2b9d61c63c9ade98"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hotel_luggage.png",
+      "bytes": 2323437,
+      "sha256": "aafad4e10532eb9ffd803b5d6b72b9fab441b5ac87fc883ea6d5b4f05b54b566"
+    },
+    {
+      "path": "assets/scene_cards_rendered/supermarket_people.png",
+      "bytes": 2481709,
+      "sha256": "3b2ab0bc54a34f2a016391a7ef706feeabdb040c1073576528005026bac7491f"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hospital_wheelchair.png",
+      "bytes": 2287834,
+      "sha256": "76a3b51633901fc73fac01be0f28cf47d544376f400e37e9acce8e48fefcf670"
+    },
+    {
+      "path": "assets/scene_cards_rendered/home_kitchen.png",
+      "bytes": 2071589,
+      "sha256": "9e8e4c12db98ad67ba53c3bf09d830c43781b73a9a8cf7c7098b9584e2b13c14"
+    },
+    {
+      "path": "assets/scene_cards_rendered/hospital_triage.png",
+      "bytes": 2187498,
+      "sha256": "c3d4fe50ad1e6f7f09439cb47deede265892b2fcf2b5d788609a7ba7d3efe1fa"
+    },
+    {
+      "path": "assets/scene_cards_rendered/bank_teller.png",
+      "bytes": 2325853,
+      "sha256": "eef6987e7127e21ec0745fea7ddcf24fade37efa2a4c18f130a9c2861da460ff"
+    },
+    {
+      "path": "assets/scene_cards/supermarket_objects.png",
+      "bytes": 197914,
+      "sha256": "8b1e2603eca541408c2ad04adf8df45b1eafbd0c34f0ef08029e1f85e41dc11d"
+    },
+    {
+      "path": "assets/scene_cards/supermarket_checkout.png",
+      "bytes": 776941,
+      "sha256": "03785c69b9475a2d983339b70fa0664fcf6dc0e2618fceb5f744db9f157b9caf"
+    },
+    {
+      "path": "assets/scene_cards/hotel_robot.png",
+      "bytes": 629824,
+      "sha256": "34ebe7e0a1b7f33e204505856d757fd239a6fcc31a7d2dfd31735bf4aa939ebe"
+    },
+    {
+      "path": "assets/scene_cards/hotel_reception.png",
+      "bytes": 755569,
+      "sha256": "b4a08260b00daf930ad56813830fb0fa9fbe0a5238b788c03d252433e4a5dc84"
+    },
+    {
+      "path": "assets/scene_cards/hospital_robot.png",
+      "bytes": 509703,
+      "sha256": "7710f153acfef02fdc495bd3ec331f04ab627f4a6c33cb36bbdf7ea8f880edcc"
+    },
+    {
+      "path": "assets/scene_cards/home_people.png",
+      "bytes": 749380,
+      "sha256": "66cf117f2500d92cc2e67eabf5dd1e9e08e292227140bfa7364bb42ac3ffd5eb"
+    },
+    {
+      "path": "assets/scene_cards/bank_atm.png",
+      "bytes": 564669,
+      "sha256": "d5c8c4f9172634348801a3e310ea0e97c4d2f383ee68dff6c606fd7174052f38"
+    },
+    {
+      "path": "assets/scene_cards/home_living.png",
+      "bytes": 675724,
+      "sha256": "a5ecf2f48ecca0ffd508418a8336ddc7e0d7a79f75a0c6e87c447ec63c9d63ee"
+    },
+    {
+      "path": "assets/scene_cards/supermarket_world.png",
+      "bytes": 835351,
+      "sha256": "43504b5ae0ebfa9676e2c5bb91ee9ee88ad888ca0675bd4aa3155f9fe94228f3"
+    },
+    {
+      "path": "assets/scene_cards/hotel_objects.png",
+      "bytes": 326435,
+      "sha256": "b44d5fe558d333420be9be46829933e8574d3cad729a2be0079b84b57c1a6442"
+    },
+    {
+      "path": "assets/scene_cards/home_robot.png",
+      "bytes": 475348,
+      "sha256": "74320345e86caee9d6a972c90377148219fa4ca8a6e3c0fb9d250fd7209364f1"
+    },
+    {
+      "path": "assets/scene_cards/bank_world.png",
+      "bytes": 769114,
+      "sha256": "d556d4fd9c8fcd8394fe17ca2729d82a678c6691250a2e3a0b2d58a4d1469ea7"
+    },
+    {
+      "path": "assets/scene_cards/bank_people.png",
+      "bytes": 760208,
+      "sha256": "dcbc797a277a6787269384309f9a3fa280ae167be84be8a88865347502cfea73"
+    },
+    {
+      "path": "assets/scene_cards/home_objects.png",
+      "bytes": 278698,
+      "sha256": "dcbc3ed84497f7f9c57dcd93b58ba09aa2205d77f8e09a46835e9c814f6dc39f"
+    },
+    {
+      "path": "assets/scene_cards/supermarket_robot.png",
+      "bytes": 540301,
+      "sha256": "b0ad2fee5e1d85b59a7c61952b644eec23d524b2b8b9640503988da88c8186f6"
+    },
+    {
+      "path": "assets/scene_cards/hotel_people.png",
+      "bytes": 805589,
+      "sha256": "e59adcb1bada76cdc060bc80484d62e590f7da11a682a5ec96332887622efb29"
+    },
+    {
+      "path": "assets/scene_cards/hospital_objects.png",
+      "bytes": 579722,
+      "sha256": "834b816e0b0c5e481acb8b369b2fa47f86d9697aea0c23f24600cc65646c8f39"
+    },
+    {
+      "path": "assets/scene_cards/bank_robot.png",
+      "bytes": 583261,
+      "sha256": "cf2e9cbc0b4eb74ec2c7ea6a6ab822a5da82b5d1e5e63fb0513ea28531140f06"
+    },
+    {
+      "path": "assets/scene_cards/home_world.png",
+      "bytes": 752762,
+      "sha256": "f89b70e5d4eac3102be4189212863ff2d6c953158938cd3bbdc56f499ed92758"
+    },
+    {
+      "path": "assets/scene_cards/hospital_people.png",
+      "bytes": 660083,
+      "sha256": "e84872b004dd0e9c317c13bbb6843450dfbd20f22b2d8df84e8b375285896bd8"
+    },
+    {
+      "path": "assets/scene_cards/bank_objects.png",
+      "bytes": 599123,
+      "sha256": "da21ad5ed4eabb7abccb607df13e1ee910b5d97de2358871bf1ddbc6d9f863fe"
+    },
+    {
+      "path": "assets/scene_cards/hospital_world.png",
+      "bytes": 839230,
+      "sha256": "b1b1aa59d76a4bbc084e726764bd621e36c2dc0e7b92f7b2298d87ec5dc66aca"
+    },
+    {
+      "path": "assets/scene_cards/hotel_world.png",
+      "bytes": 825627,
+      "sha256": "cf728edef8e29c1794ee5cfa305cbf2e23765fdab7b7d08a2482339630f53325"
+    },
+    {
+      "path": "assets/scene_cards/supermarket_shelf.png",
+      "bytes": 744185,
+      "sha256": "89c788223e60fb97976d223481a894a711666e4ca6df4d5e8ea3f1cb77883893"
+    },
+    {
+      "path": "assets/scene_cards/hotel_luggage.png",
+      "bytes": 712393,
+      "sha256": "2ccc0b71e2cb8763ca75f88e5b3dba1393572e000cc9e35605629e447588fa58"
+    },
+    {
+      "path": "assets/scene_cards/supermarket_people.png",
+      "bytes": 788056,
+      "sha256": "f47687b57ec048a5176ec40b4dde5c49e677059c73ab99a76c8a3390210069f0"
+    },
+    {
+      "path": "assets/scene_cards/hospital_wheelchair.png",
+      "bytes": 553275,
+      "sha256": "f3d544754ca41260f81da5d14179533268fc5b00fdac74e1b4744e6189d4e147"
+    },
+    {
+      "path": "assets/scene_cards/home_kitchen.png",
+      "bytes": 573635,
+      "sha256": "604055b88e3e285feca4e33dff18aeb28172a486e6a125ba4e843287bed8f024"
+    },
+    {
+      "path": "assets/scene_cards/hospital_triage.png",
+      "bytes": 724202,
+      "sha256": "9413436e5f81107294c35ea93d78cea3b7f784aeb5cb3f8723ace5854d043dd6"
+    },
+    {
+      "path": "assets/scene_cards/bank_teller.png",
+      "bytes": 726490,
+      "sha256": "df0ffd15ffff6422d881918880c1b919c73ae76e46ed2a737f8adef16633a9c8"
+    },
+    {
+      "path": "assets/workspaces/workspace_replay.png",
+      "bytes": 1554241,
+      "sha256": "6bc71dae715a2a48a9bf94601d08a7c75ee2534f329fbb063735ccbf13d43a37"
+    },
+    {
+      "path": "assets/workspaces/workspace_library.png",
+      "bytes": 1723893,
+      "sha256": "8859ecf0274040ab17836f78c41f3838bc18ede8ffb69ad6ca6d683ef527b592"
+    },
+    {
+      "path": "assets/workspaces/workspace_builder.png",
+      "bytes": 1872499,
+      "sha256": "f987ebb501d2352f7ed034b19e1eb86604681ec2b805c8e763c4c89e7aa970bd"
+    },
+    {
+      "path": "assets/workspaces/workspace_training.png",
+      "bytes": 1532145,
+      "sha256": "815bc02e75b8984d19388b7a724e6fa8f321a07e84b8c1b90dbfbeaca04ca805"
+    },
+    {
+      "path": "assets/workspaces/workspace_human_layer.png",
+      "bytes": 1692814,
+      "sha256": "1d5765f3c5911332d63c37c101aee8f7309ac5b66cfb39d7c65a4d4ae9f2a52e"
+    },
+    {
+      "path": "assets/workspaces/workspace_algorithm.png",
+      "bytes": 1597201,
+      "sha256": "9c109e1f5104d2a0c42d5c184bfa734db0b5759f6ed9d5c13ce845187943fc95"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_replay_content.png",
+      "bytes": 843952,
+      "sha256": "721b1562d80cd175db3d6c13536477ec9f0b54734c441dd05b3f230b90ba2608"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_human_content_2x.png",
+      "bytes": 2844263,
+      "sha256": "7aee57fee3168f42911a79c8ee248ff4b99846f9a74bc24442e7138f97d14324"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_human_content.png",
+      "bytes": 1008521,
+      "sha256": "41e9d3da2abd10dcd3ee3fc055ed0a2257b5eb0c4d6a69f9a9ad5be8ef888dfe"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_replay_content_2x.png",
+      "bytes": 2260882,
+      "sha256": "fbfa6a403110a4cd8099c209f1f990f95c46c6c753d44a89c6dc9d22126671bb"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_training_content_2x.png",
+      "bytes": 2802877,
+      "sha256": "b2658e34820104093e7d609ec279ea7bb50ae3f11145cd33993a2019e8a99824"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_algorithm_content.png",
+      "bytes": 1179038,
+      "sha256": "6088f4a516c72f4d7b91844abc095c71306937ef3fa4c1eb84f165e2c25ebf7a"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_training_content.png",
+      "bytes": 1122901,
+      "sha256": "c09eade4699476f73b48c441013cf3221d6d04be8901064ed42bbe64e4f9137a"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_algorithm_content_2x.png",
+      "bytes": 2967387,
+      "sha256": "e961b8ecd45de0e1060942abb1d011b89f66d0202c6a3ff5c1ae6aea4c725217"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_builder_content_2x.png",
+      "bytes": 3239923,
+      "sha256": "63ffae19be0973dad48e16f9ed275c45f4b66adc7a4ab02ee31d00ac9f749a2c"
+    },
+    {
+      "path": "assets/workspaces/content_views/workspace_builder_content.png",
+      "bytes": 1212876,
+      "sha256": "2300c83c8bb1cfc79d38fb7261fdc2730e6115e5aae9aedbf56062c4538a2589"
+    },
+    {
+      "path": "assets/scene_packs/premium_home_pack.png",
+      "bytes": 2018098,
+      "sha256": "4187a44bb18e85e25f6ade7721c13a414cc27b1577c409bdc7f5d092c38ee4c7"
+    },
+    {
+      "path": "assets/scene_packs/hotel_lobby_pack.png",
+      "bytes": 2210156,
+      "sha256": "96f09579eeaad0a64d334aaf30911fe38531c8185a3aa7d3be43a63441d4cdfa"
+    },
+    {
+      "path": "assets/scene_packs/bank_lobby_pack.png",
+      "bytes": 2064510,
+      "sha256": "53ab5df4b56721a27d8a680fab4317220457869714c52804e976a90892e2e40d"
+    },
+    {
+      "path": "assets/scene_packs/hospital_reception_pack.png",
+      "bytes": 2186959,
+      "sha256": "718adae599f9fa8a86d9745a1006efd4aa7e69a2b87bf6d9517ad481694bb4ff"
+    },
+    {
+      "path": "assets/scene_packs/supermarket_pack.png",
+      "bytes": 2111179,
+      "sha256": "7d8c67e52cf5c2b24a314dcb88befd346ea1e6ee8d7ee1c425d1f26ac3c9b5f0"
+    }
+  ]
+}

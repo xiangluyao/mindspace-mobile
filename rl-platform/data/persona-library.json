@@ -1,0 +1,487 @@
+{
+  "schemaVersion": "mindspace-persona-library/v2",
+  "version": "9.0.0",
+  "personas": [
+    {
+      "id": "dining-01",
+      "name": "口味探索者",
+      "description": "喜欢尝试菜品，点单前关注口味与推荐。",
+      "tags": [
+        "口味",
+        "探索"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.95,
+        "service": 0.45,
+        "environment": 0.4,
+        "value": 0.45,
+        "efficiency": 0.35
+      },
+      "expression": {
+        "initiative": 0.65,
+        "directness": 0.65,
+        "verbosity": 0.6
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-02",
+      "name": "安静用餐者",
+      "description": "关注座位周边环境，倾向安静、少打扰的用餐过程。",
+      "tags": [
+        "环境",
+        "安静"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.6,
+        "service": 0.45,
+        "environment": 0.95,
+        "value": 0.45,
+        "efficiency": 0.35
+      },
+      "expression": {
+        "initiative": 0.2,
+        "directness": 0.45,
+        "verbosity": 0.25
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-03",
+      "name": "服务关注者",
+      "description": "关注回应和说明，需求没有解决时倾向主动询问。",
+      "tags": [
+        "服务",
+        "沟通"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.6,
+        "service": 0.95,
+        "environment": 0.55,
+        "value": 0.5,
+        "efficiency": 0.65
+      },
+      "expression": {
+        "initiative": 0.85,
+        "directness": 0.75,
+        "verbosity": 0.65
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-04",
+      "name": "预算谨慎者",
+      "description": "比较菜品与支出；这是合成关注权重，不代表真实消费能力。",
+      "tags": [
+        "价格",
+        "比较"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.6,
+        "service": 0.5,
+        "environment": 0.35,
+        "value": 0.95,
+        "efficiency": 0.5
+      },
+      "expression": {
+        "initiative": 0.45,
+        "directness": 0.6,
+        "verbosity": 0.45
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-05",
+      "name": "高效用餐者",
+      "description": "希望流程明确，倾向及时点单、结账和离开。",
+      "tags": [
+        "效率",
+        "明确"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.65,
+        "service": 0.7,
+        "environment": 0.35,
+        "value": 0.55,
+        "efficiency": 0.95
+      },
+      "expression": {
+        "initiative": 0.8,
+        "directness": 0.9,
+        "verbosity": 0.3
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-06",
+      "name": "社交聚餐者",
+      "description": "愿意交谈和征询同行意见；同行关系接口预留；每人仍是独立单元。",
+      "tags": [
+        "交流",
+        "聚餐"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.7,
+        "service": 0.65,
+        "environment": 0.8,
+        "value": 0.5,
+        "efficiency": 0.3
+      },
+      "expression": {
+        "initiative": 0.95,
+        "directness": 0.55,
+        "verbosity": 0.85
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-07",
+      "name": "慢享用餐者",
+      "description": "偏好从容浏览菜单和享用菜品，具体时长由场景行为模型决定。",
+      "tags": [
+        "从容",
+        "体验"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.85,
+        "service": 0.55,
+        "environment": 0.8,
+        "value": 0.4,
+        "efficiency": 0.15
+      },
+      "expression": {
+        "initiative": 0.4,
+        "directness": 0.4,
+        "verbosity": 0.6
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-08",
+      "name": "谨慎点单者",
+      "description": "愿意询问菜品说明，表达相对委婉。",
+      "tags": [
+        "询问",
+        "谨慎"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.85,
+        "service": 0.8,
+        "environment": 0.55,
+        "value": 0.65,
+        "efficiency": 0.4
+      },
+      "expression": {
+        "initiative": 0.65,
+        "directness": 0.3,
+        "verbosity": 0.8
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-09",
+      "name": "直接反馈者",
+      "description": "出现服务事件时更可能清晰表达需求；不预设负面情绪。",
+      "tags": [
+        "反馈",
+        "直接"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.75,
+        "service": 0.85,
+        "environment": 0.6,
+        "value": 0.6,
+        "efficiency": 0.7
+      },
+      "expression": {
+        "initiative": 0.85,
+        "directness": 0.95,
+        "verbosity": 0.55
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    },
+    {
+      "id": "dining-10",
+      "name": "温和少言者",
+      "description": "较少主动发起对话，获得询问时以简洁、温和方式回应。",
+      "tags": [
+        "温和",
+        "简洁"
+      ],
+      "sourceType": "synthetic",
+      "focus": {
+        "flavor": 0.65,
+        "service": 0.6,
+        "environment": 0.65,
+        "value": 0.6,
+        "efficiency": 0.45
+      },
+      "expression": {
+        "initiative": 0.15,
+        "directness": 0.35,
+        "verbosity": 0.2
+      },
+      "dataset": {
+        "name": "MindSpace configured personas",
+        "version": "8.0.0"
+      },
+      "basics": {
+        "age": null,
+        "gender": "unspecified",
+        "genderLabel": "",
+        "heightCm": null,
+        "weightKg": null
+      },
+      "bigFive": {
+        "enabled": false,
+        "values": {
+          "openness": null,
+          "conscientiousness": null,
+          "extraversion": null,
+          "agreeableness": null,
+          "neuroticism": null
+        },
+        "source": {
+          "type": "unset",
+          "label": "",
+          "version": ""
+        }
+      }
+    }
+  ],
+  "assignments": {}
+}

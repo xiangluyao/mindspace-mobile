@@ -1,0 +1,71 @@
+{
+  "schema": "anatomy-three-asset-validation-v10",
+  "generatedAt": "2026-09-07T12:57:26.619Z",
+  "checks": [
+    "509 independent named muscles/tissue meshes plus one neutral skeleton; no animation rig",
+    "Source muscle/tendon face partitions retained in COLOR_0",
+    "Actual Three.js vertex bounds agree with metadata",
+    "1.75m height; feet Y=0; left +X",
+    "One muscle transform leaves source vertices and opposite side unchanged",
+    "705 stable attachment IDs and reciprocal muscle links",
+    "Reference-only/fiber-data limit/CC-BY-SA explicit"
+  ],
+  "files": [
+    {
+      "filename": "muscles.glb",
+      "bytes": 55867052,
+      "sha256": "a18f5740b9c7948cc668ef848b2bc58cd57aea2daf76abe603f2a427aa9ab2d4",
+      "meshCount": 510,
+      "triangles": 2507339,
+      "bounds": {
+        "min": [
+          -0.3442385196685791,
+          1.6298145055770874e-9,
+          -0.13387078046798706
+        ],
+        "max": [
+          0.3442385196685791,
+          1.7499998807907104,
+          0.14125293493270874
+        ]
+      }
+    },
+    {
+      "filename": "attachments.glb",
+      "bytes": 14680172,
+      "sha256": "6e0f10380dd99d79be8ccae75ffa1c5e117806922bc4fc958cda3c9a2fde90b9",
+      "meshCount": 705,
+      "triangles": 931484,
+      "bounds": {
+        "min": [
+          -0.3397235572338104,
+          0.0029786673840135336,
+          -0.11653374880552292
+        ],
+        "max": [
+          0.3397235572338104,
+          1.7032437324523926,
+          0.13184323906898499
+        ]
+      }
+    }
+  ],
+  "source": {
+    "name": "Z-Anatomy, derived from BodyParts3D",
+    "repository": "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+    "commit": "3e343336567a817ec6bdd77132ecf9672570bde7",
+    "archive": "Z-Anatomy.zip",
+    "archiveSha256": "e029688545627bd0214b269e1063143abb580aad72b2c2445d6d8a9a0d9da736",
+    "licenseUrl": "https://github.com/Z-Anatomy/Models-of-human-anatomy/blob/3e343336567a817ec6bdd77132ecf9672570bde7/License.txt"
+  },
+  "counts": {
+    "sourceSurfaceObjects": 509,
+    "muscleObjects": 462,
+    "nonMuscleConnectiveObjects": 47,
+    "attachmentSurfaces": 705,
+    "sourceBones": 206,
+    "translatedDisplayNames": 448,
+    "musclesWithLinkedSourceAttachments": 280,
+    "exactTA2MuscleTerms": 503
+  }
+}

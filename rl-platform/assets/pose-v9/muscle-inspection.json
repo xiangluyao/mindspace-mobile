@@ -1,0 +1,33 @@
+{
+  "source": "/Users/luyao/Documents/Codex/2026-09-05/new-chat/outputs/human-layer-sim/public/assets/human-layer.blend",
+  "blenderVersion": "4.5.8 LTS",
+  "rigCount": 16,
+  "boneCounts": {
+    "p01_Rig": 53,
+    "p02_Rig": 53,
+    "p03_Rig": 53,
+    "p04_Rig": 53,
+    "p05_Rig": 53,
+    "p06_Rig": 53,
+    "p07_Rig": 53,
+    "p08_Rig": 53,
+    "p09_Rig": 53,
+    "p10_Rig": 53,
+    "p11_Rig": 53,
+    "p12_Rig": 53,
+    "p13_Rig": 53,
+    "p14_Rig": 53,
+    "p15_Rig": 53,
+    "p16_Rig": 53
+  },
+  "existingMuscleNamedObjects": [],
+  "hasAuthoredMuscleSystem": false,
+  "interpretation": "Inspected local human rigs: skeletal deformation and keyed animation, no authored muscle objects/system found. New overlay is explicitly schematic and does not calculate anatomy, force, activation or physiology.",
+  "newAsset": {
+    "file": "muscle-schematic.glb",
+    "vertices": 504,
+    "polygons": 482,
+    "displayLabel": "肌肉示意 · 非生理仿真",
+    "source": "Authored in Blender for this project, no external anatomy or mocap data"
+  }
+}

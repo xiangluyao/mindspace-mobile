@@ -1,0 +1,931 @@
+{
+  "source": "/Users/luyao/Documents/Codex/2026-09-05/new-chat/outputs/human-layer-sim/public/assets/human-layer.blend",
+  "sourceSha256": "810295b44fede385940cce4791574d7569af490fa88abac80a59d840e09f3d15",
+  "blender": "4.5.8 LTS",
+  "bones": 53,
+  "bonePositions": {
+    "pelvis": [
+      0.0,
+      -0.006199299823492765,
+      0.8891483545303345
+    ],
+    "spine_01": [
+      0.0,
+      0.02404990792274475,
+      0.9730366468429565
+    ],
+    "spine_02": [
+      0.0,
+      0.015221089124679565,
+      1.0409010648727417
+    ],
+    "spine_03": [
+      0.0,
+      0.021451912820339203,
+      1.0998764038085938
+    ],
+    "neck_01": [
+      0.0,
+      -0.013209359720349312,
+      1.425832748413086
+    ],
+    "head": [
+      0.0,
+      -0.047146547585725784,
+      1.5169880390167236
+    ]
+  },
+  "nla": [
+    [
+      "Idle",
+      [
+        [
+          "Idle",
+          "p14_Rig_Idle",
+          0.0,
+          60.0
+        ]
+      ]
+    ],
+    [
+      "Walk",
+      [
+        [
+          "Walk",
+          "p14_Rig_Walk",
+          0.0,
+          60.0
+        ]
+      ]
+    ],
+    [
+      "Run",
+      [
+        [
+          "Run",
+          "p14_Rig_Run",
+          0.0,
+          60.0
+        ]
+      ]
+    ],
+    [
+      "Wave",
+      [
+        [
+          "Wave",
+          "p14_Rig_Wave",
+          0.0,
+          60.0
+        ]
+      ]
+    ],
+    [
+      "Sit",
+      [
+        [
+          "Sit",
+          "p14_Rig_Sit",
+          0.0,
+          60.0
+        ]
+      ]
+    ],
+    [
+      "Carry",
+      [
+        [
+          "Carry",
+          "p14_Rig_Carry",
+          0.0,
+          60.0
+        ]
+      ]
+    ],
+    [
+      "TakeOrder",
+      [
+        [
+          "TakeOrder",
+          "p14_Rig_TakeOrder",
+          0.0,
+          60.0
+        ]
+      ]
+    ],
+    [
+      "Serve",
+      [
+        [
+          "Serve",
+          "p14_Rig_Serve",
+          0.0,
+          60.0
+        ]
+      ]
+    ],
+    [
+      "Greet",
+      [
+        [
+          "Greet",
+          "p14_Rig_Greet",
+          0.0,
+          120.0
+        ]
+      ]
+    ],
+    [
+      "Guide",
+      [
+        [
+          "Guide",
+          "p14_Rig_Guide",
+          0.0,
+          120.0
+        ]
+      ]
+    ],
+    [
+      "Listen",
+      [
+        [
+          "Listen",
+          "p14_Rig_Listen",
+          0.0,
+          120.0
+        ]
+      ]
+    ],
+    [
+      "WipeTable",
+      [
+        [
+          "WipeTable",
+          "p14_Rig_WipeTable",
+          0.0,
+          120.0
+        ]
+      ]
+    ]
+  ],
+  "meshes": [
+    {
+      "name": "p14_apron_back_bow_-1",
+      "vertices": 8,
+      "faces": 3,
+      "min": [
+        -0.0880875512957573,
+        0.15159818530082703,
+        0.9648066759109497
+      ],
+      "max": [
+        0.003028360428288579,
+        0.1645001620054245,
+        1.038051962852478
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_cotton"
+      ]
+    },
+    {
+      "name": "p14_apron_back_bow_1",
+      "vertices": 8,
+      "faces": 3,
+      "min": [
+        -0.003028360428288579,
+        0.15159818530082703,
+        0.9648066759109497
+      ],
+      "max": [
+        0.0880875512957573,
+        0.1645001620054245,
+        1.038051962852478
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_cotton"
+      ]
+    },
+    {
+      "name": "p14_apron_bottom_hem",
+      "vertices": 10,
+      "faces": 4,
+      "min": [
+        -0.18621806800365448,
+        -0.17847728729248047,
+        0.45387887954711914
+      ],
+      "max": [
+        0.18621806800365448,
+        -0.14084653556346893,
+        0.4581795632839203
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_stitch"
+      ]
+    },
+    {
+      "name": "p14_apron_patch_pocket_-1",
+      "vertices": 4,
+      "faces": 1,
+      "min": [
+        -0.16573406755924225,
+        -0.16223110258579254,
+        0.8323367834091187
+      ],
+      "max": [
+        -0.01675962470471859,
+        -0.12919296324253082,
+        0.9506048560142517
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_cotton"
+      ]
+    },
+    {
+      "name": "p14_apron_patch_pocket_1",
+      "vertices": 4,
+      "faces": 1,
+      "min": [
+        0.01675962470471859,
+        -0.16223110258579254,
+        0.8323367834091187
+      ],
+      "max": [
+        0.16573406755924225,
+        -0.12919296324253082,
+        0.9506048560142517
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_cotton"
+      ]
+    },
+    {
+      "name": "p14_apron_skirt",
+      "vertices": 475,
+      "faces": 432,
+      "min": [
+        -0.18621806800365448,
+        -0.1784008890390396,
+        0.4560292363166809
+      ],
+      "max": [
+        0.18621806800365448,
+        -0.09553129225969315,
+        1.0151147842407227
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_cotton"
+      ]
+    },
+    {
+      "name": "p14_apron_waist_tie",
+      "vertices": 128,
+      "faces": 65,
+      "min": [
+        -0.1830074042081833,
+        -0.13869620859622955,
+        1.0022127628326416
+      ],
+      "max": [
+        0.1830074042081833,
+        0.13869620859622955,
+        1.0280166864395142
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_cotton"
+      ]
+    },
+    {
+      "name": "p14_badge_engraving",
+      "vertices": 4,
+      "faces": 1,
+      "min": [
+        -0.11139757931232452,
+        -0.19512945413589478,
+        1.3138325214385986
+      ],
+      "max": [
+        -0.07786857336759567,
+        -0.19512945413589478,
+        1.3156602382659912
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_contrast_piping"
+      ]
+    },
+    {
+      "name": "p14_badge_engraving.001",
+      "vertices": 4,
+      "faces": 1,
+      "min": [
+        -0.11139757931232452,
+        -0.19512945413589478,
+        1.3202834129333496
+      ],
+      "max": [
+        -0.07786857336759567,
+        -0.19512945413589478,
+        1.3221111297607422
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_contrast_piping"
+      ]
+    },
+    {
+      "name": "p14_body",
+      "vertices": 19158,
+      "faces": 18486,
+      "min": [
+        -0.5052923560142517,
+        -0.3501166105270386,
+        -0.028447816148400307
+      ],
+      "max": [
+        0.5052923560142517,
+        0.11863367259502411,
+        1.7934725284576416
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ],
+        [
+          "Hide helpers",
+          "MASK"
+        ],
+        [
+          "Delete.male_casualsuit01",
+          "MASK"
+        ],
+        [
+          "Delete.shoes01",
+          "MASK"
+        ]
+      ],
+      "mats": [
+        "p14_p04_skin"
+      ]
+    },
+    {
+      "name": "p14_body.eyebrow001",
+      "vertices": 124,
+      "faces": 96,
+      "min": [
+        -0.06077750772237778,
+        -0.16601800918579102,
+        1.6780591011047363
+      ],
+      "max": [
+        0.06077750772237778,
+        -0.13077430427074432,
+        1.6882377862930298
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_p04_body.eyebrow001.001"
+      ]
+    },
+    {
+      "name": "p14_body.eyelashes01",
+      "vertices": 250,
+      "faces": 184,
+      "min": [
+        -0.04989663511514664,
+        -0.1601226031780243,
+        1.663613200187683
+      ],
+      "max": [
+        0.04989663511514664,
+        -0.14487804472446442,
+        1.679272174835205
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_p04_body.eyelashes01.001"
+      ]
+    },
+    {
+      "name": "p14_body.high-poly",
+      "vertices": 1064,
+      "faces": 1020,
+      "min": [
+        -0.04579862952232361,
+        -0.156199112534523,
+        1.658063530921936
+      ],
+      "max": [
+        0.04579862952232361,
+        -0.12897418439388275,
+        1.690840244293213
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_p04_body.high-poly.001"
+      ]
+    },
+    {
+      "name": "p14_body.male_casualsuit01",
+      "vertices": 8426,
+      "faces": 8336,
+      "min": [
+        -0.49973857402801514,
+        -0.24071529507637024,
+        0.07488901913166046
+      ],
+      "max": [
+        0.4960664212703705,
+        0.12509533762931824,
+        1.5780861377716064
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_uniform_fabric",
+        "p14_work_trousers"
+      ]
+    },
+    {
+      "name": "p14_body.shoes01",
+      "vertices": 1552,
+      "faces": 1472,
+      "min": [
+        -0.2464207261800766,
+        -0.22018364071846008,
+        -0.002262773923575878
+      ],
+      "max": [
+        0.2464207261800766,
+        0.058687973767519,
+        0.10124123841524124
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_non_slip_leather"
+      ]
+    },
+    {
+      "name": "p14_engraved_name_badge",
+      "vertices": 4,
+      "faces": 1,
+      "min": [
+        -0.12155788391828537,
+        -0.1929791122674942,
+        1.3072201013565063
+      ],
+      "max": [
+        -0.06466017663478851,
+        -0.1929791122674942,
+        1.3287233114242554
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_nameplate"
+      ]
+    },
+    {
+      "name": "p14_necktie",
+      "vertices": 8,
+      "faces": 3,
+      "min": [
+        -0.013208395801484585,
+        -0.1851598173379898,
+        1.2212070226669312
+      ],
+      "max": [
+        0.013208395801484585,
+        0.07550355046987534,
+        1.4846223592758179
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_narrow_tie"
+      ]
+    },
+    {
+      "name": "p14_pocket_top_stitch_-1",
+      "vertices": 4,
+      "faces": 1,
+      "min": [
+        -0.16573406755924225,
+        -0.16299612820148468,
+        0.9492608904838562
+      ],
+      "max": [
+        -0.01675962470471859,
+        -0.13349361717700958,
+        0.951948881149292
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_stitch"
+      ]
+    },
+    {
+      "name": "p14_pocket_top_stitch_1",
+      "vertices": 4,
+      "faces": 1,
+      "min": [
+        0.01675962470471859,
+        -0.16299612820148468,
+        0.9492608904838562
+      ],
+      "max": [
+        0.16573406755924225,
+        -0.13349361717700958,
+        0.951948881149292
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_apron_stitch"
+      ]
+    },
+    {
+      "name": "p14_staff_hairstyle_short02",
+      "vertices": 1755,
+      "faces": 1672,
+      "min": [
+        -0.09329819679260254,
+        -0.1822526752948761,
+        1.5919878482818604
+      ],
+      "max": [
+        0.08726111799478531,
+        0.05105847865343094,
+        1.8059766292572021
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_p02_body.short02.001"
+      ]
+    },
+    {
+      "name": "p14_tailored_vest_front_-1",
+      "vertices": 120,
+      "faces": 99,
+      "min": [
+        -0.16053281724452972,
+        -0.197946235537529,
+        0.9452290534973145
+      ],
+      "max": [
+        -0.010160303674638271,
+        -0.017674749717116356,
+        1.4555927515029907
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_tailored_black_vest"
+      ]
+    },
+    {
+      "name": "p14_tailored_vest_front_1",
+      "vertices": 120,
+      "faces": 99,
+      "min": [
+        0.010160303674638271,
+        -0.20124287903308868,
+        0.9452290534973145
+      ],
+      "max": [
+        0.16053281724452972,
+        -0.01716790348291397,
+        1.4555927515029907
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_tailored_black_vest"
+      ]
+    },
+    {
+      "name": "p14_vest_back",
+      "vertices": 38,
+      "faces": 18,
+      "min": [
+        -0.16053281724452972,
+        0.09837754815816879,
+        0.9721081256866455
+      ],
+      "max": [
+        0.16053281724452972,
+        0.10150577872991562,
+        1.393233299255371
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_tailored_black_vest"
+      ]
+    },
+    {
+      "name": "p14_vest_button",
+      "vertices": 178,
+      "faces": 192,
+      "min": [
+        0.008128244429826736,
+        -0.17823666334152222,
+        1.0312422513961792
+      ],
+      "max": [
+        0.018288547173142433,
+        -0.17178566753864288,
+        1.0419938564300537
+      ],
+      "modifiers": [
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_nameplate"
+      ]
+    },
+    {
+      "name": "p14_vest_button.001",
+      "vertices": 178,
+      "faces": 192,
+      "min": [
+        0.008128244429826736,
+        -0.18967221677303314,
+        1.1065037250518799
+      ],
+      "max": [
+        0.018288547173142433,
+        -0.1832212209701538,
+        1.1172553300857544
+      ],
+      "modifiers": [
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_nameplate"
+      ]
+    },
+    {
+      "name": "p14_vest_button.002",
+      "vertices": 178,
+      "faces": 192,
+      "min": [
+        0.008128244429826736,
+        -0.18428665399551392,
+        1.1817653179168701
+      ],
+      "max": [
+        0.018288547173142433,
+        -0.17783565819263458,
+        1.1925169229507446
+      ],
+      "modifiers": [
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_nameplate"
+      ]
+    },
+    {
+      "name": "p14_vest_shoulder_-1",
+      "vertices": 6,
+      "faces": 2,
+      "min": [
+        -0.16293422877788544,
+        -0.0890844315290451,
+        1.4280338287353516
+      ],
+      "max": [
+        -0.09508047997951508,
+        0.09031381458044052,
+        1.515070915222168
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_tailored_black_vest"
+      ]
+    },
+    {
+      "name": "p14_vest_shoulder_1",
+      "vertices": 6,
+      "faces": 2,
+      "min": [
+        0.09508047997951508,
+        -0.09737123548984528,
+        1.4280338287353516
+      ],
+      "max": [
+        0.16293422877788544,
+        0.09031381458044052,
+        1.515070915222168
+      ],
+      "modifiers": [
+        [
+          "Sewn fabric thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Staff garment skeletal deformation",
+          "ARMATURE"
+        ]
+      ],
+      "mats": [
+        "p14_tailored_black_vest"
+      ]
+    }
+  ]
+}

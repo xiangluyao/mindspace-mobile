@@ -1,0 +1,418 @@
+{
+  "id": "iron-reference-prototype-v1",
+  "label": "IRON 外观参考 · 训练原型",
+  "asset": "iron-prototype.glb",
+  "source_blend": "iron-prototype.blend",
+  "provenance": "Original Blender procedural model based on two user-supplied XPENG IRON reference photographs; not manufacturer CAD, URDF or calibrated dynamics.",
+  "height_m": 1.7778292894363403,
+  "bounds_blender_m": {
+    "min": [
+      -0.30323317646980286,
+      -0.15521660447120667,
+      0.0
+    ],
+    "max": [
+      0.30323317646980286,
+      0.0957571342587471,
+      1.7778292894363403
+    ]
+  },
+  "triangle_count": 92384,
+  "mesh_count": 120,
+  "bone_count": 18,
+  "coordinates": {
+    "gltf_up": "+Y",
+    "gltf_front": "+Z",
+    "gltf_ground_y": 0,
+    "units": "metres",
+    "blender_front": "-Y",
+    "blender_up": "+Z"
+  },
+  "pose_control": {
+    "method": "Stop AnimationMixer, restore each bone bindQuaternion, multiply local-axis delta quaternion; rotations are relative to bind pose.",
+    "primary_flexion_axis": "local +X",
+    "thigh_positive": "raises leg forward (+Z in glTF)",
+    "shin_positive": "extends knee forward; flexion is negative",
+    "root_vertical_axis": "local +Y on Root (maps to world up)",
+    "animation_clips": [
+      {
+        "name": "Idle",
+        "duration": 3,
+        "frame_start": 0,
+        "frame_end": 90,
+        "root_motion": false
+      },
+      {
+        "name": "Walk",
+        "duration": 1.2,
+        "frame_start": 0,
+        "frame_end": 36,
+        "root_motion": false
+      },
+      {
+        "name": "Squat",
+        "duration": 3.2,
+        "frame_start": 0,
+        "frame_end": 96,
+        "root_motion": false
+      },
+      {
+        "name": "Reach",
+        "duration": 3.0,
+        "frame_start": 0,
+        "frame_end": 90,
+        "root_motion": false
+      }
+    ],
+    "ground_contact": "Support sole height compensated at each exported keyframe; no horizontal root translation."
+  },
+  "bones": [
+    {
+      "name": "Root",
+      "head_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "tail_blender_m": [
+        0,
+        0,
+        0.12
+      ],
+      "head_gltf_m": [
+        0,
+        0,
+        0
+      ],
+      "parent": null
+    },
+    {
+      "name": "Pelvis",
+      "head_blender_m": [
+        0,
+        0,
+        0.9399357965961098
+      ],
+      "tail_blender_m": [
+        0,
+        0,
+        1.05493579659611
+      ],
+      "head_gltf_m": [
+        0,
+        0.9399357965961098,
+        0
+      ],
+      "parent": "Root"
+    },
+    {
+      "name": "Spine",
+      "head_blender_m": [
+        0,
+        0,
+        1.05493579659611
+      ],
+      "tail_blender_m": [
+        0,
+        0,
+        1.23993579659611
+      ],
+      "head_gltf_m": [
+        0,
+        1.05493579659611,
+        0
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Chest",
+      "head_blender_m": [
+        0,
+        0,
+        1.23993579659611
+      ],
+      "tail_blender_m": [
+        0,
+        0,
+        1.4549357965961098
+      ],
+      "head_gltf_m": [
+        0,
+        1.23993579659611,
+        0
+      ],
+      "parent": "Spine"
+    },
+    {
+      "name": "Neck",
+      "head_blender_m": [
+        0,
+        0,
+        1.4549357965961098
+      ],
+      "tail_blender_m": [
+        0,
+        0,
+        1.5599357965961098
+      ],
+      "head_gltf_m": [
+        0,
+        1.4549357965961098,
+        0
+      ],
+      "parent": "Chest"
+    },
+    {
+      "name": "Head",
+      "head_blender_m": [
+        0,
+        0,
+        1.5599357965961098
+      ],
+      "tail_blender_m": [
+        0,
+        0,
+        1.7599357965961098
+      ],
+      "head_gltf_m": [
+        0,
+        1.5599357965961098,
+        0
+      ],
+      "parent": "Neck"
+    },
+    {
+      "name": "UpperArm_L",
+      "head_blender_m": [
+        0.204,
+        0,
+        1.41593579659611
+      ],
+      "tail_blender_m": [
+        0.258,
+        0.007,
+        1.1449357965961098
+      ],
+      "head_gltf_m": [
+        0.204,
+        1.41593579659611,
+        0
+      ],
+      "parent": "Chest"
+    },
+    {
+      "name": "Forearm_L",
+      "head_blender_m": [
+        0.258,
+        0.007,
+        1.1449357965961098
+      ],
+      "tail_blender_m": [
+        0.267,
+        -0.014,
+        0.9199357965961099
+      ],
+      "head_gltf_m": [
+        0.258,
+        1.1449357965961098,
+        -0.007
+      ],
+      "parent": "UpperArm_L"
+    },
+    {
+      "name": "Hand_L",
+      "head_blender_m": [
+        0.267,
+        -0.014,
+        0.9199357965961099
+      ],
+      "tail_blender_m": [
+        0.272,
+        -0.022,
+        0.7999357965961099
+      ],
+      "head_gltf_m": [
+        0.267,
+        0.9199357965961099,
+        0.014
+      ],
+      "parent": "Forearm_L"
+    },
+    {
+      "name": "Thigh_L",
+      "head_blender_m": [
+        0.088,
+        0,
+        0.9469357965961098
+      ],
+      "tail_blender_m": [
+        0.094,
+        -0.017,
+        0.5429357965961099
+      ],
+      "head_gltf_m": [
+        0.088,
+        0.9469357965961098,
+        0
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Shin_L",
+      "head_blender_m": [
+        0.094,
+        -0.017,
+        0.5429357965961099
+      ],
+      "tail_blender_m": [
+        0.102,
+        0,
+        0.10993579659610987
+      ],
+      "head_gltf_m": [
+        0.094,
+        0.5429357965961099,
+        0.017
+      ],
+      "parent": "Thigh_L"
+    },
+    {
+      "name": "Foot_L",
+      "head_blender_m": [
+        0.102,
+        0,
+        0.10993579659610987
+      ],
+      "tail_blender_m": [
+        0.102,
+        -0.12,
+        0.04993579659610987
+      ],
+      "head_gltf_m": [
+        0.102,
+        0.10993579659610987,
+        0
+      ],
+      "parent": "Shin_L"
+    },
+    {
+      "name": "UpperArm_R",
+      "head_blender_m": [
+        -0.204,
+        0,
+        1.41593579659611
+      ],
+      "tail_blender_m": [
+        -0.258,
+        0.007,
+        1.1449357965961098
+      ],
+      "head_gltf_m": [
+        -0.204,
+        1.41593579659611,
+        0
+      ],
+      "parent": "Chest"
+    },
+    {
+      "name": "Forearm_R",
+      "head_blender_m": [
+        -0.258,
+        0.007,
+        1.1449357965961098
+      ],
+      "tail_blender_m": [
+        -0.267,
+        -0.014,
+        0.9199357965961099
+      ],
+      "head_gltf_m": [
+        -0.258,
+        1.1449357965961098,
+        -0.007
+      ],
+      "parent": "UpperArm_R"
+    },
+    {
+      "name": "Hand_R",
+      "head_blender_m": [
+        -0.267,
+        -0.014,
+        0.9199357965961099
+      ],
+      "tail_blender_m": [
+        -0.272,
+        -0.022,
+        0.7999357965961099
+      ],
+      "head_gltf_m": [
+        -0.267,
+        0.9199357965961099,
+        0.014
+      ],
+      "parent": "Forearm_R"
+    },
+    {
+      "name": "Thigh_R",
+      "head_blender_m": [
+        -0.088,
+        0,
+        0.9469357965961098
+      ],
+      "tail_blender_m": [
+        -0.094,
+        -0.017,
+        0.5429357965961099
+      ],
+      "head_gltf_m": [
+        -0.088,
+        0.9469357965961098,
+        0
+      ],
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Shin_R",
+      "head_blender_m": [
+        -0.094,
+        -0.017,
+        0.5429357965961099
+      ],
+      "tail_blender_m": [
+        -0.102,
+        0,
+        0.10993579659610987
+      ],
+      "head_gltf_m": [
+        -0.094,
+        0.5429357965961099,
+        0.017
+      ],
+      "parent": "Thigh_R"
+    },
+    {
+      "name": "Foot_R",
+      "head_blender_m": [
+        -0.102,
+        0,
+        0.10993579659610987
+      ],
+      "tail_blender_m": [
+        -0.102,
+        -0.12,
+        0.04993579659610987
+      ],
+      "head_gltf_m": [
+        -0.102,
+        0.10993579659610987,
+        0
+      ],
+      "parent": "Shin_R"
+    }
+  ],
+  "limitations": [
+    "Approximate exterior and kinematic rig only. Dimensions and joints are design assumptions, not factory specifications.",
+    "Rigid section skinning, no force-based soft-body or cloth simulation.",
+    "No trained policy or measured hardware telemetry is embedded."
+  ]
+}

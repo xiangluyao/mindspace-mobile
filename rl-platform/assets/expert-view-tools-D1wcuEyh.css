@@ -1,0 +1,31 @@
+.expert-view-tools{margin:12px 15px 14px;border:1px solid #465341;background:#252e24;padding:11px 11px 9px;color:#d1deca}
+.expert-view-tools>header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.expert-view-tools>header strong{font-size:11px;font-weight:550}.expert-view-tools>header span{font-size:9px;color:#9eb58d}
+.expert-vision-actor{display:flex;align-items:center;gap:8px;font-size:10px;color:#a4b89a;margin-bottom:14px}.expert-vision-actor select{flex:1;min-width:0;width:auto;font-size:10px;background:#202b20;border-color:#4c6042}
+.expert-vision-presets{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:7px}.expert-vision-presets button{font:11px ui-monospace,Menlo,monospace;background:#2c3926;border-color:#526645;min-height:28px}.expert-vision-presets button.active{background:#49612f;border-color:#8eaf61;color:#e6f4d2}
+.expert-look-details{border-top:1px solid #43563c;margin-top:12px;padding-top:10px}.expert-look-details>summary{cursor:pointer;font-size:10px;color:#b5cba4;user-select:none}.expert-look-details>summary small{font-size:9px;color:#809673;margin-left:5px}.expert-look-details[open]>summary{margin-bottom:12px}
+.expert-view-tools fieldset{border:0;margin:0;padding:0;min-width:0}.expert-view-tools fieldset:disabled{opacity:.46}
+.expert-angle-row{margin-bottom:12px}.expert-angle-row label{display:flex;align-items:center;gap:5px;font-size:10px;line-height:22px}.expert-angle-row label small{font-size:8px;color:#95a88a}
+.expert-angle-row input[type=number]{margin-left:auto;width:58px;min-width:0;height:23px;padding:2px 4px;text-align:right;background:#1f281e;color:#d7e9c9;border:1px solid #4b5d43;border-radius:2px;font:10px ui-monospace,Menlo,monospace}
+.expert-angle-row input[type=range]{display:block;margin:8px 0 0;width:100%;background:#506044}.expert-angle-row input[type=range]::-webkit-slider-thumb{background:#a5cc71;border-color:#d2e9aa}
+.expert-view-tools input:disabled{cursor:default}.expert-view-tools button:disabled{cursor:default}
+.expert-view-footer{display:flex;justify-content:space-between;align-items:center;gap:5px;font-size:9px;color:#99ad8a}.expert-view-footer output{color:#c4d9ad;font:10px ui-monospace,Menlo,monospace}.expert-view-footer button{min-height:25px;padding:3px 6px;font-size:9px;background:#35432d;border-color:#5e754b;color:#d9eac9}
+.expert-view-note{font-size:9px!important;line-height:1.55!important;margin-top:9px!important;color:#8ea581!important}
+.expert-replay-view{border-top:1px solid #485a3d;margin-top:10px;padding-top:9px}.expert-replay-view label{display:flex;align-items:center;gap:5px;font-size:10px;color:#c4dcb0}.expert-replay-view p{font-size:9px;color:#9caf8e;line-height:1.5;margin-top:5px}
+.expert-minimap{position:absolute;top:11px;right:11px;z-index:5;width:208px;max-width:calc(100% - 22px);border:1px solid #667758;background:#202b24f7;box-shadow:0 3px 12px #07110955;pointer-events:auto;user-select:none;color:#c7d6bf}
+.expert-minimap-toggle{width:100%;display:flex;justify-content:space-between;align-items:center;padding:7px 9px;min-height:35px;text-align:left;border:0;border-radius:0;border-bottom:1px solid #4d5b43;background:#2b3829;color:#c9dfb6}
+.expert-minimap-toggle:hover{background:#354530;border:0;border-bottom:1px solid #4d5b43}.expert-minimap-toggle b{font-size:10px;font-weight:550;display:block}.expert-minimap-toggle small{display:block;font-size:8px;color:#98ae89;margin-top:3px}.expert-minimap-toggle>[data-map-chevron]{font:17px ui-monospace,Menlo,monospace;color:#aec693}
+.expert-minimap canvas{position:static!important;display:block;width:100%;height:225px;touch-action:auto!important}.expert-minimap-legend{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:2px 9px 5px;font-size:8px;color:#a6b599}
+.expert-minimap-legend span{display:flex;align-items:center;gap:4px}.expert-minimap-legend i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#c1e781}.expert-minimap-legend i.map-body{height:2px;width:10px;border-radius:0;background:#e0f3c5}.expert-minimap-legend i.map-look{height:2px;width:10px;border-radius:0;background:#7cd5e7}
+.expert-minimap-coordinate{padding:5px 7px;border-top:1px solid #405039;color:#9bb38b;font:8px/1.4 ui-monospace,Menlo,monospace;white-space:normal;overflow-wrap:anywhere}
+.expert-minimap.is-collapsed{width:132px!important}.expert-minimap.is-collapsed .expert-minimap-toggle{border-bottom:0}.expert-minimap.is-collapsed .expert-minimap-toggle small{display:none}
+@media(max-width:1100px){.expert-view-tools{margin:10px 11px;padding:9px}.expert-view-footer{flex-wrap:wrap}.expert-minimap{top:8px;right:8px}.expert-minimap-toggle{padding:6px 8px}}
+
+/* A flat camera section in both Human Layer and robot training. */
+.human-expert-layout #expert-console .console-block:has(#expert-camera-tools),#expert-console .console-block:has(#expert-camera-tools){border:0;border-top:1px solid #3e4b3a;padding:12px 14px}
+#expert-camera-tools .expert-view-tools,.human-expert-layout #expert-camera-tools .expert-view-tools{margin:12px 0 0;padding:0;border:0;background:transparent;box-shadow:none}
+#expert-camera-tools .expert-view-tools>header{margin-bottom:10px}
+#expert-camera-tools .expert-view-tools .expert-vision-actor{margin-bottom:11px}
+#expert-camera-tools .expert-view-tools fieldset{border:0;padding:0;margin:0;box-shadow:none}
+#expert-camera-tools .expert-look-details{padding:9px 0 0;border:0;border-top:1px solid #3e4b3a;background:transparent;border-radius:0}
+#expert-camera-tools .expert-angle-row{margin-bottom:10px}

@@ -1,0 +1,372 @@
+{
+  "id": "agibot-d1-reference-v1",
+  "label": "智元 D1 · 外观参考模型",
+  "modelUrl": "/mindspace-mobile/rl-platform/assets/d1-social/d1-reference.glb",
+  "imageUrl": "/mindspace-mobile/rl-platform/assets/d1-social/d1-preview.png",
+  "sourceFile": "/mindspace-mobile/rl-platform/assets/d1-social/d1-reference.blend",
+  "asset": "d1-reference.glb",
+  "source_blend": "d1-reference.blend",
+  "dimensions": {
+    "width": 0.37521666173650287,
+    "length": 0.5098938789536851,
+    "height": 0.42,
+    "unit": "m",
+    "basis": "Image-derived proportions uniformly scaled to official approximate 420 mm standing height; measured asset dimensions, not calibrated manufacturer CAD"
+  },
+  "height_m": 0.42,
+  "frontAxis": "+Z",
+  "upAxis": "+Y",
+  "groundY": 0,
+  "cameraOffset": [
+    0,
+    0.35425265837348935,
+    0.2514714228686085
+  ],
+  "coordinates": {
+    "units": "metres",
+    "gltf_up": "+Y",
+    "gltf_front": "+Z",
+    "gltf_ground_y": 0,
+    "blender_up": "+Z",
+    "blender_front": "-Y"
+  },
+  "bounds_blender_m": {
+    "min": [
+      -0.18760833086825143,
+      -0.25201960804906126,
+      0.0
+    ],
+    "max": [
+      0.18760833086825143,
+      0.2578742709046238,
+      0.42
+    ]
+  },
+  "triangle_count": 204310,
+  "mesh_count": 62,
+  "bone_count": 13,
+  "joints": [
+    "Root",
+    "Hip_FL",
+    "Thigh_FL",
+    "Shin_FL",
+    "Hip_FR",
+    "Thigh_FR",
+    "Shin_FR",
+    "Hip_RL",
+    "Thigh_RL",
+    "Shin_RL",
+    "Hip_RR",
+    "Thigh_RR",
+    "Shin_RR"
+  ],
+  "animations": [
+    "Idle",
+    "Walk",
+    "Greet",
+    "Listen"
+  ],
+  "animationClips": [
+    {
+      "name": "Idle",
+      "duration": 3.2,
+      "frameStart": 0,
+      "frameEnd": 96,
+      "rootMotion": false
+    },
+    {
+      "name": "Walk",
+      "duration": 1.2,
+      "frameStart": 0,
+      "frameEnd": 36,
+      "rootMotion": false
+    },
+    {
+      "name": "Greet",
+      "duration": 3.6,
+      "frameStart": 0,
+      "frameEnd": 108,
+      "rootMotion": false
+    },
+    {
+      "name": "Listen",
+      "duration": 4.0,
+      "frameStart": 0,
+      "frameEnd": 120,
+      "rootMotion": false
+    }
+  ],
+  "bones": [
+    {
+      "name": "Root",
+      "parent": null,
+      "head_blender_m": [
+        0.0,
+        0.0,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        0.0,
+        0.0,
+        0.39810598552223847
+      ],
+      "head_gltf_m": [
+        0.0,
+        0.34328932658630207,
+        -0.0
+      ]
+    },
+    {
+      "name": "Hip_FL",
+      "parent": "Root",
+      "head_blender_m": [
+        0.09592915313788881,
+        -0.1541718532573213,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        0.1569126862041181,
+        -0.1541718532573213,
+        0.34328932658630207
+      ],
+      "head_gltf_m": [
+        0.09592915313788881,
+        0.34328932658630207,
+        0.1541718532573213
+      ]
+    },
+    {
+      "name": "Thigh_FL",
+      "parent": "Hip_FL",
+      "head_blender_m": [
+        0.1569126862041181,
+        -0.1541718532573213,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        0.1569126862041181,
+        -0.06715040719652217,
+        0.193228722749176
+      ],
+      "head_gltf_m": [
+        0.1569126862041181,
+        0.34328932658630207,
+        0.1541718532573213
+      ]
+    },
+    {
+      "name": "Shin_FL",
+      "parent": "Thigh_FL",
+      "head_blender_m": [
+        0.1569126862041181,
+        -0.06715040719652217,
+        0.193228722749176
+      ],
+      "tail_blender_m": [
+        0.1569126862041181,
+        -0.2247483016373395,
+        0.023297080047772995
+      ],
+      "head_gltf_m": [
+        0.1569126862041181,
+        0.193228722749176,
+        0.06715040719652217
+      ]
+    },
+    {
+      "name": "Hip_FR",
+      "parent": "Root",
+      "head_blender_m": [
+        -0.09592915313788881,
+        -0.1541718532573213,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        -0.1569126862041181,
+        -0.1541718532573213,
+        0.34328932658630207
+      ],
+      "head_gltf_m": [
+        -0.09592915313788881,
+        0.34328932658630207,
+        0.1541718532573213
+      ]
+    },
+    {
+      "name": "Thigh_FR",
+      "parent": "Hip_FR",
+      "head_blender_m": [
+        -0.1569126862041181,
+        -0.1541718532573213,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        -0.1569126862041181,
+        -0.06715040719652217,
+        0.193228722749176
+      ],
+      "head_gltf_m": [
+        -0.1569126862041181,
+        0.34328932658630207,
+        0.1541718532573213
+      ]
+    },
+    {
+      "name": "Shin_FR",
+      "parent": "Thigh_FR",
+      "head_blender_m": [
+        -0.1569126862041181,
+        -0.06715040719652217,
+        0.193228722749176
+      ],
+      "tail_blender_m": [
+        -0.1569126862041181,
+        -0.2247483016373395,
+        0.023297080047772995
+      ],
+      "head_gltf_m": [
+        -0.1569126862041181,
+        0.193228722749176,
+        0.06715040719652217
+      ]
+    },
+    {
+      "name": "Hip_RL",
+      "parent": "Root",
+      "head_blender_m": [
+        0.09592915313788881,
+        0.1541718532573213,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        0.1569126862041181,
+        0.1541718532573213,
+        0.34328932658630207
+      ],
+      "head_gltf_m": [
+        0.09592915313788881,
+        0.34328932658630207,
+        -0.1541718532573213
+      ]
+    },
+    {
+      "name": "Thigh_RL",
+      "parent": "Hip_RL",
+      "head_blender_m": [
+        0.1569126862041181,
+        0.1541718532573213,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        0.1569126862041181,
+        0.2411932993181204,
+        0.193228722749176
+      ],
+      "head_gltf_m": [
+        0.1569126862041181,
+        0.34328932658630207,
+        -0.1541718532573213
+      ]
+    },
+    {
+      "name": "Shin_RL",
+      "parent": "Thigh_RL",
+      "head_blender_m": [
+        0.1569126862041181,
+        0.2411932993181204,
+        0.193228722749176
+      ],
+      "tail_blender_m": [
+        0.1569126862041181,
+        0.0835954048773031,
+        0.023297080047772995
+      ],
+      "head_gltf_m": [
+        0.1569126862041181,
+        0.193228722749176,
+        -0.2411932993181204
+      ]
+    },
+    {
+      "name": "Hip_RR",
+      "parent": "Root",
+      "head_blender_m": [
+        -0.09592915313788881,
+        0.1541718532573213,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        -0.1569126862041181,
+        0.1541718532573213,
+        0.34328932658630207
+      ],
+      "head_gltf_m": [
+        -0.09592915313788881,
+        0.34328932658630207,
+        -0.1541718532573213
+      ]
+    },
+    {
+      "name": "Thigh_RR",
+      "parent": "Hip_RR",
+      "head_blender_m": [
+        -0.1569126862041181,
+        0.1541718532573213,
+        0.34328932658630207
+      ],
+      "tail_blender_m": [
+        -0.1569126862041181,
+        0.2411932993181204,
+        0.193228722749176
+      ],
+      "head_gltf_m": [
+        -0.1569126862041181,
+        0.34328932658630207,
+        -0.1541718532573213
+      ]
+    },
+    {
+      "name": "Shin_RR",
+      "parent": "Thigh_RR",
+      "head_blender_m": [
+        -0.1569126862041181,
+        0.2411932993181204,
+        0.193228722749176
+      ],
+      "tail_blender_m": [
+        -0.1569126862041181,
+        0.0835954048773031,
+        0.023297080047772995
+      ],
+      "head_gltf_m": [
+        -0.1569126862041181,
+        0.193228722749176,
+        -0.2411932993181204
+      ]
+    }
+  ],
+  "pose_control": {
+    "primary_flexion_axis": "Thigh_* and Shin_* local +X",
+    "root_translation": "constant bind translation in every clip; no animated root displacement",
+    "method": "Rigid section skinning with 13 control bones; two-link IK authored into sampled animation channels."
+  },
+  "provenance": "Original Blender procedural reconstruction from the D1 product photograph supplied by the user on 2026-09-08. Uniform scale uses the official approximate 420 mm D1 Pro/Edu standing height. No manufacturer CAD, mesh, URDF, calibrated joint locations or hardware parameters used.",
+  "officialReference": {
+    "url": "https://www.agibot.com.cn/products/D1_Pro",
+    "title": "智元 D1 Pro / Edu 官方产品规格",
+    "retrieved": "2026-09-08",
+    "standingDimensionsMm": {
+      "length": 635,
+      "width": 360,
+      "height": 420
+    },
+    "usedFor": "Uniform model height scale only; the image-derived length and width remain approximate."
+  },
+  "limitations": [
+    "Exterior reference model and authored demonstration gestures only.",
+    "Only overall height is scaled to the official approximate dimension; the exterior proportions, skeleton and kinematics are visual modeling assumptions.",
+    "No trained policy, real hardware connection or force-based dynamics included."
+  ],
+  "generator": "blender/d1-social/build_d1.py",
+  "blenderVersion": "5.2.1 LTS"
+}

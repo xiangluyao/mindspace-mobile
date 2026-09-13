@@ -1,0 +1,1062 @@
+{
+  "version": "restaurant-actions-8.0",
+  "coordinateSystem": {
+    "modelUp": "+Z",
+    "modelForward": "-Y",
+    "webUp": "+Y",
+    "webForward": "+Z",
+    "wrapperRotationX": -1.5707963267948966
+  },
+  "authoring": "Authored Blender bone IK and timed poses; reuse existing support poses. No external motion-library download or mocap claim.",
+  "legacyClips": [
+    "Idle",
+    "Walk",
+    "Run",
+    "Wave",
+    "Sit"
+  ],
+  "roles": {
+    "customer": [
+      {
+        "name": "Talk",
+        "label": "站立交谈",
+        "loop": true,
+        "duration": 2,
+        "seated": false,
+        "gait": false
+      },
+      {
+        "name": "Eat",
+        "label": "坐姿用餐",
+        "loop": true,
+        "duration": 2,
+        "seated": true,
+        "gait": false
+      },
+      {
+        "name": "SeatedTalk",
+        "label": "坐姿交谈",
+        "loop": true,
+        "duration": 2,
+        "seated": true,
+        "gait": false
+      },
+      {
+        "id": "queue",
+        "name": "Queue",
+        "label": "排队等候",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "queue-space",
+        "prop": null,
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "menu",
+        "name": "ReadMenu",
+        "label": "查看菜单",
+        "loop": true,
+        "duration": 4.0,
+        "seated": true,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "existing-seat",
+        "prop": "menu",
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "drink",
+        "name": "Drink",
+        "label": "坐姿喝水",
+        "loop": true,
+        "duration": 4.0,
+        "seated": true,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "existing-seat",
+        "prop": "cup",
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "callserver",
+        "name": "CallServer",
+        "label": "举手呼叫",
+        "loop": true,
+        "duration": 4.0,
+        "seated": true,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "existing-seat",
+        "prop": null,
+        "source": "Blender v8 authored action"
+      }
+    ],
+    "chef": [
+      {
+        "name": "Prep",
+        "label": "切配备餐",
+        "loop": true,
+        "duration": 2,
+        "seated": false,
+        "gait": false
+      },
+      {
+        "name": "Cook",
+        "label": "翻炒烹饪",
+        "loop": true,
+        "duration": 2,
+        "seated": false,
+        "gait": false
+      },
+      {
+        "name": "Plate",
+        "label": "摆盘装盘",
+        "loop": true,
+        "duration": 2,
+        "seated": false,
+        "gait": false
+      },
+      {
+        "id": "wash",
+        "name": "Wash",
+        "label": "清洗食材",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "wash-or-prep-station",
+        "prop": null,
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "stir",
+        "name": "Stir",
+        "label": "持续搅拌",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "range-station",
+        "prop": "utensil",
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "season",
+        "name": "Season",
+        "label": "撒料调味",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "range-or-prep-station",
+        "prop": "seasoning",
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "inspectplate",
+        "name": "InspectPlate",
+        "label": "检查装盘",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "prep-station",
+        "prop": null,
+        "source": "Blender v8 authored action"
+      }
+    ],
+    "service": [
+      {
+        "name": "Carry",
+        "label": "端盘行走",
+        "loop": true,
+        "duration": 2,
+        "seated": false,
+        "gait": true
+      },
+      {
+        "name": "TakeOrder",
+        "label": "记录点单",
+        "loop": true,
+        "duration": 2,
+        "seated": false,
+        "gait": false
+      },
+      {
+        "name": "Serve",
+        "label": "向前上菜",
+        "loop": true,
+        "duration": 2,
+        "seated": false,
+        "gait": false
+      },
+      {
+        "id": "greet",
+        "name": "Greet",
+        "label": "迎宾致意",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "clear-standing-space",
+        "prop": null,
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "guide",
+        "name": "Guide",
+        "label": "伸臂引导",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "clear-standing-space",
+        "prop": null,
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "listen",
+        "name": "Listen",
+        "label": "倾听回应",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "reachable-customer",
+        "prop": null,
+        "source": "Blender v8 authored action"
+      },
+      {
+        "id": "wipe",
+        "name": "WipeTable",
+        "label": "擦拭桌面",
+        "loop": true,
+        "duration": 4.0,
+        "seated": false,
+        "gait": false,
+        "rootMotion": false,
+        "constraint": "reachable-table-edge",
+        "prop": "cloth",
+        "source": "Blender v8 authored action"
+      }
+    ]
+  },
+  "characters": {
+    "p01": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5584353127479553,
+        -0.021679420098662375
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.18850111961364746,
+          "frontOffset": 0.18235474824905396,
+          "backOffset": 0.0984998568892479
+        },
+        "chest": {
+          "halfWidth": 0.21285390853881836,
+          "frontOffset": 0.16129741072654724,
+          "backOffset": 0.0645843893289566
+        }
+      },
+      "lowestSoleFromRoot": 0.001999747008085251,
+      "props": []
+    },
+    "p02": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5575811185836792,
+        -0.03837112531065941
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.19405651092529297,
+          "frontOffset": 0.16640761494636536,
+          "backOffset": 0.11020512878894806
+        },
+        "chest": {
+          "halfWidth": 0.259429931640625,
+          "frontOffset": 0.16633620858192444,
+          "backOffset": 0.09671720117330551
+        }
+      },
+      "lowestSoleFromRoot": 0.006033147685229778,
+      "props": []
+    },
+    "p03": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5579804697036743,
+        -0.021262174546718596
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.19122076034545898,
+          "frontOffset": 0.17973698675632477,
+          "backOffset": 0.09257911145687103
+        },
+        "chest": {
+          "halfWidth": 0.2221916913986206,
+          "frontOffset": 0.16418418288230896,
+          "backOffset": 0.06573960185050964
+        }
+      },
+      "lowestSoleFromRoot": 0.002064633648842573,
+      "props": []
+    },
+    "p04": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5587424554824829,
+        -0.038297497276216744
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.19053447246551514,
+          "frontOffset": 0.16666549444198608,
+          "backOffset": 0.10683529824018478
+        },
+        "chest": {
+          "halfWidth": 0.2653203010559082,
+          "frontOffset": 0.16665448248386383,
+          "backOffset": 0.11849231272935867
+        }
+      },
+      "lowestSoleFromRoot": 0.006102161481976509,
+      "props": []
+    },
+    "p05": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5572042384147644,
+        -0.021923635229468344
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.18680036067962646,
+          "frontOffset": 0.18281614780426025,
+          "backOffset": 0.098885178565979
+        },
+        "chest": {
+          "halfWidth": 0.21599999070167542,
+          "frontOffset": 0.1596021056175232,
+          "backOffset": 0.06391030550003052
+        }
+      },
+      "lowestSoleFromRoot": 0.002058731857687235,
+      "props": []
+    },
+    "p06": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5575547137260437,
+        -0.03837355373427272
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.1942729949951172,
+          "frontOffset": 0.16660325229167938,
+          "backOffset": 0.11117661744356155
+        },
+        "chest": {
+          "halfWidth": 0.2607187032699585,
+          "frontOffset": 0.1666070520877838,
+          "backOffset": 0.09718587249517441
+        }
+      },
+      "lowestSoleFromRoot": 0.005305697210133076,
+      "props": []
+    },
+    "p07": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5580412664413452,
+        -0.021245827972888945
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.19128203392028809,
+          "frontOffset": 0.18348993360996246,
+          "backOffset": 0.0922226831316948
+        },
+        "chest": {
+          "halfWidth": 0.21681129932403564,
+          "frontOffset": 0.1646295189857483,
+          "backOffset": 0.12589837610721588
+        }
+      },
+      "lowestSoleFromRoot": 0.0019998643547296524,
+      "props": []
+    },
+    "p08": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5570867576599121,
+        -0.021820601150393484
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.18762516975402832,
+          "frontOffset": 0.18281379342079163,
+          "backOffset": 0.09928487986326218
+        },
+        "chest": {
+          "halfWidth": 0.2169630527496338,
+          "frontOffset": 0.16032005846500397,
+          "backOffset": 0.0641937106847763
+        }
+      },
+      "lowestSoleFromRoot": 0.0020638597197830677,
+      "props": []
+    },
+    "p09": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5575815358161926,
+        -0.03826358688995242
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.19713592529296875,
+          "frontOffset": 0.16666586697101593,
+          "backOffset": 0.11173133552074432
+        },
+        "chest": {
+          "halfWidth": 0.2636556625366211,
+          "frontOffset": 0.1667211353778839,
+          "backOffset": 0.09828682988882065
+        }
+      },
+      "lowestSoleFromRoot": 0.006108516827225685,
+      "props": []
+    },
+    "p10": {
+      "role": "customer",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Talk",
+        "Eat",
+        "SeatedTalk",
+        "Queue",
+        "ReadMenu",
+        "Drink",
+        "CallServer"
+      ],
+      "seatAnchor": [
+        0,
+        0.5587819137573242,
+        -0.018351966589689253
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.1979210376739502,
+          "frontOffset": 0.1860799640417099,
+          "backOffset": 0.09430963546037674
+        },
+        "chest": {
+          "halfWidth": 0.22412681579589844,
+          "frontOffset": 0.17464838922023773,
+          "backOffset": 0.055464401841163635
+        }
+      },
+      "lowestSoleFromRoot": 0.0019999498035758734,
+      "props": []
+    },
+    "p11": {
+      "role": "chef",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Prep",
+        "Cook",
+        "Plate",
+        "Wash",
+        "Stir",
+        "Season",
+        "InspectPlate"
+      ],
+      "seatAnchor": [
+        0,
+        0.4978734173774719,
+        -0.03818575859069824
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.2031567096710205,
+          "frontOffset": 0.16643047332763672,
+          "backOffset": 0.10765886306762695
+        },
+        "chest": {
+          "halfWidth": 0.2845780849456787,
+          "frontOffset": 0.1668107509613037,
+          "backOffset": 0.1204671859741211
+        }
+      },
+      "lowestSoleFromRoot": 0.006282898597419262,
+      "props": []
+    },
+    "p12": {
+      "role": "chef",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Prep",
+        "Cook",
+        "Plate",
+        "Wash",
+        "Stir",
+        "Season",
+        "InspectPlate"
+      ],
+      "seatAnchor": [
+        0,
+        0.44644080781936646,
+        -0.021676225662231444
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.1920679807662964,
+          "frontOffset": 0.18331670761108398,
+          "backOffset": 0.14378952980041504
+        },
+        "chest": {
+          "halfWidth": 0.22377407550811768,
+          "frontOffset": 0.17762327194213867,
+          "backOffset": 0.06459307670593262
+        }
+      },
+      "lowestSoleFromRoot": 0.002028925344347954,
+      "props": []
+    },
+    "p13": {
+      "role": "chef",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Prep",
+        "Cook",
+        "Plate",
+        "Wash",
+        "Stir",
+        "Season",
+        "InspectPlate"
+      ],
+      "seatAnchor": [
+        0,
+        0.47861578249931336,
+        -0.03844635009765625
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.18355754017829895,
+          "frontOffset": 0.16640257835388184,
+          "backOffset": 0.1630551815032959
+        },
+        "chest": {
+          "halfWidth": 0.24904727935791016,
+          "frontOffset": 0.16649508476257324,
+          "backOffset": 0.1158592700958252
+        }
+      },
+      "lowestSoleFromRoot": 0.006042564287781715,
+      "props": []
+    },
+    "p14": {
+      "role": "service",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Carry",
+        "TakeOrder",
+        "Serve",
+        "Greet",
+        "Guide",
+        "Listen",
+        "WipeTable"
+      ],
+      "seatAnchor": [
+        0,
+        0.4867057123184204,
+        -0.03833477020263672
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.18376943469047546,
+          "frontOffset": 0.1664111614227295,
+          "backOffset": 0.16316556930541992
+        },
+        "chest": {
+          "halfWidth": 0.24933484196662903,
+          "frontOffset": 0.16632723808288574,
+          "backOffset": 0.11783409118652344
+        }
+      },
+      "lowestSoleFromRoot": 0.006145560182631016,
+      "props": [
+        "Carry",
+        "TakeOrder"
+      ]
+    },
+    "p15": {
+      "role": "service",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Carry",
+        "TakeOrder",
+        "Serve",
+        "Greet",
+        "Guide",
+        "Listen",
+        "WipeTable"
+      ],
+      "seatAnchor": [
+        0,
+        0.4385868229866028,
+        -0.022090358734130858
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.18405699729919434,
+          "frontOffset": 0.18276429176330566,
+          "backOffset": 0.1412370204925537
+        },
+        "chest": {
+          "halfWidth": 0.21444082260131836,
+          "frontOffset": 0.1826033592224121,
+          "backOffset": 0.0634462833404541
+        }
+      },
+      "lowestSoleFromRoot": 0.0019929101690649986,
+      "props": [
+        "Carry",
+        "TakeOrder"
+      ]
+    },
+    "p16": {
+      "role": "service",
+      "clips": [
+        "Idle",
+        "Walk",
+        "Run",
+        "Wave",
+        "Sit",
+        "Carry",
+        "TakeOrder",
+        "Serve",
+        "Greet",
+        "Guide",
+        "Listen",
+        "WipeTable"
+      ],
+      "seatAnchor": [
+        0,
+        0.47322239661216736,
+        -0.03852097511291504
+      ],
+      "seatAnchorMethod": "Sit last frame; posterior garment lower surface, fourth lowest sample +4 mm; root local Y-up metres. Customer pelvis calibrated to original chair 0.559m while leg IK keeps ankle/sole grounded.",
+      "seatedEnvelope": {
+        "hip": {
+          "halfWidth": 0.17391037940979004,
+          "frontOffset": 0.166459321975708,
+          "backOffset": 0.16120243072509766
+        },
+        "chest": {
+          "halfWidth": 0.23595809936523438,
+          "frontOffset": 0.1616811752319336,
+          "backOffset": 0.11454248428344727
+        }
+      },
+      "lowestSoleFromRoot": 0.00597389554604888,
+      "props": [
+        "Carry",
+        "TakeOrder"
+      ]
+    }
+  },
+  "props": {
+    "Carry": {
+      "anchor": "midpoint(hand_l,hand_r)",
+      "space": "world metres",
+      "offsetY": 0.025,
+      "offsetForward": 0.045,
+      "orientation": "horizontal; follows character heading; keep plate underside above hands",
+      "radius": 0.17
+    },
+    "TakeOrder": {
+      "anchor": "hand_l",
+      "description": "Optional small order pad near left palm; right hand writes above it"
+    },
+    "Prep": {
+      "description": "Hands make alternating chopping strokes over a worktop; props can be placed on the existing counter"
+    },
+    "Cook": {
+      "description": "Left hand steadies pan handle, right hand stirs in circles"
+    },
+    "Plate": {
+      "description": "Alternating forward, inward plating motions"
+    },
+    "ReadMenu": {
+      "anchor": "midpoint of palm centres",
+      "runtime": "action-props-v8.js",
+      "description": "Two folded menu leaves, follows both hands"
+    },
+    "Drink": {
+      "anchor": "right palm centre",
+      "description": "Upright cup follows right hand"
+    },
+    "Season": {
+      "anchor": "right palm centre",
+      "description": "Tilted seasoning jar"
+    },
+    "Stir": {
+      "anchor": "right palm centre",
+      "description": "Short stirring spoon"
+    },
+    "WipeTable": {
+      "anchor": "right palm centre",
+      "offsetY": -0.018,
+      "clothThickness": 0.007,
+      "targetTableHeightAboveFloor": 0.8434,
+      "description": "Cloth underside 2–3mm over registered dining tabletop"
+    }
+  },
+  "expandedActions": {
+    "queue": {
+      "id": "queue",
+      "name": "Queue",
+      "label": "排队等候",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "queue-space",
+      "prop": null,
+      "source": "Blender v8 authored action"
+    },
+    "menu": {
+      "id": "menu",
+      "name": "ReadMenu",
+      "label": "查看菜单",
+      "loop": true,
+      "duration": 4.0,
+      "seated": true,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "existing-seat",
+      "prop": "menu",
+      "source": "Blender v8 authored action"
+    },
+    "drink": {
+      "id": "drink",
+      "name": "Drink",
+      "label": "坐姿喝水",
+      "loop": true,
+      "duration": 4.0,
+      "seated": true,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "existing-seat",
+      "prop": "cup",
+      "source": "Blender v8 authored action"
+    },
+    "callserver": {
+      "id": "callserver",
+      "name": "CallServer",
+      "label": "举手呼叫",
+      "loop": true,
+      "duration": 4.0,
+      "seated": true,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "existing-seat",
+      "prop": null,
+      "source": "Blender v8 authored action"
+    },
+    "wash": {
+      "id": "wash",
+      "name": "Wash",
+      "label": "清洗食材",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "wash-or-prep-station",
+      "prop": null,
+      "source": "Blender v8 authored action"
+    },
+    "stir": {
+      "id": "stir",
+      "name": "Stir",
+      "label": "持续搅拌",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "range-station",
+      "prop": "utensil",
+      "source": "Blender v8 authored action"
+    },
+    "season": {
+      "id": "season",
+      "name": "Season",
+      "label": "撒料调味",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "range-or-prep-station",
+      "prop": "seasoning",
+      "source": "Blender v8 authored action"
+    },
+    "inspectplate": {
+      "id": "inspectplate",
+      "name": "InspectPlate",
+      "label": "检查装盘",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "prep-station",
+      "prop": null,
+      "source": "Blender v8 authored action"
+    },
+    "greet": {
+      "id": "greet",
+      "name": "Greet",
+      "label": "迎宾致意",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "clear-standing-space",
+      "prop": null,
+      "source": "Blender v8 authored action"
+    },
+    "guide": {
+      "id": "guide",
+      "name": "Guide",
+      "label": "伸臂引导",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "clear-standing-space",
+      "prop": null,
+      "source": "Blender v8 authored action"
+    },
+    "listen": {
+      "id": "listen",
+      "name": "Listen",
+      "label": "倾听回应",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "reachable-customer",
+      "prop": null,
+      "source": "Blender v8 authored action"
+    },
+    "wipe": {
+      "id": "wipe",
+      "name": "WipeTable",
+      "label": "擦拭桌面",
+      "loop": true,
+      "duration": 4.0,
+      "seated": false,
+      "gait": false,
+      "rootMotion": false,
+      "constraint": "reachable-table-edge",
+      "prop": "cloth",
+      "source": "Blender v8 authored action"
+    }
+  }
+}

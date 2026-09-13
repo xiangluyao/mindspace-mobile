@@ -1,0 +1,606 @@
+[
+  {
+    "id": "p01",
+    "label": "浅蓝无袖黑裙",
+    "genderPresentation": "feminine",
+    "height": 1.69,
+    "build": "slim",
+    "skinTone": "#E8C7B1",
+    "hairColor": "#A77A4F",
+    "hairStyle": "low_bun",
+    "basicOutfit": "sleeveless_blouse_skirt",
+    "topColor": "#C1DADE",
+    "bottomColor": "#191B1A",
+    "shoeColor": "#8D693F",
+    "description": "浅蓝灰色小翻领无袖衬衫，深色不规则小花纹；黑色膝上直筒短裙；棕色楔跟短靴，侧面黑色拼接；浅棕发低盘髻，无可见包袋。",
+    "referenceIndex": 1,
+    "category": "通勤",
+    "seatAnchor": [
+      0,
+      0.5584353127479553,
+      -0.021679420098662375
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.18850111961364746,
+        "frontOffset": 0.18235474824905396,
+        "backOffset": 0.0984998568892479
+      },
+      "chest": {
+        "halfWidth": 0.21285390853881836,
+        "frontOffset": 0.16129741072654724,
+        "backOffset": 0.0645843893289566
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p02",
+    "label": "棕格纹西装",
+    "genderPresentation": "masculine",
+    "height": 1.78,
+    "build": "average",
+    "skinTone": "#DFC0AE",
+    "hairColor": "#45362F",
+    "hairStyle": "short_side_part",
+    "basicOutfit": "blazer_trousers",
+    "topColor": "#4F4542",
+    "bottomColor": "#444957",
+    "shoeColor": "#3C332E",
+    "description": "深棕细格纹翻领长袖西装外套，内搭白底棕蓝小格翻领衬衫，未系领带；蓝灰直筒长裤、深色腰带；深棕皮鞋，短发侧分，无可见包袋。",
+    "referenceIndex": 2,
+    "category": "商务",
+    "seatAnchor": [
+      0,
+      0.5575811185836792,
+      -0.03837112531065941
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.19405651092529297,
+        "frontOffset": 0.16640761494636536,
+        "backOffset": 0.11020512878894806
+      },
+      "chest": {
+        "halfWidth": 0.259429931640625,
+        "frontOffset": 0.16633620858192444,
+        "backOffset": 0.09671720117330551
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p03",
+    "label": "藏蓝衬衫牛仔",
+    "genderPresentation": "feminine",
+    "height": 1.72,
+    "build": "slim",
+    "skinTone": "#DDBDB3",
+    "hairColor": "#4A2D2D",
+    "hairStyle": "low_bun",
+    "basicOutfit": "shirt_jeans",
+    "topColor": "#111C40",
+    "bottomColor": "#4B76A3",
+    "shoeColor": "#141B2A",
+    "description": "藏蓝小翻领扣式衬衫，袖口卷至小臂并露白色内衬；浅中蓝修身牛仔长裤；深色平底浅口鞋、细浅色鞋底；深棕低盘发，无可见包袋。",
+    "referenceIndex": 3,
+    "category": "休闲",
+    "seatAnchor": [
+      0,
+      0.5579804697036743,
+      -0.021262174546718596
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.19122076034545898,
+        "frontOffset": 0.17973698675632477,
+        "backOffset": 0.09257911145687103
+      },
+      "chest": {
+        "halfWidth": 0.2221916913986206,
+        "frontOffset": 0.16418418288230896,
+        "backOffset": 0.06573960185050964
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p04",
+    "label": "深棕工装衬衫",
+    "genderPresentation": "masculine",
+    "height": 1.8,
+    "build": "average",
+    "skinTone": "#C79885",
+    "hairColor": "#34282A",
+    "hairStyle": "buzzcut",
+    "basicOutfit": "shirt_trousers",
+    "topColor": "#4E4440",
+    "bottomColor": "#503C34",
+    "shoeColor": "#743E27",
+    "description": "深灰棕翻领长袖工装衬衫，胸前贴袋、领口敞开；棕色直筒长裤；棕色系带休闲皮鞋、浅色中底；短寸发与短胡茬，一手插袋，无可见包袋。",
+    "referenceIndex": 4,
+    "category": "休闲",
+    "seatAnchor": [
+      0,
+      0.5587424554824829,
+      -0.038297497276216744
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.19053447246551514,
+        "frontOffset": 0.16666549444198608,
+        "backOffset": 0.10683529824018478
+      },
+      "chest": {
+        "halfWidth": 0.2653203010559082,
+        "frontOffset": 0.16665448248386383,
+        "backOffset": 0.11849231272935867
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p05",
+    "label": "粉衬衫深棕裙",
+    "genderPresentation": "feminine",
+    "height": 1.67,
+    "build": "slim",
+    "skinTone": "#E3BFA9",
+    "hairColor": "#312322",
+    "hairStyle": "short_bob",
+    "basicOutfit": "short_sleeve_shirt_skirt",
+    "topColor": "#E9919B",
+    "bottomColor": "#453C36",
+    "shoeColor": "#302A28",
+    "description": "粉色细条纹立领短袖扣式衬衫，前襟带窄褶边；深棕高腰及膝裙；深色连裤袜与深色细高跟浅口鞋；深棕耳下短发，无可见包袋。",
+    "referenceIndex": 5,
+    "category": "通勤",
+    "seatAnchor": [
+      0,
+      0.5572042384147644,
+      -0.021923635229468344
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.18680036067962646,
+        "frontOffset": 0.18281614780426025,
+        "backOffset": 0.098885178565979
+      },
+      "chest": {
+        "halfWidth": 0.21599999070167542,
+        "frontOffset": 0.1596021056175232,
+        "backOffset": 0.06391030550003052
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p06",
+    "label": "灰西装白裤",
+    "genderPresentation": "masculine",
+    "height": 1.8,
+    "build": "slim",
+    "skinTone": "#DCBDA5",
+    "hairColor": "#684B39",
+    "hairStyle": "short_crop",
+    "basicOutfit": "blazer_trousers",
+    "topColor": "#797B7D",
+    "bottomColor": "#E2E0DA",
+    "shoeColor": "#A16A3C",
+    "description": "中灰翻领长袖西装外套，领缘与口袋带深色细边；内搭浅蓝翻领衬衫，未系领带；米白修身长裤；棕褐低帮皮鞋、深色袜口；棕色短发，无可见包袋。",
+    "referenceIndex": 6,
+    "category": "商务",
+    "seatAnchor": [
+      0,
+      0.5575547137260437,
+      -0.03837355373427272
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.1942729949951172,
+        "frontOffset": 0.16660325229167938,
+        "backOffset": 0.11117661744356155
+      },
+      "chest": {
+        "halfWidth": 0.2607187032699585,
+        "frontOffset": 0.1666070520877838,
+        "backOffset": 0.09718587249517441
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p07",
+    "label": "黑背心蓝牛仔",
+    "genderPresentation": "feminine",
+    "height": 1.72,
+    "build": "slim",
+    "skinTone": "#E1B8BA",
+    "hairColor": "#382731",
+    "hairStyle": "long_straight",
+    "basicOutfit": "tank_jeans",
+    "topColor": "#171823",
+    "bottomColor": "#3D5A86",
+    "shoeColor": "#343449",
+    "description": "黑色圆领无袖短上衣，胸前白色手写字样；蓝色高腰紧身牛仔裤；深蓝紫系带平底短靴；深棕长直发，身侧可见细棕肩带及小片棕色包体。",
+    "referenceIndex": 7,
+    "category": "休闲",
+    "seatAnchor": [
+      0,
+      0.5580412664413452,
+      -0.021245827972888945
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.19128203392028809,
+        "frontOffset": 0.18348993360996246,
+        "backOffset": 0.0922226831316948
+      },
+      "chest": {
+        "halfWidth": 0.21681129932403564,
+        "frontOffset": 0.1646295189857483,
+        "backOffset": 0.12589837610721588
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p08",
+    "label": "蓝绿衬衫红裙",
+    "genderPresentation": "feminine",
+    "height": 1.68,
+    "build": "slim",
+    "skinTone": "#DDB89E",
+    "hairColor": "#6A452D",
+    "hairStyle": "low_bun",
+    "basicOutfit": "shirt_pencil_skirt",
+    "topColor": "#297E94",
+    "bottomColor": "#701E2A",
+    "shoeColor": "#1D1D1D",
+    "description": "蓝绿色竖条纹翻领七分袖衬衫；酒红高腰及膝铅笔裙，侧袋插手；深棕连裤袜与黑色细高跟浅口鞋；棕发低盘髻，手提较大的黑色软质双提柄包。",
+    "referenceIndex": 8,
+    "category": "通勤",
+    "seatAnchor": [
+      0,
+      0.5570867576599121,
+      -0.021820601150393484
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.18762516975402832,
+        "frontOffset": 0.18281379342079163,
+        "backOffset": 0.09928487986326218
+      },
+      "chest": {
+        "halfWidth": 0.2169630527496338,
+        "frontOffset": 0.16032005846500397,
+        "backOffset": 0.0641937106847763
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p09",
+    "label": "黑西装白衬衫",
+    "genderPresentation": "masculine",
+    "height": 1.81,
+    "build": "average",
+    "skinTone": "#E0C4B0",
+    "hairColor": "#5B4436",
+    "hairStyle": "short_tousled",
+    "basicOutfit": "suit",
+    "topColor": "#252824",
+    "bottomColor": "#252824",
+    "shoeColor": "#171817",
+    "description": "近黑深灰翻领长袖西装与同色长裤，白色翻领衬衫敞领、未系领带；黑色皮鞋；中棕侧扫稍蓬短发与短胡须，无可见包袋。",
+    "referenceIndex": 9,
+    "category": "商务",
+    "seatAnchor": [
+      0,
+      0.5575815358161926,
+      -0.03826358688995242
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.19713592529296875,
+        "frontOffset": 0.16666586697101593,
+        "backOffset": 0.11173133552074432
+      },
+      "chest": {
+        "halfWidth": 0.2636556625366211,
+        "frontOffset": 0.1667211353778839,
+        "backOffset": 0.09828682988882065
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p10",
+    "label": "碎花上衣长靴",
+    "genderPresentation": "feminine",
+    "height": 1.63,
+    "build": "full",
+    "skinTone": "#D9B4AE",
+    "hairColor": "#653B32",
+    "hairStyle": "short_bob_bangs",
+    "basicOutfit": "sweater_jeans",
+    "topColor": "#D5BCCB",
+    "bottomColor": "#2F5790",
+    "shoeColor": "#57313D",
+    "description": "浅粉灰圆领长袖针织上衣，散布深色小花点纹；中蓝修身牛仔裤收入靴筒；酒红棕色近膝低跟长靴；红棕短波波头与刘海，体型较丰满，无可见包袋。",
+    "referenceIndex": 10,
+    "category": "休闲",
+    "seatAnchor": [
+      0,
+      0.5587819137573242,
+      -0.018351966589689253
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.1979210376739502,
+        "frontOffset": 0.1860799640417099,
+        "backOffset": 0.09430963546037674
+      },
+      "chest": {
+        "halfWidth": 0.22412681579589844,
+        "frontOffset": 0.17464838922023773,
+        "backOffset": 0.055464401841163635
+      }
+    },
+    "simulationRole": "customer"
+  },
+  {
+    "id": "p11",
+    "base": "p04",
+    "label": "主厨 · 双排扣白衣",
+    "role": "主厨",
+    "category": "chef",
+    "height": 1.83,
+    "width": 1.055,
+    "hairColor": "#262223",
+    "topColor": "#EEECE5",
+    "bottomColor": "#24272A",
+    "apron": null,
+    "hat": "tall",
+    "description": "白色双排扣厨师夹克、立领、白色高厨师帽、深色工作裤与黑色防滑鞋。",
+    "isStaff": true,
+    "source": "Blender staff expansion",
+    "referenceIndex": 11,
+    "genderPresentation": "masculine",
+    "build": "average",
+    "skinTone": "#D7B6A4",
+    "hairStyle": "short_crop",
+    "basicOutfit": "chef_uniform",
+    "shoeColor": "#202529",
+    "seatAnchor": [
+      0,
+      0.4978734173774719,
+      -0.03818575859069824
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.2031567096710205,
+        "frontOffset": 0.16643047332763672,
+        "backOffset": 0.10765886306762695
+      },
+      "chest": {
+        "halfWidth": 0.2845780849456787,
+        "frontOffset": 0.1668107509613037,
+        "backOffset": 0.1204671859741211
+      }
+    },
+    "simulationRole": "chef"
+  },
+  {
+    "id": "p12",
+    "base": "p03",
+    "label": "热厨 · 短帽白衣",
+    "role": "热厨厨师",
+    "category": "chef",
+    "height": 1.69,
+    "width": 1.025,
+    "hairColor": "#362A23",
+    "topColor": "#E7E6DE",
+    "bottomColor": "#303438",
+    "apron": "#393E42",
+    "hat": "short",
+    "description": "白色短厨师帽、白色卷袖厨师夹克、炭灰腰围裙、深色工作裤；收束盘发。",
+    "isStaff": true,
+    "source": "Blender staff expansion",
+    "referenceIndex": 12,
+    "genderPresentation": "feminine",
+    "build": "average",
+    "skinTone": "#D7B6A4",
+    "hairStyle": "low_bun",
+    "basicOutfit": "chef_uniform",
+    "shoeColor": "#202529",
+    "seatAnchor": [
+      0,
+      0.44644080781936646,
+      -0.021676225662231444
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.1920679807662964,
+        "frontOffset": 0.18331670761108398,
+        "backOffset": 0.14378952980041504
+      },
+      "chest": {
+        "halfWidth": 0.22377407550811768,
+        "frontOffset": 0.17762327194213867,
+        "backOffset": 0.06459307670593262
+      }
+    },
+    "simulationRole": "chef"
+  },
+  {
+    "id": "p13",
+    "base": "p04",
+    "label": "备餐厨师 · 灰围裙",
+    "role": "备餐厨师",
+    "category": "chef",
+    "height": 1.76,
+    "width": 0.96,
+    "hairColor": "#593D2F",
+    "topColor": "#272F33",
+    "bottomColor": "#303337",
+    "apron": "#8C8F88",
+    "hat": "skull",
+    "description": "深色厨师服和短厨师帽、灰色带胸袋围裙、黑色工作裤与防滑鞋。",
+    "isStaff": true,
+    "source": "Blender staff expansion",
+    "referenceIndex": 13,
+    "genderPresentation": "masculine",
+    "build": "slim",
+    "skinTone": "#D7B6A4",
+    "hairStyle": "short_crop",
+    "basicOutfit": "chef_uniform",
+    "shoeColor": "#202529",
+    "seatAnchor": [
+      0,
+      0.47861578249931336,
+      -0.03844635009765625
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.18355754017829895,
+        "frontOffset": 0.16640257835388184,
+        "backOffset": 0.1630551815032959
+      },
+      "chest": {
+        "halfWidth": 0.24904727935791016,
+        "frontOffset": 0.16649508476257324,
+        "backOffset": 0.1158592700958252
+      }
+    },
+    "simulationRole": "chef"
+  },
+  {
+    "id": "p14",
+    "base": "p04",
+    "label": "前厅服务员 · 黑马甲",
+    "role": "前厅服务员",
+    "category": "service",
+    "height": 1.79,
+    "width": 0.945,
+    "hairColor": "#392E28",
+    "topColor": "#E8E9E5",
+    "bottomColor": "#222629",
+    "apron": "#25282B",
+    "hat": null,
+    "description": "白色长袖衬衫、另建的黑色马甲、窄领带和黑色长围裙、胸牌；侧分短发。",
+    "isStaff": true,
+    "source": "Blender staff expansion",
+    "referenceIndex": 14,
+    "genderPresentation": "masculine",
+    "build": "slim",
+    "skinTone": "#D7B6A4",
+    "hairStyle": "short_side_part",
+    "basicOutfit": "service_uniform",
+    "shoeColor": "#202529",
+    "seatAnchor": [
+      0,
+      0.4867057123184204,
+      -0.03833477020263672
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.18376943469047546,
+        "frontOffset": 0.1664111614227295,
+        "backOffset": 0.16316556930541992
+      },
+      "chest": {
+        "halfWidth": 0.24933484196662903,
+        "frontOffset": 0.16632723808288574,
+        "backOffset": 0.11783409118652344
+      }
+    },
+    "simulationRole": "service",
+    "modelFile": "p14-garment-v11_1.glb",
+    "modelRevision": "v11.1-garment"
+  },
+  {
+    "id": "p15",
+    "base": "p03",
+    "label": "服务员 · 酒红围裙",
+    "role": "餐区服务员",
+    "category": "service",
+    "height": 1.66,
+    "width": 1.0,
+    "hairColor": "#4D2D26",
+    "topColor": "#E9E6DF",
+    "bottomColor": "#33363A",
+    "apron": "#713540",
+    "hat": null,
+    "description": "白色卷袖衬衫、酒红色胸兜围裙、深色长裤和黑色平底鞋；低盘发与胸牌。",
+    "isStaff": true,
+    "source": "Blender staff expansion",
+    "referenceIndex": 15,
+    "genderPresentation": "feminine",
+    "build": "slim",
+    "skinTone": "#D7B6A4",
+    "hairStyle": "low_bun",
+    "basicOutfit": "service_uniform",
+    "shoeColor": "#202529",
+    "seatAnchor": [
+      0,
+      0.4385868229866028,
+      -0.022090358734130858
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.18405699729919434,
+        "frontOffset": 0.18276429176330566,
+        "backOffset": 0.1412370204925537
+      },
+      "chest": {
+        "halfWidth": 0.21444082260131836,
+        "frontOffset": 0.1826033592224121,
+        "backOffset": 0.0634462833404541
+      }
+    },
+    "simulationRole": "service"
+  },
+  {
+    "id": "p16",
+    "base": "p04",
+    "label": "传菜员 · 绿围裙",
+    "role": "传菜员",
+    "category": "service",
+    "height": 1.74,
+    "width": 0.92,
+    "hairColor": "#292323",
+    "topColor": "#374346",
+    "bottomColor": "#293133",
+    "apron": "#7A8978",
+    "hat": null,
+    "description": "深色衬衫、鼠尾草绿腰围裙、双口袋与胸牌、黑色工作裤；短发。",
+    "isStaff": true,
+    "source": "Blender staff expansion",
+    "referenceIndex": 16,
+    "genderPresentation": "masculine",
+    "build": "slim",
+    "skinTone": "#D7B6A4",
+    "hairStyle": "short_crop",
+    "basicOutfit": "service_uniform",
+    "shoeColor": "#202529",
+    "seatAnchor": [
+      0,
+      0.47322239661216736,
+      -0.03852097511291504
+    ],
+    "seatedEnvelope": {
+      "hip": {
+        "halfWidth": 0.17391037940979004,
+        "frontOffset": 0.166459321975708,
+        "backOffset": 0.16120243072509766
+      },
+      "chest": {
+        "halfWidth": 0.23595809936523438,
+        "frontOffset": 0.1616811752319336,
+        "backOffset": 0.11454248428344727
+      }
+    },
+    "simulationRole": "service"
+  }
+]

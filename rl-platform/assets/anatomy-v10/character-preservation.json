@@ -1,0 +1,122 @@
+{
+  "schema": "anatomy-v10-character-preservation",
+  "baselineVersion": "restaurant-human-layer-9.0",
+  "baselineCreatedAt": "2026-09-07T11:51:46.571943+00:00",
+  "baselineDeliveryCheckSHA256": "3a0238920ae0fe41b6c50d76abafa7a32fbe678200f34d89fcea3132f711f273",
+  "checkedAt": "2026-09-07T13:04:27.623055+00:00",
+  "all16CharactersUnchanged": true,
+  "files": [
+    {
+      "path": "public/assets/p01.glb",
+      "bytes": 3924324,
+      "sha256": "15826d13f030a47263b95e9e41a35f53bf0bb93b22d825d86a3a2029c74c4cb9",
+      "baselineSHA256": "15826d13f030a47263b95e9e41a35f53bf0bb93b22d825d86a3a2029c74c4cb9",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p02.glb",
+      "bytes": 3677172,
+      "sha256": "70d171f9ac5a2817db1ed77b764ac606ddf34d779236b41df12c92ac418b6312",
+      "baselineSHA256": "70d171f9ac5a2817db1ed77b764ac606ddf34d779236b41df12c92ac418b6312",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p03.glb",
+      "bytes": 3633956,
+      "sha256": "23e77cd7c6b88ce54509d9d9090b4eff9b5c136883a878ea5bbae3d32bef4160",
+      "baselineSHA256": "23e77cd7c6b88ce54509d9d9090b4eff9b5c136883a878ea5bbae3d32bef4160",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p04.glb",
+      "bytes": 3919056,
+      "sha256": "92c2a6a6ca28880e62c324426d1bae25be4ae59a3a1345d35349ee07ed91c700",
+      "baselineSHA256": "92c2a6a6ca28880e62c324426d1bae25be4ae59a3a1345d35349ee07ed91c700",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p05.glb",
+      "bytes": 3704148,
+      "sha256": "f697bb5cf8aae1fbce7322ef6a16bfa790ab2d16edb23c78f48b51e3a37a2b32",
+      "baselineSHA256": "f697bb5cf8aae1fbce7322ef6a16bfa790ab2d16edb23c78f48b51e3a37a2b32",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p06.glb",
+      "bytes": 4218800,
+      "sha256": "7e40f1de9e672040814258d43def2554fb0c076c77314cfa365fa00f6c5e9561",
+      "baselineSHA256": "7e40f1de9e672040814258d43def2554fb0c076c77314cfa365fa00f6c5e9561",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p07.glb",
+      "bytes": 4165700,
+      "sha256": "1466c21ef85c35ae998af577f2e38342bdddc42cc0a82fdd59bcf68a356a2f08",
+      "baselineSHA256": "1466c21ef85c35ae998af577f2e38342bdddc42cc0a82fdd59bcf68a356a2f08",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p08.glb",
+      "bytes": 3865000,
+      "sha256": "fdbcff3ef99474a2bc1a4756bc35ca7045830b61dd568f67565d3f5753dff55f",
+      "baselineSHA256": "fdbcff3ef99474a2bc1a4756bc35ca7045830b61dd568f67565d3f5753dff55f",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p09.glb",
+      "bytes": 3606328,
+      "sha256": "434a1b93ae1c3638eeb518893c78c5b8dff876772d01e674d0dbd91266d0c1df",
+      "baselineSHA256": "434a1b93ae1c3638eeb518893c78c5b8dff876772d01e674d0dbd91266d0c1df",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p10.glb",
+      "bytes": 3793112,
+      "sha256": "dc66d09e24e93cdb3c6e3815569b029a928400ac5626a68a6f97391a0d507a15",
+      "baselineSHA256": "dc66d09e24e93cdb3c6e3815569b029a928400ac5626a68a6f97391a0d507a15",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p11.glb",
+      "bytes": 3132960,
+      "sha256": "b90bd046fc55dc9777becdc64c51265f68eff2c3637c7021bac5274f2a1f078a",
+      "baselineSHA256": "b90bd046fc55dc9777becdc64c51265f68eff2c3637c7021bac5274f2a1f078a",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p12.glb",
+      "bytes": 2995548,
+      "sha256": "520e8a8b45722cd52e5e7cbfc91ad736ddcd9deda403df38be2a6c5540d7bfad",
+      "baselineSHA256": "520e8a8b45722cd52e5e7cbfc91ad736ddcd9deda403df38be2a6c5540d7bfad",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p13.glb",
+      "bytes": 3214832,
+      "sha256": "bdc4b572604fff516ee415edb27927f58180a99b23a077253860fb722c4da0c4",
+      "baselineSHA256": "bdc4b572604fff516ee415edb27927f58180a99b23a077253860fb722c4da0c4",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p14.glb",
+      "bytes": 2938656,
+      "sha256": "85d354297375dbd3c93c4ba2de4658f40bbf26871d3f1db5103b6a89350c1bcc",
+      "baselineSHA256": "85d354297375dbd3c93c4ba2de4658f40bbf26871d3f1db5103b6a89350c1bcc",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p15.glb",
+      "bytes": 2816360,
+      "sha256": "cbb199e01941cc823c88e4ae80879b7ee01e9ad5ebe785b1e9691f5c99cf8837",
+      "baselineSHA256": "cbb199e01941cc823c88e4ae80879b7ee01e9ad5ebe785b1e9691f5c99cf8837",
+      "unchanged": true
+    },
+    {
+      "path": "public/assets/p16.glb",
+      "bytes": 2822452,
+      "sha256": "eb906f1f8dd4c069214b1f05386a5834ceed37bd0e59655da5cb3b03570922aa",
+      "baselineSHA256": "eb906f1f8dd4c069214b1f05386a5834ceed37bd0e59655da5cb3b03570922aa",
+      "unchanged": true
+    }
+  ]
+}

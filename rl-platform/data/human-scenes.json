@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "scenes": [{
+    "id": "restaurant", "name": "餐厅 · 展示场景", "kind": "demo", "modelLabel": "开放餐厅 v2",
+    "assets": {"characters": "./assets/characters.json", "keypoints": "./assets/keypoints.json", "layout": "./assets/restaurant-layout.json", "environment": "./assets/restaurant-scene.glb", "modelsBase": "./assets/"}
+  }]
+}
