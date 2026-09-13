@@ -1,0 +1,248 @@
+/* A separate phone layout keeps the original desktop editor unchanged at 1024px and above.
+   Forms/cards flow vertically. Only the diagram and comparison tables use local exploration. */
+.mrl-tabs,.mrl-node-catalog,.mrl-back,.mrl-canvas-hint { display:none; }
+@media (max-width:1023px) {
+  /* Enlarged axis text extends left of the original SVG view box. Reserve room
+     inside the card so five-character tick labels remain fully readable. */
+  html[data-mobile-rl] .el-chart-plot svg { box-sizing:content-box; padding-left:22px; width:calc(100% - 22px); }
+  html[data-mobile-rl],html[data-mobile-rl] body { width:100%; height:100%; font-size:15px; -webkit-text-size-adjust:100%; }
+  html[data-mobile-rl] { --faint:#a3b1b6; --muted:#bac7cb; }
+  html[data-mobile-rl] .studio-shell { grid-template-rows:auto minmax(0,1fr) auto; }
+  html[data-mobile-rl] .studio-head { padding:8px 12px; align-items:center; gap:8px; flex-wrap:wrap; }
+  html[data-mobile-rl] .studio-title { gap:8px; width:auto; flex:1; min-height:44px; }
+  html[data-mobile-rl] .studio-title > div { min-width:0; }
+  html[data-mobile-rl] .studio-title h1 { font-size:20px; white-space:normal; line-height:1.4; }
+  html[data-mobile-rl] .studio-title p { font-size:13px; white-space:normal; line-height:1.65; }
+  html[data-mobile-rl] .stage-index { font-size:13px; }
+  html[data-mobile-rl] .head-actions { flex-wrap:wrap; gap:6px; }
+  html[data-mobile-rl] .mrl-fold { min-width:0; }
+  html[data-mobile-rl] .mrl-fold > summary { display:flex; align-items:center; justify-content:space-between; min-height:44px; padding:8px 10px; border:1px solid #425660; background:#22343e; border-radius:6px; cursor:pointer; font-size:14px; list-style:none; color:#c7d8df; gap:8px; }
+  html[data-mobile-rl] .mrl-fold > summary::-webkit-details-marker { display:none; }
+  html[data-mobile-rl] .mrl-fold > summary:after { content:'⌄'; }
+  html[data-mobile-rl] .mrl-fold[open] > summary:after { content:'⌃'; }
+  html[data-mobile-rl] .mrl-fold-body { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; padding:10px; background:#1d2a32; border:1px solid #3e545e; border-radius:6px; }
+  html[data-mobile-rl] .mrl-fold-info { flex:0 0 auto; }
+  html[data-mobile-rl] .mrl-fold-info > summary { font-size:12px; }
+  html[data-mobile-rl] .mrl-fold-info[open] { flex:1 0 100%; }
+  html[data-mobile-rl] .mrl-fold-info .mrl-fold-body p { width:100%; margin:0; color:#b9cbd2; font-size:13px; line-height:1.65; }
+  html[data-mobile-rl] .mrl-fold-tools { flex:1 0 100%; }
+  html[data-mobile-rl] .mrl-fold-chart { margin-bottom:14px; }
+  html[data-mobile-rl] .mrl-fold-chart .mrl-fold-body { padding:0; border:0; }
+  html[data-mobile-rl] .mrl-fold-chart .el-controls { width:100%; margin:0; }
+  html[data-mobile-rl] .mrl-fold-transfer { min-width:0; }
+  html[data-mobile-rl] .mrl-fold-transfer[open] { grid-column:1/-1; }
+  html[data-mobile-rl] .mrl-fold-transfer .mrl-fold-body { display:grid; }
+  html[data-mobile-rl] .mrl-fold-transfer .mrl-fold-body > button { width:100%; }
+  html[data-mobile-rl] .adapter-steps { grid-template-columns:minmax(0,1fr); gap:8px; }
+  html[data-mobile-rl] .adapter-steps > div { min-height:80px; }
+  html[data-mobile-rl] .adapter-steps > div:after { display:none; }
+  html[data-mobile-rl] .adapter-steps :is(b,span),html[data-mobile-rl] .adapter-card strong { font-size:14px; line-height:1.6; }
+  html[data-mobile-rl] .adapter-card { min-height:84px; }
+  html[data-mobile-rl] .hub-title { font-size:18px; }
+  html[data-mobile-rl] .contract-row { min-height:42px; font-size:14px; gap:12px; }
+  html[data-mobile-rl] .contract-row b { font-size:12px; }
+  html[data-mobile-rl] .contract-row span { min-width:0; overflow-wrap:anywhere; }
+  html[data-mobile-rl] .modelhub-grid { gap:12px; }
+  html[data-mobile-rl] .modelhub-grid .stack { overflow:visible; gap:12px; }
+  html[data-mobile-rl] .modelhub-grid .panel-head b { font-size:11px; }
+  html[data-mobile-rl] .modelhub-grid .switch-row { min-height:48px; font-size:14px; }
+  html[data-mobile-rl] .modelhub-grid .switch-row small { font-size:12px; }
+  html[data-mobile-rl] .modelhub-grid .adapter-steps i { font-size:12px; }
+  html[data-mobile-rl] .adapter-card small { font-size:12px; line-height:1.6; }
+  html[data-mobile-rl] .adapter-card b { font-size:11px; }
+  html[data-mobile-rl] .adapter-steps b { margin-top:5px; }
+  html[data-mobile-rl] .head-chip,html[data-mobile-rl] .status-chip { min-height:28px; font-size:10px; }
+  html[data-mobile-rl] .studio-body { overflow:auto; padding:8px; overscroll-behavior-y:contain; -webkit-overflow-scrolling:touch; }
+  html[data-mobile-rl] .studio-foot { gap:3px 12px; flex-wrap:wrap; padding:5px 12px; font:10px/1.5 var(--mono); }
+  html[data-mobile-rl] .studio-foot > strong { display:none; }
+  html[data-mobile-rl] :is(button,summary) { touch-action:manipulation; }
+  html[data-mobile-rl] :is(.tool,.target-card,.run-card,.editor-row) { min-height:44px; font-size:14px; }
+  html[data-mobile-rl] :is(input:not([type=checkbox]):not([type=radio]),select,textarea) { font-size:16px!important; min-height:44px; max-width:100%; }
+  html[data-mobile-rl] input[type=checkbox],html[data-mobile-rl] input[type=radio] { width:20px; height:20px; flex:0 0 20px; }
+  html[data-mobile-rl] .toolbar { height:auto; min-height:52px; display:flex; flex-wrap:wrap; gap:6px; padding:8px; }
+  html[data-mobile-rl] .toolbar-spacer { display:none; }
+  html[data-mobile-rl] .algorithm-layout > .toolbar > .tool { display:flex; justify-content:center; flex:1; padding:8px 6px; min-width:0; white-space:normal; }
+  html[data-mobile-rl] .algorithm-layout > .toolbar > .tool .tool-glyph { display:none; }
+  html[data-mobile-rl] .toolbar-note { width:100%; font-size:11px; overflow-wrap:anywhere; }
+  html[data-mobile-rl] .tool { padding:8px; border-color:#39474c; }
+  html[data-mobile-rl] .tool-glyph { width:20px; }
+  html[data-mobile-rl] .panel { border-radius:8px; }
+  html[data-mobile-rl] .panel-head { min-height:44px; padding:10px 12px; gap:8px; font-size:13px; flex-wrap:wrap; letter-spacing:0; }
+  html[data-mobile-rl] .panel-body { padding:12px; }
+  html[data-mobile-rl] :is(.subtle,.section-note,.empty-state) { font-size:14px; line-height:1.75; }
+  html[data-mobile-rl] :is(.field>span,.config-section h3,.range-row label,.range-row output) { font-size:13px; line-height:1.5; }
+  html[data-mobile-rl] .field { gap:7px; }
+  html[data-mobile-rl] .form-grid { gap:14px; }
+  html[data-mobile-rl] .form-grid.two { grid-template-columns:minmax(0,1fr); }
+  html[data-mobile-rl] .badge { font-size:11px; min-height:24px; }
+  html[data-mobile-rl] :is(.metric-grid,.training-charts) { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+  html[data-mobile-rl] .metric { padding:12px; }
+  html[data-mobile-rl] .metric label,html[data-mobile-rl] .metric small { font-size:12px; line-height:1.5; }
+  html[data-mobile-rl] .metric strong { font-size:21px; }
+  html[data-mobile-rl] :is(.editor-row strong,.model-row strong,.target-card strong,.run-card strong) { font-size:14px; overflow-wrap:anywhere; }
+  html[data-mobile-rl] :is(.editor-row small,.model-row small,.target-card span,.run-card span) { font-size:12px; line-height:1.6; overflow-wrap:anywhere; }
+  html[data-mobile-rl] :is(.editor-row>b,.model-row>b,.run-card>b) { font-size:11px; }
+  html[data-mobile-rl] #rl-toast { font-size:14px; line-height:1.6; bottom:12px; }
+
+  /* The algorithm's same nodes become an index into original editable parameters. */
+  html[data-mobile-rl] .algorithm-layout,html[data-mobile-rl] .algorithm-layout:has(.ne-host) { height:auto; min-height:0; display:grid; grid-template-rows:auto auto; gap:8px; }
+  html[data-mobile-rl] .ne-host { height:auto; overflow:visible; }
+  html[data-mobile-rl] .node-editor { display:block; height:auto; min-height:450px; font-size:15px; border-radius:8px; overflow:clip; }
+  html[data-mobile-rl] .mrl-tabs { display:flex; gap:5px; padding:8px; background:#17232b; border-bottom:1px solid #455863; overflow-x:auto; position:relative; }
+  html[data-mobile-rl] .mrl-tabs button { min-height:44px; min-width:44px; flex:1 0 auto; padding:8px 10px; border:1px solid #455a64; border-radius:7px; background:#24343e; color:#c5d6dc; font-size:14px; white-space:nowrap; }
+  html[data-mobile-rl] .mrl-tabs button[aria-pressed=true] { background:#d0e5af; color:#17241b; border-color:#d0e5af; font-weight:650; }
+  html[data-mobile-rl] .mrl-node-catalog { display:block; padding:14px 12px; background:#222c34; }
+  html[data-mobile-rl] .mrl-catalog-heading { display:flex; gap:8px; align-items:center; justify-content:space-between; }
+  html[data-mobile-rl] .mrl-catalog-heading h2 { font-size:19px; margin:0; }
+  html[data-mobile-rl] .mrl-catalog-heading span { color:#b4c4cb; font-size:12px; }
+  html[data-mobile-rl] .mrl-help { font-size:14px; line-height:1.75; color:#b9cbd4; margin:9px 0 14px; }
+  html[data-mobile-rl] .mrl-node-list { display:grid; gap:9px; }
+  html[data-mobile-rl] .mrl-node-card { display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; min-height:80px; padding:14px 12px; text-align:left; background:#2e3b45; border:1px solid #4d6473; border-left:3px solid var(--node-color,#b9d58d); border-radius:8px; }
+  html[data-mobile-rl] .mrl-node-card > span:first-child { min-width:0; }
+  html[data-mobile-rl] .mrl-node-card strong { display:block; font-size:16px; line-height:1.5; color:#eef4f5; overflow-wrap:anywhere; }
+  html[data-mobile-rl] .mrl-node-card small { display:block; margin-top:5px; font-size:13px; line-height:1.55; color:#b4c6d0; overflow-wrap:anywhere; }
+  html[data-mobile-rl] .mrl-node-arrow { flex:0 0 auto; color:#d0e5af; font-size:12px; }
+  html[data-mobile-rl] .node-editor[data-mrl-ready] > :is(.ne-library,.ne-main,.ne-inspector,.mrl-node-catalog) { display:none; }
+  html[data-mobile-rl] .node-editor[data-mrl-panel=nodes] > .mrl-node-catalog { display:block; }
+  html[data-mobile-rl] .node-editor[data-mrl-panel=library] > .ne-library { display:flex; }
+  html[data-mobile-rl] .node-editor[data-mrl-panel=inspector] > .ne-inspector { display:block; }
+  html[data-mobile-rl] .node-editor:is([data-mrl-panel=graph],[data-mrl-panel=preview]) > .ne-main { display:block; }
+  html[data-mobile-rl] .node-editor[data-mrl-panel=graph] .ne-preview { display:none; }
+  html[data-mobile-rl] .node-editor[data-mrl-panel=preview] :is(.ne-canvas-toolbar,.ne-canvas) { display:none; }
+  html[data-mobile-rl] .ne-library { padding:14px; gap:12px; overflow:visible; }
+  html[data-mobile-rl] .ne-library button,html[data-mobile-rl] .ne-library summary { min-height:44px; font-size:14px!important; line-height:1.6; padding:10px; }
+  html[data-mobile-rl] .ne-library-item span { font-size:15px; }
+  html[data-mobile-rl] .ne-library-item small,html[data-mobile-rl] .ne-library > p { font-size:13px; }
+  html[data-mobile-rl] .ne-section-head { min-height:44px; font-size:15px; flex-wrap:wrap; gap:8px; }
+  html[data-mobile-rl] .ne-section-head span { font-size:11px; }
+  html[data-mobile-rl] .ne-help { font-size:13px; }
+  html[data-mobile-rl] .ne-type-list { font-size:13px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+  html[data-mobile-rl] .ne-inspector { position:static; width:100%; max-width:none; max-height:none; border:0; box-shadow:none; padding:12px; overflow:visible; }
+  html[data-mobile-rl] .ne-inspector .ne-section-head { position:static; }
+  html[data-mobile-rl] .mrl-back { display:block; min-height:44px; margin:0 0 10px; padding:8px 12px; font-size:14px; background:#334751; border:1px solid #5b7380; border-radius:6px; }
+  html[data-mobile-rl] .ne-inspector :is(button,select,input:not([type=checkbox])) { min-height:44px; font-size:14px; }
+  html[data-mobile-rl] .ne-inspector :is(p,.ne-detail,.ne-detail p,.ne-detail h3,.ne-control>span,.ne-control.compact>span,.ne-check span,.ne-formula,.rst-note,.rst-field,.ne-transformer-explain p,.ne-transformer-explain ol,.ne-module-guide p,.ne-stream span,.ne-stream>div>button) { font-size:14px!important; line-height:1.75; }
+  html[data-mobile-rl] .ne-detail h2 { font-size:19px; line-height:1.5; }
+  html[data-mobile-rl] .ne-control { padding:14px 0; }
+  html[data-mobile-rl] .ne-control output { font-size:14px; }
+  html[data-mobile-rl] .ne-check { min-height:48px; }
+  html[data-mobile-rl] .ne-inspector .ne-wide-button { font-size:14px!important; line-height:1.6; }
+  html[data-mobile-rl] .ne-main { overflow:visible; }
+  html[data-mobile-rl] .ne-canvas-toolbar { padding:10px; gap:10px; }
+  html[data-mobile-rl] .ne-toolbar-group { flex-wrap:wrap; gap:6px; }
+  html[data-mobile-rl] .ne-toolbar-group button { min-width:44px; min-height:44px; font-size:14px; padding:8px; }
+  html[data-mobile-rl] .ne-toolbar-group span { font-size:13px; }
+  html[data-mobile-rl] .mrl-canvas-hint { display:block; flex:1 0 100%; margin:0; }
+  html[data-mobile-rl] .ne-transformer-banner { padding:10px; }
+  html[data-mobile-rl] .ne-transformer-banner button { min-height:44px; }
+  html[data-mobile-rl] .ne-transformer-banner strong { font-size:15px; }
+  html[data-mobile-rl] .ne-transformer-banner :is(small,p) { font-size:12px; line-height:1.6; }
+  html[data-mobile-rl] .ne-transformer-banner b { display:none; }
+  html[data-mobile-rl] .ne-canvas { height:500px; min-height:380px; }
+  html[data-mobile-rl] .ne-stage-nav { position:relative; inset:auto; margin:8px; max-height:106px; overflow:auto; }
+  html[data-mobile-rl] .ne-stage-nav button { min-height:44px; font-size:13px; }
+  html[data-mobile-rl] .ne-add-menu { position:fixed; top:12px!important; left:12px!important; width:calc(100% - 24px); max-width:none; max-height:calc(100dvh - 24px); }
+  html[data-mobile-rl] .ne-add-menu button { min-height:44px; font-size:14px; }
+  html[data-mobile-rl] .ne-add-menu :is(span,small) { font-size:13px; }
+  html[data-mobile-rl] .ne-preview,html[data-mobile-rl] .node-editor.ne-preview-expanded .ne-preview { position:static; display:block; border-top:0; }
+  html[data-mobile-rl] .ne-preview > header { padding:12px; }
+  html[data-mobile-rl] .ne-preview > header > div { width:100%; }
+  html[data-mobile-rl] .ne-preview header :is(button,label,strong) { font-size:14px; min-height:44px; }
+  html[data-mobile-rl] .ne-preview-body,html[data-mobile-rl] .node-editor.ne-preview-expanded .ne-preview-body { display:grid; grid-template-columns:minmax(0,1fr); padding:12px; gap:14px; overflow:visible; }
+  html[data-mobile-rl] .ne-real-preview { height:330px; }
+  html[data-mobile-rl] .ne-scene-tools { justify-content:flex-start; flex-wrap:wrap; }
+  html[data-mobile-rl] .ne-scene-tools button { min-height:44px; font-size:13px; }
+  html[data-mobile-rl] .ne-model-data { overflow:visible; }
+  html[data-mobile-rl] .ne-model-data :is(p,span,small),html[data-mobile-rl] .ne-world-heading { font-size:14px; line-height:1.65; }
+  html[data-mobile-rl] .ne-map-wrap { height:330px; grid-template-rows:minmax(0,1fr) 48px; }
+  html[data-mobile-rl] .ne-live-data { grid-template-rows:auto auto 80px; gap:14px; }
+  html[data-mobile-rl] .ne-live-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+  html[data-mobile-rl] .ne-live-metrics :is(span,b),html[data-mobile-rl] .ne-score-row,html[data-mobile-rl] .ne-score-row b { font-size:14px; }
+  html[data-mobile-rl] .ne-score-row { height:34px; }
+
+  /* Evaluation: full-width readable charts; experiment filters remain one tap away. */
+  html[data-mobile-rl] #evaluation-lab-host { height:auto!important; }
+  html[data-mobile-rl] .evaluation-lab { height:auto; display:block; font-size:15px; border-radius:8px; overflow:clip; }
+  html[data-mobile-rl] .evaluation-lab :is(button,select) { min-height:44px; font-size:14px; padding:10px; }
+  html[data-mobile-rl] .el-toolbar { padding:10px; gap:10px; }
+  html[data-mobile-rl] .el-tabs { flex-wrap:nowrap; overflow-x:auto; width:100%; gap:5px; }
+  html[data-mobile-rl] .el-tabs button { flex:1 0 auto; white-space:nowrap; }
+  html[data-mobile-rl] .el-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); width:100%; gap:7px; }
+  html[data-mobile-rl] .el-actions select { grid-column:1 / -1; width:100%; }
+  html[data-mobile-rl] .el-provenance { font-size:13px; line-height:1.7; padding:12px; }
+  html[data-mobile-rl] .el-layout { display:block; }
+  html[data-mobile-rl] .el-main,html[data-mobile-rl] .el-sidebar { width:100%; min-width:0; overflow:visible; padding:14px 12px; }
+  html[data-mobile-rl] .evaluation-lab[data-mrl-panel=charts] .el-sidebar { display:none; }
+  html[data-mobile-rl] .evaluation-lab[data-mrl-panel=settings] .el-main { display:none; }
+  html[data-mobile-rl] .el-main-heading { gap:10px; align-items:flex-start; }
+  html[data-mobile-rl] .el-main-heading h2 { font-size:21px; line-height:1.5; }
+  html[data-mobile-rl] .el-main-heading span { font-size:11px; }
+  html[data-mobile-rl] .el-controls { gap:12px; padding:12px; }
+  html[data-mobile-rl] .el-controls label { display:grid; width:100%; grid-template-columns:minmax(0,1fr) auto; gap:4px; font-size:14px; white-space:normal; }
+  html[data-mobile-rl] .el-controls label input { grid-row:2; grid-column:1/-1; width:100%; }
+  html[data-mobile-rl] .el-controls label output { grid-column:2; grid-row:1; font-size:14px; }
+  html[data-mobile-rl] .el-controls small { font-size:12px; line-height:1.6; margin:0; }
+  html[data-mobile-rl] .el-charts { grid-template-columns:minmax(0,1fr); gap:16px; }
+  html[data-mobile-rl] .el-chart > header { padding:14px 12px 6px; gap:8px; }
+  html[data-mobile-rl] .el-chart h3 { font-size:17px; line-height:1.5; }
+  html[data-mobile-rl] .el-chart header p { font-size:13px; line-height:1.65; }
+  html[data-mobile-rl] .el-chart header button { min-width:44px; flex:0 0 44px; }
+  html[data-mobile-rl] .el-chart-stamp { font-size:10px; left:12px; }
+  html[data-mobile-rl] .el-chart svg text { font-size:23px; }
+  html[data-mobile-rl] .el-chart-axis { font-size:12px; padding:0 10px; line-height:1.6; }
+  html[data-mobile-rl] .el-values { padding:12px; gap:12px; }
+  html[data-mobile-rl] .el-values > div { display:grid; grid-template-columns:7px minmax(0,1fr) auto; font-size:14px; gap:5px 8px; }
+  html[data-mobile-rl] .el-values small { font-size:11px; }
+  html[data-mobile-rl] .el-values b { font-size:15px; grid-column:3; }
+  html[data-mobile-rl] .el-values em { font-size:12px; grid-column:2/-1; min-width:0; text-align:left; }
+  html[data-mobile-rl] :is(.el-subtle,.el-field,.el-metric-toggle,.el-protocol,.el-baseline-note p,.el-compare-warning,.el-no-data,.el-footnote) { font-size:14px; line-height:1.75; }
+  html[data-mobile-rl] .el-run { padding:14px 10px; gap:8px; }
+  html[data-mobile-rl] .el-run strong { font-size:16px; }
+  html[data-mobile-rl] .el-run small { font-size:13px; }
+  html[data-mobile-rl] .el-run code { font-size:11px; }
+  html[data-mobile-rl] .el-metric-toggle { align-items:center; min-height:48px; gap:10px; }
+  html[data-mobile-rl] .el-section-title { font-size:13px; margin-top:14px; }
+  html[data-mobile-rl] .el-section-title span { font-size:11px; }
+  html[data-mobile-rl] .el-protocol dd { font-size:13px; line-height:1.7; }
+  html[data-mobile-rl] .el-plan { padding:14px; }
+  html[data-mobile-rl] .el-plan-grid { grid-template-columns:minmax(0,1fr); }
+  html[data-mobile-rl] .el-plan :is(p,small) { font-size:14px; line-height:1.75; }
+  html[data-mobile-rl] .el-output-table { overflow-x:auto; }
+  html[data-mobile-rl] .el-output-table table { min-width:600px; font-size:14px; }
+
+  /* Deployment and episode replay: one continuous page, not three narrow columns. */
+  html[data-mobile-rl] :is(.deployment-layout,.evaluation-layout,.modelhub-grid,.rewardlab-grid) { height:auto; min-height:0; grid-template-columns:minmax(0,1fr); grid-template-rows:auto; }
+  html[data-mobile-rl] :is(.deployment-grid,.evaluation-grid) { display:grid; grid-template-columns:minmax(0,1fr); gap:12px; }
+  html[data-mobile-rl] :is(.deployment-grid,.evaluation-grid,.modelhub-grid,.rewardlab-grid) > * { grid-column:auto; min-width:0; }
+  html[data-mobile-rl] :is(.deployment-grid,.evaluation-grid) .stack { gap:12px; overflow:visible; }
+  html[data-mobile-rl] .release-flow { display:grid; grid-template-rows:auto; gap:12px; }
+  html[data-mobile-rl] .release-summary { grid-template-columns:minmax(0,1fr); }
+  html[data-mobile-rl] .flow-line { grid-template-columns:minmax(0,1fr); gap:8px; padding:12px; }
+  html[data-mobile-rl] .flow-step { min-height:92px; padding:12px 68px 12px 14px; text-align:left; }
+  html[data-mobile-rl] .flow-step:after { display:none; }
+  html[data-mobile-rl] .flow-step strong { font-size:16px; margin-top:5px; }
+  html[data-mobile-rl] .flow-step small { font-size:13px; line-height:1.6; }
+  html[data-mobile-rl] .flow-step span,html[data-mobile-rl] .flow-step b { font-size:11px; }
+  html[data-mobile-rl] .manifest { max-height:420px; overflow:auto; font-size:13px; line-height:1.7; overflow-wrap:anywhere; padding:12px; }
+  html[data-mobile-rl] .target-card { width:100%; text-align:left; padding:14px 10px; }
+  html[data-mobile-rl] .gate-row { padding:12px 8px; grid-template-columns:22px minmax(0,1fr) auto; }
+  html[data-mobile-rl] .gate-row strong { font-size:14px; }
+  html[data-mobile-rl] .gate-row small { font-size:12px; line-height:1.5; overflow-wrap:anywhere; }
+  html[data-mobile-rl] .gate-row b { font-size:11px; }
+  html[data-mobile-rl] .gate-row i { width:22px; height:22px; font-size:12px; }
+  html[data-mobile-rl] .evaluation-center { display:grid; grid-template-rows:auto auto; gap:12px; }
+  html[data-mobile-rl] .sim-viewport { min-height:300px; height:300px; }
+  html[data-mobile-rl] .replay-controls { grid-template-columns:auto minmax(0,1fr); gap:8px; }
+  html[data-mobile-rl] .replay-controls code { font-size:12px; grid-column:1/-1; }
+  html[data-mobile-rl] .mrl-table-scroll { width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  html[data-mobile-rl] .compare-table { min-width:560px; font-size:14px; }
+  html[data-mobile-rl] .compare-table th { font-size:12px; }
+  html[data-mobile-rl] .compare-table :is(td,th) { padding:12px; }
+}
+@media (min-width:640px) and (max-width:1023px) {
+  html[data-mobile-rl] .mrl-node-list { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  html[data-mobile-rl] .el-charts { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  html[data-mobile-rl] .el-charts.has-focus { grid-template-columns:minmax(0,1fr); }
+  html[data-mobile-rl] .el-chart svg text { font-size:21px; }
+  html[data-mobile-rl] .flow-line { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}

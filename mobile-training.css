@@ -1,0 +1,211 @@
+/* Phone workspaces use real viewport width. Desktop is untouched: the JS adds
+   ms-touch only below 1024 px. Existing nodes and handlers stay in place. */
+.ms-workspace-tabs { display: none; }
+html.ms-touch { font-size: 15px; -webkit-text-size-adjust: 100%; }
+html.ms-touch, html.ms-touch body { min-width: 0; max-width: 100%; height: auto; min-height: 100%; overflow: visible; }
+html.ms-touch body { font-size: 15px; line-height: 1.55; }
+html.ms-touch :is(button, a, input, select, textarea, summary) { touch-action: manipulation; }
+html.ms-touch :is(button, select, input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), summary) { min-height: 44px !important; }
+html.ms-touch :is(input, select, textarea) { font-size: 16px !important; min-width: 0; max-width: 100%; }
+html.ms-touch button { font-size: 14px !important; line-height: 1.45; border-radius: 6px; }
+html.ms-touch :is(input[type="checkbox"], input[type="radio"]) { width: 20px; height: 20px; flex: 0 0 20px; }
+html.ms-touch input[type="range"] { height: 28px; background: transparent; }
+html.ms-touch input[type="range"]::-webkit-slider-runnable-track { height: 5px; background: #4b5850; border-radius: 5px; }
+html.ms-touch input[type="range"]::-webkit-slider-thumb { width: 24px; height: 24px; margin-top: -10px; }
+html.ms-touch .ms-workspace-tabs { display: flex; position: sticky; top: 0; z-index: 50; gap: 5px; padding: 7px 10px; background: #1c2524; border-bottom: 1px solid #46514b; flex: 0 0 auto; }
+html.ms-touch .ms-workspace-tabs button { flex: 1; min-width: 0; padding: 8px 5px; color: #b9c8c2; border: 1px solid transparent; background: transparent; font-size: 15px !important; font-weight: 600; }
+html.ms-touch .ms-workspace-tabs button[aria-selected="true"] { color: #e9f4dc; border-color: #799956; background: #36482c; }
+html.ms-touch .ms-workspace-tabs button:focus-visible { outline: 2px solid #c0e6ac; outline-offset: 1px; }
+
+/* Training is one screen: switch between the full-width viewport and its
+   readable configuration sheet. The nested workspace keeps its own tabs. */
+html.ms-touch #training-app { display: flex; flex-direction: column; height: 100vh; height: 100dvh; min-height: 360px; }
+html.ms-touch #training-app .training-layout { display: flex; position: relative; flex: 1; min-height: 0; min-width: 0; overflow: hidden; }
+html.ms-touch #training-app .training-left { display: none; width: 100%; border: 0; overflow: auto; }
+html.ms-touch #training-app .left-scroll { overflow: visible; }
+html.ms-touch #training-app #expert-frame-host { min-width: 0; width: 100%; min-height: 0; flex: 1; }
+html.ms-touch #training-app #expert-frame-host iframe { width: 100%; height: 100%; }
+html.ms-touch #training-app.ms-config-open .training-left { display: block; position: absolute; inset: 0; height: 100%; overflow: auto; z-index: 10; }
+/* Keep the embedded runtime laid out while the opaque settings sheet covers it.
+   Model/event handlers perform synchronous canvas measurements. */
+html.ms-touch #training-app.ms-config-open #expert-frame-host { display: block; }
+html.ms-touch #training-app .training-statusbar { height: auto; min-height: 25px; font-size: 11px; padding: 3px 10px; gap: 8px; }
+html.ms-touch #training-app .training-statusbar > :not(:first-child) { display: none; }
+html.ms-touch #training-app :is(.field-note, .event-description, .training-event-button small, .event-guide > summary, .robot-identity span, .left-footer, .asset-row, .asset-download) { font-size: 14px; line-height: 1.7; }
+html.ms-touch #training-app :is(.section-title, .training-event-button strong) { font-size: 16px; line-height: 1.5; }
+html.ms-touch #training-app :is(.section-title > span, .robot-identity > b, .left-footer code) { font-size: 11px; }
+html.ms-touch #training-app .robot-identity { padding: 18px 16px; }
+html.ms-touch #training-app .robot-identity > div:not(.robot-symbol) { min-width: 0; padding-right: 48px; }
+html.ms-touch #training-app .sidebar-section { padding: 18px 16px; }
+html.ms-touch #training-app .training-event-button { padding: 12px; gap: 7px; }
+html.ms-touch #training-app .overlay-options { grid-template-columns: repeat(2, minmax(0, 1fr)); font-size: 15px; gap: 8px; }
+html.ms-touch #training-app .overlay-options label { min-height: 44px; gap: 8px; }
+html.ms-touch #training-app .asset-download { min-height: 44px; }
+html.ms-touch #training-app .event-guide > summary { display: flex; align-items: center; }
+html.ms-touch #scene-loading { padding: 22px; }
+html.ms-touch #scene-loading p { font-size: 14px; }
+
+/* Human / expert workspaces have three panes. No 3-column desktop canvas is
+   scaled down; the scene, controls and signal dashboard each use all width. */
+html.ms-touch body #human-app { position: relative; inset: auto; z-index: auto; display: flex; flex-direction: column; width: 100%; height: auto; min-height: 0; grid-template-columns: minmax(0, 1fr); }
+html.ms-touch body #human-app[hidden] { display: none !important; }
+html.ms-touch body #human-app > :is(.left-panel, .main-panel, .inspector) { min-width: 0; width: 100%; height: auto; min-height: 0; border-left: 0; border-right: 0; overflow: visible; }
+html.ms-touch body #human-app > .left-panel,
+html.ms-touch body #human-app > .inspector { display: none; }
+html.ms-touch body[data-ms-pane="people"] #human-app > .left-panel { display: flex; }
+html.ms-touch body[data-ms-pane="people"] #human-app > .main-panel,
+html.ms-touch body[data-ms-pane="controls"] #human-app > .main-panel { display: none; }
+html.ms-touch body[data-ms-pane="controls"] #human-app > .inspector { display: flex; padding-bottom: calc(22px + env(safe-area-inset-bottom)); }
+html.ms-touch body[data-ms-pane="signals"] #human-app > .main-panel { display: flex; }
+html.ms-touch body[data-ms-pane="signals"] #human-app > .main-panel > :not(#neuro-dashboard-dock):not(.robot-signal-controls) { display: none !important; }
+html.ms-touch body:not([data-ms-pane="signals"]) #human-app #neuro-dashboard-dock { display: none !important; }
+html.ms-touch body:not([data-ms-pane="signals"]) #human-app > .main-panel > .robot-signal-controls { display: none !important; }
+html.ms-touch body #human-app .workspace-head { height: auto; min-height: 72px; padding: 13px 15px; gap: 8px; }
+html.ms-touch body #human-app .workspace-head h1 { font-size: 20px; letter-spacing: 0; }
+html.ms-touch body #human-app .workspace-head .mini-label { font-size: 10px; letter-spacing: .3px; }
+html.ms-touch body #human-app .runtime { flex-wrap: wrap; justify-content: flex-end; max-width: 86px; gap: 3px; }
+html.ms-touch body #human-app .runtime :is(b, span), html.ms-touch body #human-app .runtime { font-size: 12px; }
+html.ms-touch body #human-app :is(.scene-tools, .robot-view-toolbar) { display: flex; flex-wrap: wrap; height: auto; flex: 0 0 auto; min-height: 52px; padding: 7px 9px; gap: 6px; }
+html.ms-touch body.human-expert-layout #human-app .main-panel > .scene-tools { display: none; }
+html.ms-touch body #human-app :is(.view-tabs, .robot-camera-buttons) { width: 100%; gap: 4px; display: flex; }
+html.ms-touch body #human-app :is(.view-tabs, .robot-camera-buttons) button { flex: 1; padding: 6px 3px; }
+html.ms-touch body #human-app :is(.tool-icons, .robot-display-buttons) { display: flex; flex-wrap: wrap; gap: 4px; }
+html.ms-touch body #human-app :is(.tool-icons, .robot-display-buttons) button { min-width: 44px; width: 44px; height: 44px; padding: 8px; }
+html.ms-touch body #human-app #viewport { width: 100%; height: clamp(310px, 57vh, 650px); height: clamp(310px, 57dvh, 650px); min-height: 310px; flex: 0 0 auto; }
+html.ms-touch body.human-expert-layout #human-app #viewport { height: max(310px, calc(100vh - 178px)); height: max(310px, calc(100dvh - 178px)); min-height: 310px; flex: 0 0 auto; }
+html.ms-touch body #human-app #viewport > canvas { max-width: 100%; }
+html.ms-touch body #human-app .viewport-info { left: 10px; top: 10px; gap: 5px; font-size: 11px; max-width: calc(100% - 20px); flex-wrap: wrap; }
+html.ms-touch body #human-app .view-hint { left: 10px; right: 10px; bottom: 10px; width: fit-content; max-width: calc(100% - 20px); padding: 5px 7px; font-size: 12px; line-height: 1.5; background: #18231fd9; }
+html.ms-touch body #human-app #embodiment-hud { left: 10px; right: 10px; top: 53px; gap: 6px; flex-wrap: wrap; font-size: 12px; }
+html.ms-touch body #human-app #embodiment-hud span { max-width: 100%; overflow-wrap: anywhere; }
+html.ms-touch body #human-app #loader { padding: 18px; text-align: center; }
+html.ms-touch body #human-app #loader span { font-size: 14px; }
+html.ms-touch body #human-app :is(.anatomy-bar, .transport, .expert-toolbar) { height: auto; flex: 0 0 auto; flex-wrap: wrap; gap: 10px; padding: 12px; }
+html.ms-touch body #human-app .anatomy-bar { font-size: 14px; }
+html.ms-touch body #human-app .anatomy-bar :is(code, #selected-point-bone) { font-size: 12px; }
+html.ms-touch body #human-app .anatomy-bar select { width: 100%; }
+html.ms-touch body #human-app .timeline-panel { height: auto; }
+html.ms-touch body #human-app .transport-copy strong { font-size: 15px; }
+html.ms-touch body #human-app .transport-copy span { font-size: 12px; }
+html.ms-touch body #human-app .play-button { min-width: 48px; width: 48px; height: 48px; }
+html.ms-touch body #human-app .action-buttons { flex-basis: 100%; flex-wrap: wrap; gap: 6px; }
+html.ms-touch body #human-app .action-buttons button { min-width: 64px; padding: 8px 12px; }
+html.ms-touch body #human-app .action-scope label { min-height: 44px; font-size: 14px; }
+html.ms-touch body #human-app #activity-chart { flex-basis: 100%; width: 100%; height: 55px; }
+html.ms-touch body #human-app .statusbar { height: auto; min-height: 30px; flex-wrap: wrap; padding: 7px 12px; font-size: 11px; }
+html.ms-touch body #human-app :is(.cohorts, .layer-nav, #layer-content) { padding: 16px; }
+html.ms-touch body #human-app :is(.layer-nav, .inspector-scroll, #expert-console) { overflow: visible; flex: 0 0 auto; }
+html.ms-touch body #human-app .person-list { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+html.ms-touch body #human-app .person-card { height: 108px; }
+html.ms-touch body #human-app .person-card span { font-size: 12px; }
+html.ms-touch body #human-app .cohort-tabs { display: flex; gap: 5px; flex-wrap: wrap; }
+html.ms-touch body #human-app .layer-item { min-height: 64px; padding: 12px; }
+html.ms-touch body #human-app :is(.layer-item strong, .section-label, .detail-head h2, .field-label, .metric, .note, .field.check-field, .console-note, .candidate-label, .api-link, .left-bottom a, .left-bottom button) { font-size: 14px; line-height: 1.65; }
+html.ms-touch body #human-app :is(.layer-item small, .section-label > span, .detail-head p, .field small, .metric small, .field-label output, .metric b, .role-badge, .person-summary p, .evidence-card, .decision-dock p) { font-size: 13px; line-height: 1.65; }
+html.ms-touch body #human-app .section-label > span { font-size: 11px; }
+html.ms-touch body #human-app .person-summary { padding: 16px; }
+html.ms-touch body #human-app .person-summary > div { min-width: 0; }
+html.ms-touch body #human-app .person-summary h2 { font-size: 18px; }
+html.ms-touch body #human-app :is(.input-duo, .social-annotation-grid, .expert-actions, .gw-fields) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+html.ms-touch body #human-app .expert-actions button { height: auto; min-height: 44px; }
+html.ms-touch body #human-app .console-block { padding: 17px 16px; }
+html.ms-touch body #human-app .console-row { flex-wrap: wrap; gap: 7px; }
+html.ms-touch body #human-app .console-row button { min-width: 74px; }
+html.ms-touch body #human-app .capture-health { padding: 12px; gap: 8px; }
+html.ms-touch body #human-app :is(.capture-health > span, .capture-health small, .capture-health b, .immersive-identity > span, .robot-position, .robot-transport-time) { font-size: 14px; line-height: 1.65; white-space: normal; }
+html.ms-touch body #human-app #save-path { white-space: normal; overflow-wrap: anywhere; }
+html.ms-touch body #human-app .immersive-session-actions { gap: 8px; }
+html.ms-touch body #human-app #expert-layout-tools { padding: 16px; }
+html.ms-touch body #human-app :is(.device-block summary, .social-camera-settings > summary, .social-training-panel > summary, .social-annotation summary) { display: flex; flex-wrap: wrap; align-items: center; min-height: 48px; font-size: 15px; padding: 12px; gap: 8px; }
+html.ms-touch body #human-app :is(.social-training-panel, .social-training-panel small, .social-training-panel label, .social-training-panel p, .social-annotation-history > b) { font-size: 14px; line-height: 1.7; }
+html.ms-touch body #human-app .social-distance-row { flex-wrap: wrap; }
+html.ms-touch body #human-app .social-distance-row label { flex: 1 1 100%; }
+html.ms-touch body #human-app .social-distance-row output { font-size: 14px; }
+html.ms-touch body #human-app .collection-timeline { position: relative; inset: auto; margin: 0; padding: 12px; }
+html.ms-touch body #human-app :is(.collection-heading, #replay-controls) { flex-wrap: wrap; font-size: 13px; }
+html.ms-touch body #human-app #replay-controls input { flex-basis: 100%; }
+html.ms-touch body #human-app .expert-minimap { max-width: calc(100% - 20px); width: 200px; }
+
+/* Signals become a vertically readable dashboard. Keep original status and
+   empty states; no simulated sensor values are introduced by this layer. */
+html.ms-touch body #human-app #neuro-dashboard-dock:not([hidden]) { height: auto; min-height: 0; flex: 0 0 auto; border: 0; overflow: visible; }
+html.ms-touch body #human-app .robot-signal-controls { margin: 0; padding: 12px 14px; }
+html.ms-touch body #human-app .neuro-dashboard { height: auto; overflow: visible; border-radius: 0; min-width: 0; font-size: 14px; }
+html.ms-touch body #human-app .neuro-dashboard .nd-body { display: flex; flex-direction: column; overflow: visible; min-width: 0; }
+html.ms-touch body #human-app .neuro-dashboard :is(.nd-eeg-pane, .nd-detail) { width: 100%; min-width: 0; flex: 0 0 auto; border: 0; }
+html.ms-touch body #human-app .neuro-dashboard .nd-eeg-pane { display: flex !important; }
+html.ms-touch body #human-app .neuro-dashboard .nd-detail { display: flex !important; }
+html.ms-touch body #human-app .neuro-dashboard .nd-mobile-tabs { display: none !important; }
+html.ms-touch body #human-app .neuro-dashboard .nd-eeg-canvas-wrap { height: 340px; min-height: 340px; flex: 0 0 auto; }
+html.ms-touch body #human-app .neuro-dashboard .nd-detail-content { overflow: visible; padding: 16px; }
+html.ms-touch body #human-app .neuro-dashboard :is(.nd-header, .nd-title-wrap, .nd-toolbar, .nd-control-group, .nd-detail-heading, .nd-plot-heading, .nd-title-line) { flex-wrap: wrap; height: auto; }
+html.ms-touch body #human-app .neuro-dashboard .nd-header-actions { display: flex; flex-wrap: wrap; }
+html.ms-touch body #human-app .neuro-dashboard :is(.nd-title-line strong, .nd-title-wrap small, .nd-control-group > span, .nd-control-group > label, .nd-plot-heading, .nd-eeg-readout, .nd-eeg-readout small, .nd-detail-heading, .nd-electrode-readout, .nd-quality-legend, .nd-kv, .nd-detail-note, .nd-plot-empty small, .nd-event-empty, .nd-footer, .nd-flow b, .nd-gaze-empty, .nd-eye-card, .nd-event-list li, .nd-event-list small) { font-size: 13px; line-height: 1.6; }
+html.ms-touch body #human-app .neuro-dashboard .nd-title-line strong { font-size: 16px; }
+html.ms-touch body #human-app .neuro-dashboard .nd-head-map { height: 210px; max-height: 210px; }
+html.ms-touch body #human-app .neuro-dashboard .nd-footnote { white-space: normal; max-width: 100%; }
+html.ms-touch body #human-app .neuro-dashboard .nd-channel-options { position: relative; top: 0; width: min(100%, 330px); box-shadow: none; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+html.ms-touch body #human-app .neuro-dashboard .nd-channel-options label { min-height: 44px; }
+html.ms-touch body #human-app .neuro-dashboard .nd-channel-picker { min-width: 0; max-width: 100%; }
+html.ms-touch body #human-app .neuro-dashboard .nd-channel-picker[open] { flex-basis: 100%; }
+html.ms-touch body #human-app .neuro-dashboard .nd-plot-empty { left: 45px; right: 15px; }
+html.ms-touch body #human-app .neuro-dashboard .nd-kv { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+html.ms-touch body #human-app .neuro-dashboard .nd-kv dd { max-width: none; }
+
+/* Modal sheets and additional Human Layer editors remain reachable. */
+html.ms-touch dialog { width: calc(100% - 24px); max-width: 100%; max-height: calc(100dvh - 24px); margin: auto; overflow: auto; }
+html.ms-touch :is(.capture-dialog, .scene-config-dialog) :is(p, label, small) { font-size: 14px; line-height: 1.7; }
+html.ms-touch .capture-dialog :is(header, footer) { padding: 14px; flex-wrap: wrap; gap: 8px; }
+html.ms-touch .capture-dialog header h2 { font-size: 19px; }
+html.ms-touch .capture-dialog header button { min-width: 44px; }
+html.ms-touch .scene-context-control { width: 100%; flex-wrap: wrap; }
+html.ms-touch .scene-context-control label { min-width: 0; max-width: 100%; white-space: normal; }
+html.ms-touch .scene-context-control select { min-width: 0; max-width: 100%; height: auto; }
+html.ms-touch :is(#overview-scene-header, .pl-header, .al-heading) > .scene-context-control { grid-template-columns: minmax(0, 1fr) 44px; }
+html.ms-touch .scene-context-control button { width: 44px; height: 44px; }
+html.ms-touch .human-embedded .standalone-page { display: flex; }
+html.ms-touch .human-embedded :is(#overview-scene-header, .pl-header, .al-heading) .standalone-page { display: flex; }
+html.ms-touch :is(#human-library-pages, #human-personas, #human-actions, #human-events) { width: 100%; height: auto !important; min-height: 0; max-width: 100%; overflow: visible; }
+html.ms-touch :is(#human-actions, #human-events) .al-shell { display: flex; flex-direction: column; height: auto; }
+html.ms-touch #human-actions :is(.al-browser, .al-preview-panel, .al-pose-stage, .pe-panel), html.ms-touch #human-events :is(.ed-list, .ed-detail) { height: auto; max-height: none; min-height: 0; overflow: visible; }
+html.ms-touch #human-actions .al-action-list, html.ms-touch #human-events .ed-list > [data-ed="list"] { max-height: 330px; overflow: auto; }
+html.ms-touch #human-actions .al-pose-stage { display: flex; flex-direction: column; }
+html.ms-touch #human-actions .al-preview-viewport { height: 360px; min-height: 360px; }
+html.ms-touch #human-actions .pe-panel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+html.ms-touch #human-events :is(.ed-detail form, .ed-fields) { grid-template-columns: minmax(0, 1fr); }
+html.ms-touch :is(#human-actions, #human-events) :is(p, label, small) { font-size: 14px; line-height: 1.6; }
+html.ms-touch :is(.gw-panel, .gw-panel-content) { min-width: 0; }
+html.ms-touch .gw-panel { width: calc(100% - 16px); max-width: 420px; right: 8px; }
+html.ms-touch .gw-panel :is(label, p, small, .gw-note, .gw-result) { font-size: 13px; line-height: 1.6; }
+html.ms-touch .gw-panel :is(.gw-saved-row, .gw-member-heading, .gw-footer) { flex-wrap: wrap; }
+html.ms-touch :is(#toast, #training-toast) { width: max-content; max-width: calc(100vw - 24px); white-space: normal; overflow-wrap: anywhere; font-size: 14px; line-height: 1.6; }
+
+html.ms-touch body #human-app .expert-view-tools :is(header strong, header span, label, small, output, summary, p, .expert-view-footer) { font-size: 14px !important; line-height: 1.6 !important; }
+html.ms-touch body #human-app .expert-view-tools :is(header, .expert-vision-actor, .expert-angle-row label) { flex-wrap: wrap; }
+html.ms-touch body #human-app .expert-angle-row input[type="number"] { width: 76px; }
+html.ms-touch body #human-app .expert-minimap :is(b, small, .expert-minimap-coordinate, .expert-minimap-legend) { font-size: 12px; }
+html.ms-touch .me-panel { height: auto; overflow: visible; }
+html.ms-touch .me-panel :is(p, label, small, legend, output, .me-list-head, .me-selection, .me-source) { font-size: 14px; line-height: 1.65; }
+html.ms-touch .me-list button strong { font-size: 14px; }
+html.ms-touch body #human-app :is(.left-bottom a, .api-link) { min-height: 44px; display: flex; align-items: center; }
+html.ms-touch .persona-library :is(.pl-shell, .pl-people-workspace) { display: flex; flex-direction: column; height: auto; min-width: 0; }
+html.ms-touch .persona-library .pl-people-sidebar { height: auto; max-height: none; overflow: visible; }
+html.ms-touch .persona-library .pl-people-list { max-width: 100%; max-height: 230px; display: flex; overflow: auto; }
+html.ms-touch .persona-library .pl-person-card { flex: 0 0 210px; width: 210px; min-width: 0; }
+html.ms-touch .persona-library :is(.pl-person-main, .pl-domain-panel) { height: auto; overflow: visible; }
+html.ms-touch .persona-library :is(.pl-header, .pl-person-heading, .pl-domain-panel) { padding: 16px; }
+html.ms-touch .persona-library :is(.pl-header, .pl-header-actions, .pl-search, .pl-domain-tabs, .pl-domain-intro, .pl-five-row > div) { flex-wrap: wrap; }
+html.ms-touch .persona-library .pl-domain-tabs button { padding: 12px 8px; min-width: 0; }
+html.ms-touch .persona-library :is(.pl-basic-fields, .pl-preference-columns, .pl-template-fields) { grid-template-columns: minmax(0, 1fr); }
+html.ms-touch .persona-library :is(p, label, small, .pl-status, .pl-note, .pl-person-card strong, .pl-person-card em, .pl-five-row b, .pl-range, .pl-template-description, .pl-empty, .pl-person-heading p, .pl-domain-intro p) { font-size: 14px; line-height: 1.65; }
+html.ms-touch .persona-library .pl-maintenance > div { position: relative; top: auto; width: 100%; min-width: 210px; }
+html.ms-touch .persona-library .pl-five-slider { grid-template-columns: minmax(0, 1fr) 78px; gap: 12px; }
+html.ms-touch .persona-library .pl-person-heading > div { min-width: 0; }
+html.ms-touch .persona-library .pl-person-heading h3 { font-size: 21px; }
+html.ms-touch .persona-library .pl-maintenance a { min-height: 44px; display: flex; align-items: center; justify-content: center; }
+html.ms-touch body.robot-training-shell[data-ms-pane="signals"] #human-app .main-panel:has(#neuro-dashboard-dock[hidden])::after { content: '信号面板已关闭，请在训练设置中打开「信号面板」。'; display: block; padding: 28px 18px; color: #becbc0; font-size: 15px; line-height: 1.7; }
+
+/* The desktop rule with :has(#neuro-dashboard-dock) contains two ID selectors
+   and otherwise reduces the scene to 120 px even while its dock is hidden by
+   the phone pane switch. Keep the canvas independent of that desktop flex rule. */
+html.ms-touch body.human-expert-layout #human-app .main-panel #viewport { height: max(310px, calc(100vh - 178px)) !important; height: max(310px, calc(100dvh - 178px)) !important; min-height: 310px !important; flex: 0 0 auto !important; }

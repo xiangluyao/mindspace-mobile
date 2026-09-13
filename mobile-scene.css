@@ -1,0 +1,205 @@
+/* Phone workspaces use the original panels one at a time. Desktop rules are untouched. */
+.mobile-scene-nav, .mobile-human-tools-toggle { display: none; }
+@media (max-width: 1023px) {
+  html.ms-mobile-studio, .ms-mobile-studio body, .ms-mobile-studio #root {
+    width: 100%; min-width: 0; height: 100%; margin: 0; overflow: hidden;
+  }
+  .ms-mobile-studio { -webkit-text-size-adjust: 100%; }
+  .ms-mobile-studio .app-shell {
+    width: 100%; min-width: 0; height: calc(100% - 58px - env(safe-area-inset-bottom, 0px));
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 48px 54px minmax(0, 1fr) 24px;
+  }
+  .ms-mobile-studio.ms-embedded-studio .app-shell { grid-template-rows: 54px minmax(0, 1fr) 24px; }
+  .ms-mobile-studio .app-shell.rl-studio-shell { grid-template-rows: 48px minmax(0, 1fr); }
+  .ms-mobile-studio.ms-embedded-studio .app-shell.rl-studio-shell { grid-template-rows: minmax(0, 1fr); }
+  .ms-mobile-studio .app-shell.rl-studio-shell > .topbar,
+  .ms-mobile-studio .app-shell.rl-studio-shell > .statusbar { display: none; }
+  .ms-mobile-studio .module-nav { display: block; min-width: 0; height: 48px; z-index: 20; }
+  .ms-mobile-studio .module-nav > .brand-lockup,
+  .ms-mobile-studio.ms-embedded-studio .module-nav { display: none; }
+  .ms-mobile-studio .module-nav-items { height: 48px; overflow-x: auto; padding: 0 6px; gap: 3px; }
+  .ms-mobile-studio .module-nav-item { position: static; flex: none; }
+  .ms-mobile-studio .module-nav-item > button { min-height: 44px; height: 44px; padding: 0 12px; }
+  .ms-mobile-studio .module-nav-item > button span { font-size: 14px; }
+  .ms-mobile-studio .module-nav-item > button small { display: none; }
+  .ms-mobile-studio .module-submenu { top: 48px; left: 8px; right: 8px; width: auto; max-height: 60dvh; overflow: auto; }
+  .ms-mobile-studio .module-submenu button { min-height: 48px; }
+  .ms-mobile-studio.ms-scene-menu-open .module-nav {
+    display: block; position: fixed; z-index: 100; top: 8px; bottom: calc(68px + env(safe-area-inset-bottom, 0px));
+    left: 8px; right: 8px; width: auto; height: auto; padding: 12px; overflow: auto;
+    border: 1px solid #69845c; border-radius: 14px; background: #13201b; box-shadow: 0 10px 70px #000c;
+  }
+  .ms-mobile-studio.ms-scene-menu-open .module-nav-items { display: flex; flex-direction: column; height: auto; gap: 6px; overflow: visible; padding: 0; }
+  .ms-mobile-studio.ms-scene-menu-open .module-nav-item > button { width: 100%; justify-content: space-between; min-height: 52px; padding: 10px 14px; }
+  .ms-mobile-studio.ms-scene-menu-open .module-nav-item > button span { font-size: 16px; }
+  .ms-mobile-studio.ms-scene-menu-open .module-submenu { position: static; width: 100%; margin: 4px 0; max-height: none; border-radius: 8px; box-shadow: none; }
+  .ms-mobile-studio.ms-scene-menu-open .module-submenu button { width: 100%; font-size: 15px; }
+  .ms-mobile-studio.ms-scene-menu-open .mobile-scene-nav [data-mobile-menu] { border-color: #779660; color: #e3f0ce; background: #2d4228; }
+  .ms-mobile-studio .topbar { display: flex; align-items: center; min-width: 0; gap: 0; padding-right: 6px; }
+  .ms-mobile-studio .workspace-context { display: none; }
+  .ms-mobile-studio .tool-rail { flex: 1; justify-content: flex-start; overflow-x: auto; padding: 4px 6px; gap: 4px; }
+  .ms-mobile-studio .tool-button { flex: none; height: 44px; min-width: 54px; padding: 6px 8px; gap: 4px; }
+  .ms-mobile-studio .tool-button span { font-size: 14px; }
+  .ms-mobile-studio .tool-divider { flex: none; margin: 0 2px; }
+  .ms-mobile-studio .project-switcher { display: contents; }
+  .ms-mobile-studio .project-switcher > :not(.help-button) { display: none; }
+  .ms-mobile-studio .help-button { min-width: 44px; height: 44px; margin-left: 0; font-size: 13px; }
+  .ms-mobile-studio .help-button svg { display: none; }
+  .ms-mobile-studio .human-page-tabs { display: flex; gap: 4px; flex: none; }
+  .ms-mobile-studio .human-page-tabs button { min-height: 44px; padding: 8px 12px; font-size: 14px; white-space: nowrap; }
+  .ms-mobile-studio .workspace-grid,
+  .ms-mobile-studio .workspace-grid.hl-original {
+    position: relative; display: block; min-width: 0; min-height: 0; width: 100%; height: 100%;
+    grid-template-columns: minmax(0, 1fr); padding: 0; gap: 0; overflow: hidden;
+  }
+  .ms-mobile-studio .workspace-grid > .center-workspace,
+  .ms-mobile-studio .workspace-grid.hl-original > .center-workspace {
+    display: flex; flex-direction: column; position: absolute; inset: 0; width: 100%; height: 100%;
+    min-width: 0; min-height: 0; border: 0; border-radius: 0; overflow: hidden;
+  }
+  .ms-mobile-studio .workspace-grid > :is(.left-panel, .module-tree, .right-panel, .inspector) {
+    display: none; position: absolute; inset: 0; width: 100%; height: 100%; min-width: 0; min-height: 0;
+    z-index: 10; border: 0; border-radius: 0; background: #14201e; overflow: auto;
+  }
+  .ms-mobile-studio .workspace-grid[data-mobile-panel="library"] > .left-panel,
+  .ms-mobile-studio .workspace-grid[data-mobile-panel="library"] > .module-tree,
+  .ms-mobile-studio .workspace-grid[data-mobile-panel="tree"] > .left-panel,
+  .ms-mobile-studio .workspace-grid[data-mobile-panel="properties"] > :is(.right-panel, .inspector) { display: flex; flex-direction: column; }
+  .ms-mobile-studio .workspace-grid:not([data-mobile-panel="scene"]) > .center-workspace { visibility: hidden; }
+  .ms-mobile-studio .workspace-grid[data-mobile-panel="library"] > .left-panel > .scene-tree,
+  .ms-mobile-studio .workspace-grid[data-mobile-panel="tree"] > .left-panel > .asset-library { display: none; }
+  .ms-mobile-studio .workspace-grid > .left-panel > :is(.asset-library, .scene-tree) { flex: 1; height: 100%; min-height: 0; }
+  .ms-mobile-studio .panel-heading, .ms-mobile-studio .inspector-title { height: 52px; min-height: 52px; padding: 0 16px; }
+  .ms-mobile-studio .panel-heading strong, .ms-mobile-studio .inspector-title strong { font-size: 17px; }
+  .ms-mobile-studio .panel-eyebrow { display: none; }
+  .ms-mobile-studio .search-field { height: 46px; min-height: 46px; margin: 10px 14px; }
+  .ms-mobile-studio input:not([type="checkbox"]):not([type="range"]),
+  .ms-mobile-studio select, .ms-mobile-studio textarea { font-size: 16px; }
+  .ms-mobile-studio .asset-category-list { padding: 0 12px 16px; }
+  .ms-mobile-studio .asset-category-trigger { height: 56px; min-height: 56px; padding: 8px 10px; }
+  .ms-mobile-studio .asset-category-trigger strong { font-size: 16px; }
+  .ms-mobile-studio .asset-category-trigger small { font-size: 12px; color: #a0b3ab; }
+  .ms-mobile-studio .library-refresh { width: 44px; min-height: 44px; }
+  .ms-mobile-studio .scene-library-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .ms-mobile-studio .scene-library-card strong { font-size: 14px; white-space: normal; overflow-wrap: anywhere; }
+  .ms-mobile-studio .scene-library-card small { font-size: 12px; }
+  .ms-mobile-studio .tree-scroll { padding: 8px 0 20px; }
+  .ms-mobile-studio .tree-row, .ms-mobile-studio .object-group-label { height: auto; min-height: 48px; padding-top: 8px; padding-bottom: 8px; }
+  .ms-mobile-studio .tree-row span, .ms-mobile-studio .object-group-label { font-size: 15px; }
+  .ms-mobile-studio .tree-visibility { min-width: 44px; min-height: 44px; }
+  .ms-mobile-studio .inspector-content { height: auto; flex: 1; min-height: 0; padding-bottom: 18px; }
+  .ms-mobile-studio .inspector-section { padding: 16px; }
+  .ms-mobile-studio .inspector-section h3, .ms-mobile-studio .inspector-field > span,
+  .ms-mobile-studio .inspector-note { font-size: 14px; line-height: 1.65; }
+  .ms-mobile-studio .inspector-field input, .ms-mobile-studio .inspector-field select { min-height: 44px; }
+  .ms-mobile-studio .asset-record-field input { min-height: 44px; }
+  .ms-mobile-studio .module-panel-heading { min-height: 52px; padding: 12px 16px; font-size: 16px; }
+  .ms-mobile-studio .module-search { min-height: 46px; width: calc(100% - 28px); margin: 10px 14px; }
+  .ms-mobile-studio .module-tree-scroll { flex: 1; min-height: 0; overflow: auto; }
+  .ms-mobile-studio .module-tree summary, .ms-mobile-studio .module-object-row { min-height: 48px; font-size: 15px; }
+  .ms-mobile-studio .module-inspector-scroll { flex: 1; min-height: 0; overflow: auto; padding: 16px; }
+  .ms-mobile-studio .module-inspector-scroll :is(p, label, dt, dd) { font-size: 14px; line-height: 1.65; }
+  .ms-mobile-studio .module-commandbar { flex: none; display: flex; flex-wrap: wrap; max-height: 185px; overflow: auto; padding: 10px; gap: 8px; }
+  .ms-mobile-studio .module-title { display: none; }
+  .ms-mobile-studio .attribute-layer-tabs { max-width: 100%; overflow-x: auto; flex-wrap: nowrap; }
+  .ms-mobile-studio .attribute-layer-tabs button, .ms-mobile-studio .region-controls button { min-height: 44px; flex: none; font-size: 14px; }
+  .ms-mobile-studio .scene-commandbar { display: flex; flex: none; min-height: 52px; padding: 4px 8px; overflow-x: auto; gap: 8px; }
+  .ms-mobile-studio .scene-commandbar > * { flex: none; }
+  .ms-mobile-studio .section-controls, .ms-mobile-studio .placement-controls { height: auto; min-height: 44px; white-space: nowrap; }
+  .ms-mobile-studio .section-controls > small { display: none; }
+  .ms-mobile-studio .section-controls button, .ms-mobile-studio .placement-controls button { min-height: 40px; height: auto; padding: 6px 10px; font-size: 14px; }
+  .ms-mobile-studio .section-controls label { min-height: 40px; }
+  .ms-mobile-studio .section-controls input[type="number"] { height: 36px; width: 58px; }
+  .ms-mobile-studio .model-view-grid { flex: 1 1 0; min-height: 180px; width: 100%; }
+  .ms-mobile-studio .model-view-name { top: 10px; left: 10px; height: 28px; }
+  .ms-mobile-studio .model-view-name strong { font-size: 13px; }
+  .ms-mobile-studio .model-view-name span { display: none; }
+  .ms-mobile-studio .maximized-view-tabs { left: 8px; right: 8px; bottom: 8px; width: auto; gap: 4px; padding: 4px; overflow-x: auto; }
+  .ms-mobile-studio .maximized-view-tabs .view-tabs-title { display: none; }
+  .ms-mobile-studio .maximized-view-tabs button { flex: 1; min-width: 44px; min-height: 42px; font-size: 14px; }
+  .ms-mobile-studio .maximized-view-tabs .restore-four-view { display: none; }
+  .ms-mobile-studio .viewport-hint { max-width: calc(100% - 24px); white-space: normal; text-align: center; font-size: 13px; }
+  .ms-mobile-studio .viewport-shortcuts { display: none; }
+  .ms-mobile-studio .statusbar { display: flex; justify-content: center; min-width: 0; padding: 0 8px; overflow: hidden; font-size: 11px; }
+  .ms-mobile-studio .statusbar > :not(.coordinates), .ms-mobile-studio .coordinates > :not(.viewport-counts) { display: none; }
+  .ms-mobile-studio .statusbar .coordinates { display: flex; padding: 0; }
+  .ms-mobile-studio .viewport-counts { font-size: 11px; margin: 0; }
+  .ms-mobile-studio .mobile-scene-nav:not([hidden]) {
+    display: flex; position: fixed; z-index: 90; bottom: 0; left: 0; right: 0;
+    min-height: 58px; padding: 5px 6px calc(5px + env(safe-area-inset-bottom, 0px)); gap: 4px;
+    background: #101c19; border-top: 1px solid #3c5047; box-shadow: 0 -4px 16px #0003;
+  }
+  .mobile-scene-nav button { flex: 1; min-width: 0; min-height: 46px; border: 1px solid transparent; border-radius: 9px; padding: 8px 3px; background: transparent; color: #adbbb3; font: 500 14px/1.25 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+  .mobile-scene-nav button[aria-pressed="true"] { color: #e3f0ce; background: #2d4228; border-color: #64804c; }
+  .mobile-scene-nav button:focus-visible { outline: 2px solid #bbd897; outline-offset: -3px; }
+  .ms-mobile-studio :is(.scene-preset-overlay, .asset-details-overlay, .import-unit-overlay, .save-preset-overlay, .help-overlay) { padding: 8px; }
+  .ms-mobile-studio .scene-preset-dialog,
+  .ms-mobile-studio .scene-preset-dialog.model-placement-dialog {
+    width: 100%; height: calc(100dvh - 16px); max-height: calc(100dvh - 16px); aspect-ratio: auto;
+    grid-template-columns: minmax(0, 1fr); grid-template-rows: 60px minmax(140px, 28%) minmax(0, 1fr) auto;
+  }
+  .ms-mobile-studio .scene-preset-dialog > header { grid-column: 1; grid-row: 1; padding: 8px 14px; }
+  .ms-mobile-studio .scene-preset-dialog > .scene-preset-visual { grid-column: 1; grid-row: 2; border: 0; }
+  .ms-mobile-studio .scene-preset-dialog > .scene-preset-info { grid-column: 1; grid-row: 3; padding: 16px; }
+  .ms-mobile-studio .scene-preset-dialog > footer { grid-column: 1; grid-row: 4; padding: 10px 14px; flex-wrap: wrap; }
+  .ms-mobile-studio .scene-preset-dialog > footer > div { width: 100%; }
+  .ms-mobile-studio .scene-preset-dialog > footer button { flex: 1; min-height: 46px; font-size: 15px; }
+  .ms-mobile-studio .scene-preset-dialog > header button, .ms-mobile-studio .asset-profile-header > button { min-width: 44px; min-height: 44px; }
+  .ms-mobile-studio .scene-preset-info > p, .ms-mobile-studio .scene-preset-note { font-size: 14px; line-height: 1.7; }
+  .ms-mobile-studio .asset-details-dialog { width: 100%; height: calc(100dvh - 16px); display: flex; flex-direction: column; overflow: auto; }
+  .ms-mobile-studio .asset-details-dialog > * { flex: none; min-width: 0; }
+  .ms-mobile-studio .asset-details-preview { height: 230px; }
+  .ms-mobile-studio .asset-details-profile { min-height: 520px; }
+  .ms-mobile-studio .asset-profile-scroll { overflow: visible; }
+  .ms-mobile-studio .asset-profile-field :is(input, select, textarea) { min-height: 44px; }
+  .ms-mobile-studio .import-unit-dialog, .ms-mobile-studio .help-dialog, .ms-mobile-studio .save-preset-dialog { width: 100%; max-height: calc(100dvh - 16px); overflow: auto; }
+  .ms-mobile-studio .toast { max-width: calc(100% - 24px); left: 12px; right: 12px; bottom: 76px; transform: none; white-space: normal; font-size: 14px; }
+  /* Human module uses the same three-dimensional stage and its original drawers. */
+  .ms-mobile-studio .hl-original .original-header { max-height: min(340px, 48dvh); overflow: auto; }
+  .ms-mobile-studio .hl-original .mobile-human-tools-toggle { display: block; width: calc(100% - 16px); min-height: 44px; margin: 5px 8px; padding: 8px 12px; text-align: left; border-radius: 7px; font-size: 14px; color: #d8e5ce; background: #28392a; border: 1px solid #526949; }
+  .ms-mobile-studio .hl-original .original-header:not([data-mobile-tools="open"]) > :is(.expert-toolbar, .scene-tools) { display: none; }
+  .ms-mobile-studio .hl-original .original-header button { min-height: 44px; height: auto; font-size: 14px; }
+  .ms-mobile-studio .hl-original .expert-toolbar { flex-direction: column; align-items: stretch; gap: 10px; padding: 12px; min-height: 0; }
+  .ms-mobile-studio .hl-original .mode-state { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-width: 0; }
+  .ms-mobile-studio .hl-original .mode-state b { white-space: nowrap; font-size: 15px; }
+  .ms-mobile-studio .hl-original .mode-state small { font-size: 13px; line-height: 1.5; }
+  .ms-mobile-studio .hl-original .mode-buttons { display: flex; flex-wrap: wrap; width: 100%; min-width: 0; gap: 8px; }
+  .ms-mobile-studio .hl-original .mode-buttons > button { flex: 1 1 130px; white-space: normal; padding: 10px; line-height: 1.5; }
+  .ms-mobile-studio .hl-original .mode-buttons #open-expert { flex-basis: 100%; }
+  .ms-mobile-studio .hl-original .scene-tools { height: auto; min-height: 0; flex-direction: column; align-items: stretch; gap: 10px; padding: 12px; }
+  .ms-mobile-studio .hl-original .scene-tools .view-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
+  .ms-mobile-studio .hl-original .scene-tools .view-tabs button { padding: 6px 4px; font-size: 13px; }
+  .ms-mobile-studio .hl-original .scene-tools .tool-icons { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .ms-mobile-studio .hl-original .scene-tools .tool-icons button { width: 100%; min-width: 44px; min-height: 44px; }
+  .ms-mobile-studio .hl-original .original-bottom { max-height: 160px; overflow: auto; }
+  .ms-mobile-studio .hl-original .original-bottom button { min-height: 44px; font-size: 14px; }
+  .ms-mobile-studio .hl-original .original-bottom .anatomy-bar { display: grid; height: auto; min-height: 54px; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 10px; padding: 8px 12px; font-size: 13px; }
+  .ms-mobile-studio .hl-original .anatomy-bar b { font-size: 14px; }
+  .ms-mobile-studio .hl-original .anatomy-bar code { grid-column: 1 / -1; grid-row: 2; font-size: 12px; overflow-wrap: anywhere; }
+  .ms-mobile-studio .hl-original .anatomy-bar select { width: 120px; min-height: 44px; grid-column: 2; grid-row: 1; font-size: 16px; padding: 8px; }
+  .ms-mobile-studio .hl-original .collection-heading { flex-wrap: wrap; gap: 8px; font-size: 14px; line-height: 1.5; }
+  .ms-mobile-studio .hl-original .collection-heading > span { font-size: 13px; }
+  .ms-mobile-studio .hl-original .original-bottom .collection-timeline { max-height: none; overflow: visible; padding: 10px 12px; }
+  .ms-mobile-studio .hl-original .transport-copy strong, .ms-mobile-studio .hl-original .transport .runtime { font-size: 13px; }
+  .ms-mobile-studio .hl-original .original-person-rail { flex: 1; min-height: 240px; overflow: auto; }
+  .ms-mobile-studio .hl-original .human-model-catalog { flex: none; max-height: 45%; min-height: 210px; overflow: auto; }
+  .ms-mobile-studio .hl-original .human-model-catalog button { min-height: 44px; }
+  .ms-mobile-studio .hl-original #layer-list button { min-height: 60px; font-size: 15px; }
+  .ms-mobile-studio .hl-original .inspector-scroll { min-height: 150px; flex: 1; overflow: auto; }
+  .ms-mobile-studio .hl-original .inspector-tabs button { min-height: 44px; font-size: 14px; }
+  .ms-mobile-studio .hl-original > .original-aux { position: absolute; inset: 0; pointer-events: none; }
+  .ms-mobile-studio .hl-original > .original-aux > * { pointer-events: auto; }
+  .ms-mobile-studio .hl-original.original-library-mode > .center-workspace { overflow: auto; visibility: visible; }
+  .ms-mobile-studio .hl-original.original-library-mode #human-library-pages { height: 100%; min-height: 0; flex: 1; overflow: auto; }
+  .ms-mobile-studio .persona-library { font-size: 14px; }
+  .ms-mobile-studio .persona-library .pl-domain-tabs { overflow-x: auto; flex: none; }
+  .ms-mobile-studio .persona-library .pl-domain-tabs button { min-height: 48px; font-size: 14px; }
+  .ms-mobile-studio .persona-library .pl-basic-fields { grid-template-columns: minmax(0, 1fr); }
+  .ms-mobile-studio .persona-library :is(.pl-note, .pl-domain-intro p, .pl-person-heading p, .pl-basic-fields label) { font-size: 14px; line-height: 1.7; }
+  .ms-mobile-studio .persona-library button { min-height: 44px; }
+  .ms-mobile-studio .al-shell { padding: 18px 14px; }
+  .ms-mobile-studio .al-action-layout { grid-template-columns: minmax(0, 1fr); }
+  .ms-mobile-studio .activity-library button { min-height: 44px; font-size: 14px; }
+  .ms-mobile-studio .activity-library label { font-size: 14px; }
+}
